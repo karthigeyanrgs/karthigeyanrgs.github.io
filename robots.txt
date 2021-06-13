@@ -1,0 +1,4 @@
+Sitemap: https://karthigeyanrgs.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
