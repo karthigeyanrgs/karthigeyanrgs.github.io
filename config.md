@@ -15,8 +15,7 @@ ignore = ["node_modules/"]
 generate_rss = true
 website_title = "Karthigeyan Ganesh Shankar"
 website_descr = "Personal website"
-website_url   = "https://karthigeyanrgs.github.io/my-website-Franklin/"
-@def prepath = "my-website-Franklin"
+website_url   = "https://karthigeyanrgs.github.io"
 +++
 
 <!--
