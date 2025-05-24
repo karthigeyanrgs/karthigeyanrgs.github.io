@@ -1,12 +1,36 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Sample Project
+description: A brief description of the project
+img: assets/img/projects/project-thumbnail.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
+
+# Project Overview
+
+This is a sample project page that demonstrates how to structure project documentation.
+
+## Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Implementation Details
+
+[Add technical details here]
+
+## Results
+
+[Add project outcomes here]
+
+## Resources
+
+- [Link to demo]()
+- [Link to code]()
+- [Documentation]()
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

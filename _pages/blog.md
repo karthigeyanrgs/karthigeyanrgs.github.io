@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: page
+title: Blog
 permalink: /blog/
-title: blog
+description: A collection of my thoughts, experiences, and adventures
 nav: true
-nav_order: 1
+nav_order: 2
+display_categories: ["trekking-series", "life", "tech", "travel"]
+horizontal: false
 pagination:
   enabled: true
   collection: posts
@@ -15,6 +18,33 @@ pagination:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
 ---
+
+<div class="projects">
+{%- if site.enable_project_categories and page.display_categories %}
+  <!-- Display categorized projects -->
+  {%- for category in page.display_categories %}
+  <h2 class="category">{{ category }}</h2>
+  {%- assign categorized_posts = site.posts | where: "categories", category -%}
+  {%- assign sorted_posts = categorized_posts | sort: "date" | reverse %}
+  <!-- Generate cards for each project -->
+  <div class="grid">
+    {%- for post in sorted_posts -%}
+      {% include post_card.html %}
+    {%- endfor %}
+  </div>
+  {% endfor %}
+
+{%- else -%}
+<!-- Display posts without categories -->
+  {%- assign sorted_posts = site.posts | sort: "date" | reverse -%}
+  <!-- Generate cards for each project -->
+  <div class="grid">
+    {%- for post in sorted_posts -%}
+      {% include post_card.html %}
+    {%- endfor %}
+  </div>
+{%- endif -%}
+</div>
 
 <div class="post">
 

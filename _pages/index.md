@@ -3,17 +3,17 @@ title: "Frequently Asked Questions."
 date: "2021-01-27"
 ---
 
-![](images/RWTH-Aachen-University_500x500.jpg)
+![](/assets/img/posts/RWTH-Aachen-University_500x500.jpg)
 
  [**Masters in Simulation sciences**.](https://www.aices.rwth-aachen.de/en/academics/masters-program-simulation-sciences) (SiSc) and [here](https://www.jara.org/en/research/center-for-simulation-and-data-sciences/school-for-simulation-and-data-sciences-ssd-en).
 
-I have compiled my answers to some common questions directed at me. Some questions which could be answered by a simple search have been omitted. I would like to say upfront that I do not know the job prospects of any graduate program in RWTH Aachen apart from some pointers I received from my seniors. Also, please don’t share your profile and ask me if you have a chance to receive admit, I am not qualified to answer it.
+I have compiled my answers to some common questions directed at me. Some questions which could be answered by a simple search have been omitted. I would like to say upfront that I do not know the job prospects of any graduate program in RWTH Aachen apart from some pointers I received from my seniors. Also, please don't share your profile and ask me if you have a chance to receive admit, I am not qualified to answer it.
 
 * * *
 
 **Q1)  I don't know if it is true or not but there is speculation that in a Simulation science program at RWTH they provide admission to those only who have 9+ GPA irrespective of the overall profile. Is it true?**
 
-_Ans_: I am quite certain that this is not true. Many people have their own perceptions, if you find yourself suitable for the program and you are interested in the course, don’t hesitate to apply. There is no one size fits all, it is a very competitive program which looks at a holistic profile rather than just one elimination criterion.
+_Ans_: I am quite certain that this is not true. Many people have their own perceptions, if you find yourself suitable for the program and you are interested in the course, don't hesitate to apply. There is no one size fits all, it is a very competitive program which looks at a holistic profile rather than just one elimination criterion.
 
 * * *
 
@@ -109,7 +109,7 @@ _Ans_ : Yes, definitely it is possible. Many of my batch mates took elective cou
 
 * * *
 
-**Q16) How are the 1st year courses since I’m from a mechanical engineering background. How will I cope with subjects like quantum mechanics and other computer science subjects. Will they be useful if I choose structural mechanics electives? Also I’ll have to do them anyway since those are mandatory courses right ?** 
+**Q16) How are the 1st year courses since I'm from a mechanical engineering background. How will I cope with subjects like quantum mechanics and other computer science subjects. Will they be useful if I choose structural mechanics electives? Also I'll have to do them anyway since those are mandatory courses right ?** 
 
 _Ans_ : Quantum mech will also revise your linear algebra too, and given the state of things, Quantum computing could be the next paradigm for High performance computing. Yes, they are mandatory, and helps in performing a plethora of simulations. If it isn't something you would like to do, you could look at the CAME course where they delve more into structural mech.
 
