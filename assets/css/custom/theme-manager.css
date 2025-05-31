@@ -1,0 +1,131 @@
+/* Theme toggle */
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.theme-toggle-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  border: none;
+  color: var(--bg-primary);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.theme-menu {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  transform-origin: bottom right;
+  animation: scaleIn 0.2s ease;
+}
+
+.theme-menu.active {
+  display: block;
+}
+
+.theme-menu button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.theme-menu button:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  border-radius: 4px;
+}
+
+.theme-menu i {
+  margin-right: 0.5rem;
+  width: 1.2em;
+  text-align: center;
+}
+
+/* Theme-based styles */
+:root {
+  --transition-duration: 0.3s;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color var(--transition-duration) ease,
+              color var(--transition-duration) ease;
+}
+
+a {
+  color: var(--accent-primary);
+  transition: color var(--transition-duration) ease;
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+code {
+  background-color: var(--code-bg);
+  color: var(--text-primary);
+  transition: background-color var(--transition-duration) ease;
+}
+
+blockquote {
+  background-color: var(--blockquote-bg);
+  border-color: var(--accent-primary);
+  transition: background-color var(--transition-duration) ease,
+              border-color var(--transition-duration) ease;
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Theme-specific overrides */
+[data-theme="light"] {
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"],
+[data-theme="dracula"],
+[data-theme="nord"] {
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: ease;
+} 

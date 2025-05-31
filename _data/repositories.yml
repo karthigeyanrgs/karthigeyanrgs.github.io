@@ -1,6 +1,7 @@
 github_users:
   - torvalds
   - alshedivat
+  - karthigeyanrgs
 
 repo_description_lines_max: 2
 
@@ -12,3 +13,59 @@ github_repos:
   - FortAwesome/Font-Awesome
   - mathjax/MathJax
   - jpswalsh/academicons
+  - karthigeyanrgs/CFDPython
+  - karthigeyanrgs/gpubootcamp
+  - karthigeyanrgs/IntroToJulia
+  - karthigeyanrgs/ML-From-Scratch
+  - karthigeyanrgs/nano-pgo
+  - karthigeyanrgs/ThinkStats2
+
+# Repository categories for organization
+categories:
+  scientific:
+    - karthigeyanrgs/CFDPython
+    - karthigeyanrgs/gpubootcamp
+    - karthigeyanrgs/IntroToJulia
+    - karthigeyanrgs/ThinkStats2
+  machine_learning:
+    - karthigeyanrgs/ML-From-Scratch
+  robotics:
+    - karthigeyanrgs/nano-pgo
+
+# Repository metadata
+repository_metadata:
+  CFDPython:
+    description: "A sequence of Jupyter notebooks featuring the '12 Steps to Navier-Stokes'. Comprehensive guide to computational fluid dynamics."
+    language: Jupyter Notebook
+    category: scientific
+    forked: true
+  
+  gpubootcamp:
+    description: "GPU bootcamp material for HPC and AI applications. Comprehensive tutorials and examples for GPU computing."
+    language: Jupyter Notebook
+    category: scientific
+    forked: true
+  
+  IntroToJulia:
+    description: "A Deep Introduction to Julia for Data Science and Scientific Computing. Comprehensive guide to Julia programming."
+    language: HTML
+    category: scientific
+    forked: true
+  
+  ML-From-Scratch:
+    description: "Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility."
+    language: Python
+    category: machine_learning
+    forked: true
+  
+  nano-pgo:
+    description: "Single-file, python-only pose-graph optimization implementation for educational purposes. Essential for robotics and computer vision."
+    language: Python
+    category: robotics
+    forked: true
+  
+  ThinkStats2:
+    description: "Text and supporting code for Think Stats, 2nd Edition. Statistical analysis and probability in Python."
+    language: Jupyter Notebook
+    category: scientific
+    forked: true

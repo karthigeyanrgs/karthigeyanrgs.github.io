@@ -1,0 +1,61 @@
+- title: Lead Autonomy Engineer
+  company: Ati Motors, India
+  period: April 2025 - Present
+  description: Led widespread adoption of simulation-first development and testing. Kick-started map-free visual navigation models and supported evaluation of novel VSLAM methods.
+  skills:
+    - Nvidia Isaac Sim
+    - Nvidia Warp
+    - PyTorch
+    - Simulation
+    - Computer Vision
+
+- title: Senior Autonomy Engineer
+  company: Ati Motors, India
+  period: April 2024 - Present
+  description: Spearheaded simulation workflow development with Nvidia's Isaac Sim, evaluated Jetson carrier boards, and built production-ready architecture for bot and fleet management.
+  skills:
+    - Nvidia Isaac Sim
+    - Kubernetes
+    - Bazel
+    - Python
+    - Make
+    - Unix
+    - Embedded C
+
+- title: Autonomy Engineer
+  company: Ati Motors, India
+  period: Sept 2022 - March 2024
+  description: Optimized software build systems by 40%, developed CI/CD frameworks, and increased team productivity by 30% through system improvements and training.
+  skills:
+    - Kubernetes
+    - Bazel
+    - Poetry
+    - Docker
+    - C++
+    - Python
+    - Make
+    - Unix
+    - Bash
+
+- title: Research Assistant
+  company: Institute for Aerodynamics and Fluid Mechanics, RWTH Aachen
+  period: Oct 2018 - Mar 2019
+  description: Developed parallel simulations for 1 million cells through 24 cores, optimized configurations for laminar pre-mixed flame propagation, and automated visualization pipelines.
+  skills:
+    - C++
+    - Python
+    - ParaView
+    - Unix
+    - Bash
+    - OpenMPI
+
+- title: Research Assistant
+  company: Institute for Geometric and Applied Mathematics, RWTH Aachen
+  period: Jul 2019 - Mar 2020
+  description: Implemented data fitting models for 250,000+ data points across six distributions, determining best fits for unemployment data from Luxembourg Information Centre.
+  skills:
+    - Matlab
+    - Python
+    - Seaborn
+    - Numpy
+    - Data Analysis 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  {% include head.html %}
+  <body>
+    <!-- Load Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Load custom enhancements -->
+    <link rel="stylesheet" href="{{ '/assets/css/custom/markdown-enhancements.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom/theme-manager.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom/table-of-contents.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom/search-overlay.css' | relative_url }}">
+    
+    <script src="{{ '/assets/js/custom/markdown-enhancements.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/custom/theme-manager.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/custom/table-of-contents.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/custom/search-overlay.js' | relative_url }}" defer></script>
+
+    {% include header.html %}
+
+    <div class="container mt-4">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <!-- Keyboard shortcuts help -->
+    <div class="keyboard-shortcuts-help">
+      <button class="keyboard-shortcuts-toggle" title="Show keyboard shortcuts">
+        <i class="fas fa-keyboard"></i>
+      </button>
+      <div class="keyboard-shortcuts-panel">
+        <h3>Keyboard Shortcuts</h3>
+        <div class="shortcuts-list">
+          <div class="shortcut-item">
+            <kbd>Ctrl</kbd> + <kbd>K</kbd>
+            <span>Search</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Alt</kbd> + <kbd>N</kbd>
+            <span>Next section</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Alt</kbd> + <kbd>P</kbd>
+            <span>Previous section</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>/</kbd>
+            <span>Focus table filter</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>?</kbd>
+            <span>Show/hide this panel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Initialize keyboard shortcuts help panel
+      document.addEventListener('DOMContentLoaded', () => {
+        const helpPanel = document.querySelector('.keyboard-shortcuts-help');
+        const toggle = helpPanel.querySelector('.keyboard-shortcuts-toggle');
+        const panel = helpPanel.querySelector('.keyboard-shortcuts-panel');
+
+        toggle.addEventListener('click', () => {
+          panel.classList.toggle('active');
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === '?' && !e.ctrlKey && !e.metaKey) {
+            e.preventDefault();
+            panel.classList.toggle('active');
+          }
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!helpPanel.contains(e.target)) {
+            panel.classList.remove('active');
+          }
+        });
+      });
+    </script>
+
+    <style>
+      .keyboard-shortcuts-help {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        z-index: 1000;
+      }
+
+      .keyboard-shortcuts-toggle {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background: var(--accent-primary);
+        border: none;
+        color: var(--bg-primary);
+        cursor: pointer;
+        box-shadow: 0 2px 8px var(--shadow-color);
+        transition: all 0.3s ease;
+      }
+
+      .keyboard-shortcuts-toggle:hover {
+        transform: scale(1.1);
+      }
+
+      .keyboard-shortcuts-panel {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        margin-bottom: 1rem;
+        background: var(--bg-secondary);
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px var(--shadow-color);
+        display: none;
+        min-width: 300px;
+      }
+
+      .keyboard-shortcuts-panel.active {
+        display: block;
+      }
+
+      .keyboard-shortcuts-panel h3 {
+        margin: 0 0 1rem;
+        color: var(--text-primary);
+      }
+
+      .shortcuts-list {
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .shortcut-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      kbd {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        padding: 0.2em 0.4em;
+        font-family: monospace;
+        color: var(--text-primary);
+      }
+    </style>
+  </body>
+</html> 

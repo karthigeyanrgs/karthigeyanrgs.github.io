@@ -649,3 +649,9 @@ jsonresume:
   - languages
   - interests
   - references
+
+# Add custom files to asset pipeline
+assets:
+  sources:
+    - assets/js/custom
+    - assets/css/custom

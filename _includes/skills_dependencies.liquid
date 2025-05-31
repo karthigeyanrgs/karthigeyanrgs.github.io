@@ -1,0 +1,570 @@
+<!-- Meta viewport tag for proper mobile rendering -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+<!-- Font Awesome (with preload for performance) -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Animate On Scroll (with preload for performance) -->
+<link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- TypeIt.js (with defer for performance) -->
+<script defer src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+<!-- Custom Skills CSS -->
+<style>
+/* CSS Reset for consistency across browsers */
+.skills-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+  /* Enable GPU acceleration */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.sci-comp-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  /* Fallback for older browsers */
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.sci-comp-grid > * {
+  /* Fallback for older browsers */
+  flex: 1 1 200px;
+  margin: 1rem;
+}
+
+.sci-comp-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* Enable GPU acceleration */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sci-comp-card:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.circular-progress {
+  width: 80px; /* Smaller on mobile */
+  height: 80px;
+  border-radius: 50%;
+  margin: 0.75rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  background: #eee;
+  /* Fallback for browsers that don't support conic-gradient */
+  background: linear-gradient(90deg, var(--global-theme-color) 50%, #eee 50%);
+}
+
+.progress-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--global-theme-color);
+  /* Ensure text remains sharp */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.expertise-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  /* Fallback for older browsers */
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.expertise-grid > * {
+  /* Fallback for older browsers */
+  flex: 1 1 250px;
+  margin: 1rem;
+}
+
+.expertise-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Enable GPU acceleration */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+  transition: transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+}
+
+.expertise-card ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.expertise-card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.expertise-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* Animations with fallbacks */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  from { 
+    -webkit-transform: translateY(20px);
+    opacity: 0;
+  }
+  to { 
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Performance optimizations for animations */
+.skill-section {
+  animation: fadeIn 0.5s ease-out;
+  -webkit-animation: fadeIn 0.5s ease-out;
+  will-change: opacity;
+}
+
+.skill-card,
+.tool-item,
+.language-card,
+.competency-card {
+  animation: slideIn 0.5s ease-out;
+  -webkit-animation: slideIn 0.5s ease-out;
+  will-change: transform, opacity;
+}
+
+/* Dark mode support with fallbacks */
+@media (prefers-color-scheme: dark) {
+  .skill-card,
+  .tool-item,
+  .language-card,
+  .timeline-item,
+  .competency-card,
+  .expertise-card,
+  .sci-comp-card {
+    background: var(--global-bg-color, #1a1a1a);
+    color: var(--global-text-color, #ffffff);
+  }
+
+  .skill-bar,
+  .circular-progress {
+    background: var(--global-code-bg-color, #2d2d2d);
+  }
+
+  .expertise-card ul li {
+    border-bottom-color: var(--global-divider-color, #404040);
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .skill-section,
+  .skill-card,
+  .tool-item,
+  .language-card,
+  .competency-card,
+  .expertise-card,
+  .sci-comp-card {
+    animation: none !important;
+    -webkit-animation: none !important;
+    transition: none !important;
+    -webkit-transition: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .skills-container {
+    padding: 0;
+  }
+
+  .skill-card,
+  .tool-item,
+  .language-card,
+  .timeline-item,
+  .competency-card,
+  .expertise-card,
+  .sci-comp-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Fallback for older browsers */
+@supports not (display: grid) {
+  .sci-comp-grid,
+  .expertise-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sci-comp-grid > *,
+  .expertise-grid > * {
+    flex-basis: calc(33.333% - 2rem);
+    margin: 1rem;
+  }
+}
+
+/* Responsive typography */
+:root {
+  --base-font-size: 16px;
+  --h1-size: calc(var(--base-font-size) * 2);
+  --h2-size: calc(var(--base-font-size) * 1.5);
+  --h3-size: calc(var(--base-font-size) * 1.2);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 14px;
+  }
+}
+
+/* Enhanced touch targets for mobile */
+.skill-card,
+.tool-item,
+.language-card,
+.competency-card {
+  min-height: 44px; /* Minimum touch target size */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  touch-action: manipulation; /* Optimize for touch */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
+}
+
+/* Mobile-optimized grids */
+.skills-grid,
+.tools-grid,
+.language-grid,
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .skills-grid,
+  .tools-grid,
+  .language-grid,
+  .expertise-grid {
+    grid-template-columns: 1fr; /* Single column on small devices */
+    gap: 0.75rem;
+  }
+}
+
+/* Mobile-optimized cards */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  min-height: 120px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  background: var(--card-bg-color, white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Mobile-friendly skill bars */
+.skill-bar {
+  height: 8px; /* Slightly smaller on mobile */
+  border-radius: 4px;
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .circular-progress {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mobile-optimized timeline */
+.journey-timeline {
+  padding-left: 1rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-dot {
+  left: -20px;
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 768px) {
+  .timeline-dot {
+    left: -40px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Mobile-friendly animations */
+@media (max-width: 768px) {
+  .skill-section {
+    animation-duration: 0.3s; /* Faster animations on mobile */
+  }
+  
+  .skill-card,
+  .tool-item,
+  .language-card,
+  .competency-card {
+    animation-duration: 0.3s;
+  }
+}
+
+/* Better scrolling on mobile */
+.skills-container {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Mobile-optimized hover states */
+@media (hover: hover) {
+  .skill-card:hover,
+  .tool-item:hover,
+  .language-card:hover,
+  .competency-card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Active states for touch devices */
+@media (hover: none) {
+  .skill-card:active,
+  .tool-item:active,
+  .language-card:active,
+  .competency-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
+  }
+}
+
+/* Improved mobile typography */
+.skill-card h3,
+.tool-item span,
+.language-card h3 {
+  font-size: var(--h3-size);
+  line-height: 1.3;
+  margin: 0.5rem 0;
+}
+
+.skill-percent {
+  font-size: 0.875rem;
+}
+
+/* Mobile-friendly icons */
+.skill-card i,
+.tool-item i,
+.competency-card i {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .skill-card i,
+  .tool-item i,
+  .competency-card i {
+    font-size: 2rem;
+  }
+}
+
+/* Loading states for mobile */
+.skill-card.loading,
+.tool-item.loading,
+.language-card.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Mobile gesture handling */
+.skills-container {
+  touch-action: pan-y pinch-zoom;
+}
+
+/* Mobile-friendly focus states */
+.skill-card:focus,
+.tool-item:focus,
+.language-card:focus,
+.competency-card:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--global-theme-color);
+}
+
+/* Improved contrast for mobile */
+@media (max-width: 768px) {
+  .skill-percent,
+  .tool-level,
+  .progress-value {
+    font-weight: 600;
+  }
+  
+  .timeline-content h3 {
+    font-size: var(--h3-size);
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* Mobile-optimized dark mode */
+@media (prefers-color-scheme: dark) {
+  @media (max-width: 768px) {
+    .skill-card,
+    .tool-item,
+    .language-card,
+    .competency-card {
+      background: var(--global-bg-color, #1a1a1a);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .skill-bar,
+    .circular-progress {
+      background: var(--global-code-bg-color, #2d2d2d);
+    }
+  }
+}
+
+/* Handle notched displays */
+@supports (padding: env(safe-area-inset-top)) {
+  .skills-container {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+</style>
+
+<!-- Browser compatibility check -->
+<script>
+(function() {
+  // Check for required features
+  var requiredFeatures = {
+    grid: CSS.supports('display: grid'),
+    flexbox: CSS.supports('display: flex'),
+    transforms: CSS.supports('transform: translateZ(0)'),
+    animations: CSS.supports('animation: name')
+  };
+
+  // Add fallback class if features are not supported
+  var html = document.documentElement;
+  Object.keys(requiredFeatures).forEach(function(feature) {
+    if (!requiredFeatures[feature]) {
+      html.classList.add('no-' + feature);
+    }
+  });
+})();
+</script>
+
+<!-- Mobile touch detection -->
+<script>
+(function() {
+  // Detect touch capability
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    document.documentElement.classList.add('touch-device');
+  }
+  
+  // Detect iOS
+  if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+    document.documentElement.classList.add('ios-device');
+  }
+  
+  // Detect Android
+  if (/Android/.test(navigator.userAgent)) {
+    document.documentElement.classList.add('android-device');
+  }
+})();
+</script> 

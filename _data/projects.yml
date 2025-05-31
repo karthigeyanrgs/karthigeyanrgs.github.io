@@ -1,0 +1,19 @@
+- name: Kinetic Model on Unemployment
+  description: Developed mesoscopic models to characterize unemployment patterns, performed Monte-Carlo simulations, and advanced transport equations research with minimal prior literature.
+  icon: fa-chart-line
+  github: https://github.com/karthigeyanrgs/kinetic-unemployment-model
+
+- name: Unstructured Finite Element Solver
+  description: Created a Python-based solver for unstructured meshes using FeNiCS, with mesh generation via Gmsh and visualization through ParaView. Implemented automatic differentiation and parallelization.
+  icon: fa-code
+  github: https://github.com/karthigeyanrgs/finite-element-solver
+
+- name: Convection Coupled Simulation
+  description: Developed an enthalpy method for convection-coupled phase change simulation, reducing complexity and validating against the Stefan problem benchmark.
+  icon: fa-fire
+  github: https://github.com/karthigeyanrgs/convection-simulation
+
+- name: Fatigue Characteristics of FGM
+  description: Researched and manufactured Aluminium-based functionally graded materials with various fillers, conducting experimental analysis using tri-axial accelerometer for fatigue characteristics.
+  icon: fa-cogs
+  github: https://github.com/karthigeyanrgs/fgm-fatigue-analysis 

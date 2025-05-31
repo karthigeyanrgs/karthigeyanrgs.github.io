@@ -1,0 +1,256 @@
+<!-- Dropdown styles and animations -->
+<style>
+/* Modern dropdown container */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown trigger button */
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--global-text-color);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--global-font-family);
+  font-size: var(--global-font-size);
+}
+
+.dropdown-trigger:hover {
+  background: var(--global-hover-color);
+  transform: translateY(-1px);
+}
+
+/* Dropdown icon with animation */
+.dropdown-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+}
+
+.dropdown-container.active .dropdown-icon {
+  transform: rotate(-135deg);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: var(--global-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--global-divider-color);
+}
+
+.dropdown-container.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropdown-item:hover {
+  background: var(--global-hover-color);
+  transform: translateX(5px);
+}
+
+/* Ripple effect */
+.dropdown-item::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.5s;
+  pointer-events: none;
+}
+
+.dropdown-item:active::after {
+  transform: scale(2);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.3s;
+}
+
+/* Divider */
+.dropdown-divider {
+  height: 1px;
+  background: var(--global-divider-color);
+  margin: 0.5rem 0;
+  opacity: 0.5;
+}
+
+/* Dark mode enhancements */
+@media (prefers-color-scheme: dark) {
+  .dropdown-menu {
+    background: rgba(30, 30, 30, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 80vh;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+    padding: 1rem;
+    transform: translateY(100%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .dropdown-container.active .dropdown-menu {
+    transform: translateY(0);
+  }
+
+  .dropdown-item {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Safe area insets for notched devices */
+  @supports (padding: env(safe-area-inset-bottom)) {
+    .dropdown-menu {
+      padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+    }
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .dropdown-trigger,
+  .dropdown-menu,
+  .dropdown-item,
+  .dropdown-icon {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+</style>
+
+<script>
+// Modern dropdown functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownContainer = document.querySelector('.dropdown-container');
+  const dropdownTrigger = document.querySelector('.dropdown-trigger');
+  
+  if (!dropdownContainer || !dropdownTrigger) return;
+
+  // Handle click outside
+  document.addEventListener('click', function(event) {
+    const isClickInside = dropdownContainer.contains(event.target);
+    
+    if (!isClickInside) {
+      dropdownContainer.classList.remove('active');
+    }
+  });
+
+  // Toggle dropdown
+  dropdownTrigger.addEventListener('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    dropdownContainer.classList.toggle('active');
+  });
+
+  // Handle touch events for mobile
+  let touchStartY = 0;
+  const dropdownMenu = dropdownContainer.querySelector('.dropdown-menu');
+
+  dropdownMenu.addEventListener('touchstart', function(e) {
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  dropdownMenu.addEventListener('touchmove', function(e) {
+    const touchY = e.touches[0].clientY;
+    const touchDiff = touchStartY - touchY;
+
+    // Allow scrolling inside the menu
+    if (
+      (touchDiff > 0 && dropdownMenu.scrollTop + dropdownMenu.clientHeight >= dropdownMenu.scrollHeight) ||
+      (touchDiff < 0 && dropdownMenu.scrollTop <= 0)
+    ) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  // Keyboard navigation
+  dropdownContainer.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      dropdownContainer.classList.remove('active');
+    }
+  });
+
+  // Add focus trap
+  const focusableElements = dropdownMenu.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+  const firstFocusable = focusableElements[0];
+  const lastFocusable = focusableElements[focusableElements.length - 1];
+
+  dropdownMenu.addEventListener('keydown', function(e) {
+    if (e.key === 'Tab') {
+      if (e.shiftKey && document.activeElement === firstFocusable) {
+        e.preventDefault();
+        lastFocusable.focus();
+      } else if (!e.shiftKey && document.activeElement === lastFocusable) {
+        e.preventDefault();
+        firstFocusable.focus();
+      }
+    }
+  });
+
+  // Add hover animations
+  const dropdownItems = document.querySelectorAll('.dropdown-item');
+  dropdownItems.forEach(item => {
+    item.addEventListener('mouseenter', function(e) {
+      const rect = this.getBoundingClientRect();
+      this.style.setProperty('--hover-x', `${e.clientX - rect.left}px`);
+      this.style.setProperty('--hover-y', `${e.clientY - rect.top}px`);
+    });
+  });
+});
+</script> 
