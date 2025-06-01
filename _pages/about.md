@@ -18,8 +18,16 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+Vanakkam 🙏 (Greetings in Tamil),
+
+I am a 27 years old graduate of RWTH Aachen, Germany. I hold a master's in Simulation Sciences. I will utilize this virtual space to share my honest reflections in a witty and personalized way.
+
+I tend to be quite inactive on Social Media. My social links below are my primary outlets, which equally split my attention.
+
 <!-- Load terminal dependencies -->
 <link rel="stylesheet" href="{{ '/assets/css/custom/terminal.css' | relative_url }}">
+<script src="{{ '/assets/js/custom/typing-effect.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/custom/matrix-rain.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/custom/terminal.js' | relative_url }}" defer></script>
 
 <!-- Terminal container -->
@@ -27,12 +35,6 @@ social: true # includes social icons at the bottom of the page
 
 <div class="hidden-content" style="display: none;">
   <!-- Original content preserved but hidden -->
-  Vanakkam 🙏 (Greetings in Tamil),
-
-  I am a 27 years old graduate of RWTH Aachen, Germany. I hold a master's in Simulation Sciences. I will utilize this virtual space to share my honest reflections in a witty and personalized way.
-
-  I tend to be quite inactive on Social Media. My social links below are my primary outlets, which equally split my attention.
-
   ## **Alternate Perspectives**
 
   I requested some of the people I know, what happens to be their perception of me. Because, honestly I wasn't quite sure of my own qualities.

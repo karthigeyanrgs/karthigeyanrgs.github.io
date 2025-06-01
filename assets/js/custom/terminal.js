@@ -75,7 +75,6 @@ class Terminal {
       clear: () => this.clear(),
       ls: () => this.listSections(),
       cat: (args) => this.showSection(args[0]),
-      about: () => this.showAbout(),
       skills: () => this.showSkills(),
       principles: () => this.showPrinciples(),
       contact: () => this.showContact(),
@@ -89,7 +88,6 @@ class Terminal {
     };
 
     this.sections = {
-      about: 'about.md',
       skills: 'skills.md',
       principles: 'principles.md',
       contact: 'contact.md'
@@ -340,8 +338,7 @@ Available commands:
   help      : Show this help message
   clear     : Clear the terminal
   ls        : List available sections
-  cat       : View a section (e.g., 'cat about')
-  about     : Show about section
+  cat       : View a section (e.g., 'cat skills')
   skills    : Show skills section
   principles: Show principles section
   contact   : Show contact information
@@ -363,19 +360,12 @@ Available commands:
 
   showSection(section) {
     if (this.sections[section]) {
-      window.location.href = '/' + this.sections[section];
+      const baseUrl = window.location.origin;
+      const path = this.sections[section].replace('.md', '');
+      window.location.href = `${baseUrl}/${path}/`;
     } else {
       this.printOutput(`Section not found: ${section}`);
     }
-  }
-
-  showAbout() {
-    const about = `
-Vanakkam 🙏 (Greetings in Tamil),
-I am a graduate of RWTH Aachen, Germany.
-Master's in Simulation Sciences.
-Type 'cat about' for my full profile.`;
-    this.printOutput(about);
   }
 
   showSkills() {

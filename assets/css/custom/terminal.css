@@ -1,16 +1,19 @@
 .terminal-container {
-  background-color: rgba(40, 42, 54, 0.95);
-  color: #f8f8f2;
+  background-color: rgba(30, 32, 44, 0.95);
+  color: #ffffff;
   font-family: 'Fira Code', monospace;
   padding: 20px;
   border-radius: 6px;
-  height: 500px;
+  height: 400px;
   overflow-y: auto;
-  margin: 20px 0;
+  margin: 40px 0;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .terminal-container:focus-within {
@@ -44,6 +47,7 @@
   animation: fadeIn 0.3s ease forwards;
   position: relative;
   padding-left: 24px;
+  color: #e0e0e0;
 }
 
 .terminal-line::before {
@@ -51,7 +55,7 @@
   position: absolute;
   left: 0;
   color: #50fa7b;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .terminal-line.error {
@@ -75,7 +79,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   padding: 8px;
   border-radius: 4px;
   margin-top: 8px;
@@ -83,19 +87,20 @@
 }
 
 .terminal-input-line:focus-within {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .terminal-prompt {
   color: #50fa7b;
   margin-right: 8px;
   font-weight: bold;
+  opacity: 0.9;
 }
 
 .terminal-input {
   background: transparent;
   border: none;
-  color: #f8f8f2;
+  color: #ffffff;
   font-family: inherit;
   font-size: inherit;
   flex-grow: 1;
@@ -106,7 +111,7 @@
   display: inline-block;
   width: 8px;
   height: 1.2em;
-  background-color: #f8f8f2;
+  background-color: #ffffff;
   animation: blink 1s step-end infinite;
   vertical-align: text-bottom;
   margin-left: 2px;
