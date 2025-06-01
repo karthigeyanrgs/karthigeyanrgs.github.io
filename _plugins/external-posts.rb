@@ -25,18 +25,24 @@ module ExternalPosts
     def fetch_from_rss(site, src)
       xml = HTTParty.get(src['rss_url']).body
       return if xml.nil?
-      feed = Feedjira.parse(xml)
-      process_entries(site, src, feed.entries)
-    end
+      
+      doc = Nokogiri::XML(xml)
+      entries = doc.xpath('//item')
+      
+      entries.each do |entry|
+        title = entry.at_xpath('title')&.text
+        content = entry.at_xpath('description')&.text || entry.at_xpath('content:encoded')&.text
+        summary = entry.at_xpath('description')&.text
+        published = entry.at_xpath('pubDate')&.text
+        url = entry.at_xpath('link')&.text
 
-    def process_entries(site, src, entries)
-      entries.each do |e|
-        puts "...fetching #{e.url}"
-        create_document(site, src['name'], e.url, {
-          title: e.title,
-          content: e.content,
-          summary: e.summary,
-          published: e.published
+        next if url.nil? || title.nil?
+
+        create_document(site, src['name'], url, {
+          title: title,
+          content: content,
+          summary: summary,
+          published: published ? Time.parse(published).utc : Time.now.utc
         })
       end
     end
