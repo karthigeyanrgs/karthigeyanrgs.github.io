@@ -289,10 +289,13 @@ compress_html:
   blanklines: false
   profile: false
 
-# Disable uglifier for JavaScript
+# Asset settings
 assets:
   compression: false
   gzip: false
+  sources:
+    - assets/js/custom
+    - assets/css/custom
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
@@ -648,9 +651,3 @@ jsonresume:
   - languages
   - interests
   - references
-
-# Add custom files to asset pipeline
-assets:
-  sources:
-    - assets/js/custom
-    - assets/css/custom
