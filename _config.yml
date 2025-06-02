@@ -276,8 +276,24 @@ defaults:
     values:
       sitemap: false
 
+# -----------------------------------------------------------------------------
+# Compression settings
+# -----------------------------------------------------------------------------
 sass:
   style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+# Disable uglifier for JavaScript
+assets:
+  compression: false
+  gzip: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
