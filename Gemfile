@@ -6,9 +6,8 @@ gem 'webrick'  # Required for Ruby 3
 gem 'csv'  # Required for Ruby 3.4+
 gem 'css_parser'  # Required for download-3rd-party.rb
 
-# RSS feed parsing with Windows-specific nokogiri
-gem 'nokogiri', '~> 1.15.5', platforms: [:x64_mingw, :mingw, :mswin]
-gem 'nokogiri', '~> 1.15.5', platforms: :ruby
+# RSS feed parsing
+gem 'nokogiri', '~> 1.15.5'  # Single entry for all platforms
 gem 'feedjira', '~> 2.1.4'  # Using version 2.x for better parser compatibility
 gem 'rss'  # Required for RSS parsing
 gem 'httparty', '~> 0.21.0'
