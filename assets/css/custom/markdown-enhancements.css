@@ -1,0 +1,259 @@
+/* Code block enhancements */
+.code-block-wrapper {
+  position: relative;
+  margin: 1.5em 0;
+}
+
+.copy-code-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  padding: 0.5em;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: #f8f8f2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-code-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Image lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -1.5em;
+  right: -1.5em;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/* Table enhancements */
+.table-wrapper {
+  margin: 1.5em 0;
+  overflow-x: auto;
+}
+
+.table-filter {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+}
+
+table th {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+table th:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+table th::after {
+  content: '↕';
+  position: absolute;
+  right: 0.5em;
+  opacity: 0.5;
+}
+
+/* Heading enhancements */
+.heading-anchor {
+  opacity: 0;
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  transition: opacity 0.2s ease;
+}
+
+h2:hover .heading-anchor,
+h3:hover .heading-anchor {
+  opacity: 1;
+}
+
+.section-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.2em 0.5em;
+  margin-left: 0.5em;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.section-toggle:hover {
+  opacity: 1;
+}
+
+.collapsible-section {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.collapsible-section.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blockquote variations */
+blockquote {
+  border-left: 4px solid #6272a4;
+  margin: 1.5em 0;
+  padding: 1em;
+  background: rgba(98, 114, 164, 0.1);
+}
+
+blockquote.note {
+  border-color: #8be9fd;
+  background: rgba(139, 233, 253, 0.1);
+}
+
+blockquote.warning {
+  border-color: #ffb86c;
+  background: rgba(255, 184, 108, 0.1);
+}
+
+blockquote.tip {
+  border-color: #50fa7b;
+  background: rgba(80, 250, 123, 0.1);
+}
+
+/* External link indicators */
+.external-link {
+  position: relative;
+  padding-right: 1.2em;
+}
+
+.external-link i {
+  font-size: 0.8em;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.external-link:hover i {
+  opacity: 1;
+}
+
+/* Progress bars */
+.progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  height: 1.5em;
+  overflow: hidden;
+  margin: 1em 0;
+}
+
+.progress {
+  background: linear-gradient(90deg, #50fa7b, #8be9fd);
+  height: 100%;
+  width: 0;
+  transition: width 1s ease;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 2em 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2em;
+  height: 100%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2em 0;
+  padding-left: 3em;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.5s ease;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 1.75em;
+  top: 0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: #8be9fd;
+  transform: translateX(-50%);
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Tooltips */
+.tooltip {
+  position: fixed;
+  padding: 0.5em 1em;
+  background: rgba(40, 42, 54, 0.95);
+  color: #f8f8f2;
+  border-radius: 4px;
+  font-size: 0.9em;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(40, 42, 54, 0.95);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+} 
