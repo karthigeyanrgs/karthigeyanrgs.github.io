@@ -1,4 +1,4 @@
-name: Comment on pull request
+name: Comment on PR with Prettier diff
 
 on:
   repository_dispatch:
@@ -6,13 +6,24 @@ on:
 
 jobs:
   comment:
-    # available images: https://github.com/actions/runner-images#available-images
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: PR comment with html diff 💬
-        uses: thollander/actions-comment-pull-request@v2
+      - name: Download diff artifact
+        uses: dawidd6/action-download-artifact@v3
         with:
-          comment_tag: prettier-failed
-          pr_number: ${{ github.event.client_payload.pr_number }}
-          message: |
-            Failed [prettier code check](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.event.client_payload.run_id }}). Check [this file](${{ github.event.client_payload.artifact_url }}) for more information.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: prettier.yml
+          run_id: ${{ github.event.client_payload.run_id }}
+          name: HTML Diff
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const diff = fs.readFileSync('diff.html', 'utf8');
+            github.rest.issues.createComment({
+              issue_number: ${{ github.event.client_payload.pr_number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Prettier found some formatting issues. Please review the diff below:\n\n${diff}`
+            });
