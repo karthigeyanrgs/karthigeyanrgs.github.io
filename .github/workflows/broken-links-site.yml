@@ -20,8 +20,9 @@ jobs:
 
       - name: Configure Bundler 🔧
         run: |
+          rm -f Gemfile.lock
           bundle config set --local frozen false
-          bundle install
+          bundle install --jobs 4
 
       - name: Install HTMLProofer 💾
         run: gem install html-proofer
