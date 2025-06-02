@@ -28,7 +28,11 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1.4'
-          bundler-cache: true
+          bundler-cache: false
+      - name: Configure Bundler 🔧
+        run: |
+          bundle config set --local frozen false
+          bundle install
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v4
         with:
