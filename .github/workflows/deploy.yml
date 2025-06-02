@@ -85,8 +85,9 @@ jobs:
           value: ${{ github.repository }}
       - name: Configure Bundler 🔧
         run: |
+          rm -f Gemfile.lock
           bundle config set --local frozen false
-          bundle install
+          bundle install --jobs 4
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade nbconvert
