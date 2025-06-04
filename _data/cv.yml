@@ -2,96 +2,108 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Karthigeyan Ganesh Shankar
+    - name: Email
+      value: karthigeyanrgs@gmail.com
     - name: Languages
-      value: English, German
+      value: English (Fluent), French (Intermediate), German (Beginner), Hindi (Intermediate), Tamil (Native)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Sciences in Simulation Sciences
+      institution: RWTH Aachen
+      year: Oct 2017 - Mar 2020
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - "Coursework: High Performance Computing, High dimensional Probability theory, Stochastic Numeric, Kinetic Description of Interacting Multi-agent Systems"
+
+    - title: Bachelor of Technology in Mechanical Engineering
+      institution: SRM University
+      year: May 2013 - May 2017
+      location: Chennai, India
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Lead Autonomy Engineer
+      institution: Ati Motors
+      year: April 2025 - Present
+      location: Bengaluru, India
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Led to widespread adoption of simulation-first development and testing
+        - Kick-started the map-free visual navigation models which are generalized and reliable
+        - Supported the evaluation of different novel, state-of-the-art VSLAM methods
+        - "Technologies: Nvidia Isaac Sim, Nvidia Warp, Pytorch"
+
+    - title: Senior Autonomy Engineer
+      institution: Ati Motors
+      year: April 2024 - Present
+      location: Bengaluru, India
       description:
-        - Description 1.
-        - Description 2.
+        - Spearheading team developing one button press simulation workflow with Nvidia's Isaac Sim
+        - Evaluated different OTS carrier boards (Jetson) for bot control
+        - Built production ready architecture for bot and fleet manager application
+        - "Technologies: Nvidia Isaac Sim, Kubernetes, Bazel, Python, Make, Unix, Embedded C"
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Autonomy Engineer
+      institution: Ati Motors
+      year: Sept 2022 - March 2024
+      location: Bengaluru, India
       description:
+        - Optimized software build systems improving efficiency by 40%
+        - Developed software-in-loop (CI/CD) frameworks to automate release process
+        - Increased team productivity by 30% through system improvements
+        - "Technologies: Kubernetes, Bazel, Poetry, Docker, C++, Python, Make, Unix, Bash"
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Research Assistant
+      institution: Institute for Aerodynamics and Fluid Mechanics, RWTH Aachen
+      year: Oct 2018 - Mar 2019
+      location: Aachen, Germany
+      description:
+        - Developed parallel simulations for 1M cells through 24 cores
+        - Automated visualization pipeline through Python
+        - "Technologies: C++, Python, ParaView, Unix, Bash, OpenMPI"
 
-- title: Open Source Projects
+    - title: Research Assistant
+      institution: Institute for Geometric and Applied Mathematics, RWTH Aachen
+      year: Jul 2019 - Mar 2020
+      location: Aachen, Germany
+      description:
+        - Implemented data fitting models for 250,000+ data points
+        - Analyzed unemployment data from Luxembourg Information Centre
+        - "Technologies: Matlab, Python, Seaborn, Numpy"
+
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Master Thesis - Kinetic Model on Unemployment
+      year: Sep 2019 - Mar 2021
+      description:
+        - Developed mesoscopic models to characterize unemployment
+        - Performed Monte-Carlo simulations for complex scenarios
+        - Advanced research in transport equations with limited prior literature
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Unstructured Finite Element Solver
+      year: Sep 2020 - Nov 2020
+      description:
+        - Programmed solver using Python (FeNiCS) for unstructured meshes
+        - Implemented automatic differentiation using dolfin-adjoint
+        - Enhanced code through parallelization
 
-- title: Academic Interests
+    - title: Board member, Examination Board
+      institution: Simulation Sciences, RWTH Aachen
+      year: Sept 2019 - May 2020
+      description:
+        - Updated curriculum to align with current trends
+        - Assessed 600+ graduate applications
+
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - "Languages: Python, C++, MATLAB, Bash, Git, Julia"
+        - "Tools: Dolfin, ScoreP, LaTeX, Gmsh, ParaView, NumPy, SciPy, Docker, Poetry, Bazel, Makefile, Kubernetes"
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - "English (Fluent), French (Intermediate), German (Beginner), Hindi (Intermediate), Tamil (Native)"

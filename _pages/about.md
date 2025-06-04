@@ -1,28 +1,27 @@
 ---
 layout: about
-title: about
+title: Karthigeyan Ganesh Shankar
 permalink: /
-subtitle: Graduate of RWTH Aachen | Simulation Sciences | Writer | Thinker
+subtitle: Reinforcement Learning | Nvidia Isaac Sim and Jetson Expert | VSLAM and Foundational models
+nav_order: 1
+nav: true
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: profile.jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>29 years old</p>
+    <p>Karthigeyan Ganesh Shankar </p>
+    <p>Lead Engineer - Autonomy @ Ati Motors </p>
     <p>Master's in Simulation Sciences</p>
     <p>RWTH Aachen, Germany</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Vanakkam 🙏 (Greetings in Tamil),
 
-I am a 27 years old graduate of RWTH Aachen, Germany. I hold a master's in Simulation Sciences. I will utilize this virtual space to share my honest reflections in a witty and personalized way.
-
-I tend to be quite inactive on Social Media. My social links below are my primary outlets, which equally split my attention.
 
 <!-- Load terminal dependencies -->
 <link rel="stylesheet" href="{{ '/assets/css/custom/terminal.css' | relative_url }}">
@@ -32,6 +31,13 @@ I tend to be quite inactive on Social Media. My social links below are my primar
 
 <!-- Terminal container -->
 <div id="terminal" class="terminal-container"></div>
+
+Vanakkam 🙏 (Greetings in Tamil),
+
+I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations. I moved to non-technical line of work from ground up - Community and Growth manager, Customer Success Engineer to becoming the Head of Growth. After a year, I found my feet again at Ati motors doing what I am extremely passionate about - improving technology for humankind's benefit.
+
+I am currently working on bringing robotics simulations closer to reality. Through Nvidia Isaac Sim, we are translating real world scenarios to the simulation framework and creating the near-perfect digital twins of the bots and environment wherein they are deployed.
+
 
 <div class="hidden-content" style="display: none;">
   <!-- Original content preserved but hidden -->
@@ -72,12 +78,10 @@ I tend to be quite inactive on Social Media. My social links below are my primar
   ## **Principles**
 
   - I don't smoke or drink alcohol
-  - I am a vegetarian (_tried to be a vegan but cheese is sometimes irresistible_!)
+  - I am a vegetarian
   - I don't cuss both online or offline
   - I'm punctual and value others' time
   - I reflect on the consequence of every one of my actions
-
-  I'm not against anyone having conflicting principles and wouldn't enforce my principles on others. Everyone is entitled to their own opinions and their hygiene care.
 
   ## **Case Scenarios**
 
@@ -87,4 +91,3 @@ I tend to be quite inactive on Social Media. My social links below are my primar
   - **When I'm scared**: I divert my complete attention toward the source of it. I have acrophobia (_fear of heights_) which I am in the process of overcoming.
 </div>
 
-This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.

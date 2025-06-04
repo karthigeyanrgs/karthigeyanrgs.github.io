@@ -2,6 +2,7 @@
 layout: page
 title: Personal Principles
 permalink: /principles/
+nav: false
 ---
 
 ## Core Values
