@@ -2,10 +2,12 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: A collection of my work and contributions in various domains - from scientific computing to robotics simulations.
+description: A collection of my open source contributions and personal projects.
 nav: true
-nav_order: 3
+nav_order: 6
 ---
+
+{% include common_styles.liquid %}
 
 <!-- Repository page style -->
 <style>

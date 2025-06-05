@@ -1,13 +1,13 @@
 ---
 layout: about
-title: Karthigeyan Ganesh Shankar
+title: Homepage
 permalink: /
 subtitle: Reinforcement Learning | Nvidia Isaac Sim and Jetson Expert | VSLAM and Foundational models
 nav_order: 1
 nav: true
 
 profile:
-  align: right
+  align: centre
   image: profile.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
@@ -16,13 +16,140 @@ profile:
     <p>Master's in Simulation Sciences</p>
     <p>RWTH Aachen, Germany</p>
 
-news: true # includes a list of news items
+news: false
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+{% include common_styles.liquid %}
 
+<style>
+.terminal-container {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
+.terminal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.terminal-close { background: #ff5f56; }
+.terminal-minimize { background: #ffbd2e; }
+.terminal-maximize { background: #27c93f; }
+
+.terminal-title {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.terminal-content {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.terminal-prompt {
+  color: #00ff00;
+}
+
+.terminal-command {
+  color: #fff;
+}
+
+.terminal-output {
+  color: #888;
+  margin: 10px 0;
+}
+
+.command-list {
+  color: #fff;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.command-list dt {
+  color: #00ff00;
+  margin-top: 10px;
+}
+
+.command-list dd {
+  color: #888;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+</style>
+
+<!-- Terminal container -->
+<div class="terminal-container">
+  <div class="terminal-header">
+    <div class="terminal-button terminal-close"></div>
+    <div class="terminal-button terminal-minimize"></div>
+    <div class="terminal-button terminal-maximize"></div>
+    <span class="terminal-title">kgs@portfolio ~ </span>
+  </div>
+  <div class="terminal-content">
+    <div class="terminal-line">
+      <span class="terminal-prompt">$ </span>
+      <span class="terminal-command">help</span>
+    </div>
+    <div class="terminal-output">
+      Welcome to Terminal! Here are the available commands:
+    </div>
+    <dl class="command-list">
+      <dt>about</dt>
+      <dd>Display information about my background and current role</dd>
+      
+      <dt>skills</dt>
+      <dd>List my technical skills and expertise</dd>
+      
+      <dt>projects</dt>
+      <dd>Show my featured projects and contributions</dd>
+      
+      <dt>experience</dt>
+      <dd>View my professional experience and achievements</dd>
+      
+      <dt>education</dt>
+      <dd>Display my educational background</dd>
+      
+      <dt>contact</dt>
+      <dd>Show ways to get in touch with me</dd>
+      
+      <dt>blog</dt>
+      <dd>Read my latest blog posts and articles</dd>
+      
+      <dt>clear</dt>
+      <dd>Clear the terminal screen</dd>
+    </dl>
+    <div class="terminal-line">
+      <span class="terminal-prompt">$ </span>
+      <span class="terminal-command blink">_</span>
+    </div>
+  </div>
+</div>
+
+Vanakkam 🙏 (Greetings in Tamil),
+
+I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations. I moved to non-technical line of work from ground up - Community and Growth manager, Customer Success Engineer to becoming the Head of Growth. After a year, I found my feet again at Ati motors doing what I am extremely passionate about - improving technology for humankind's benefit.
+
+I am currently working on bringing robotics simulations closer to reality. Through Nvidia Isaac Sim, we are translating real world scenarios to the simulation framework and creating the near-perfect digital twins of the bots and environment wherein they are deployed.
+
+---
 <!-- Load terminal dependencies -->
 <link rel="stylesheet" href="{{ '/assets/css/custom/terminal.css' | relative_url }}">
 <script src="{{ '/assets/js/custom/typing-effect.js' | relative_url }}" defer></script>
@@ -31,12 +158,6 @@ social: true # includes social icons at the bottom of the page
 
 <!-- Terminal container -->
 <div id="terminal" class="terminal-container"></div>
-
-Vanakkam 🙏 (Greetings in Tamil),
-
-I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations. I moved to non-technical line of work from ground up - Community and Growth manager, Customer Success Engineer to becoming the Head of Growth. After a year, I found my feet again at Ati motors doing what I am extremely passionate about - improving technology for humankind's benefit.
-
-I am currently working on bringing robotics simulations closer to reality. Through Nvidia Isaac Sim, we are translating real world scenarios to the simulation framework and creating the near-perfect digital twins of the bots and environment wherein they are deployed.
 
 
 <div class="hidden-content" style="display: none;">

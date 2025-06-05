@@ -2,7 +2,7 @@
 title: "How to train a graduate in Germany Sept"
 date: 2020-08-15
 categories: 
-  - "graduate-series"
+  - "life"
 tags: 
   - "germany"
   - "graduate"

@@ -2,10 +2,12 @@
 layout: page
 permalink: /skills/
 title: skills
-description: Technical expertise and professional competencies
+description: A comprehensive overview of my technical and professional skills.
 nav: true
-nav_order: 3
+nav_order: 7
 ---
+
+{% include common_styles.liquid %}
 
 {% include skills_dependencies.liquid %}
 

@@ -2,7 +2,7 @@
 title: "India: Anniversary Edition"
 date: 2021-06-27
 categories: 
-  - "trekking-series"
+  - "life"
 tags: 
   - "anniversary"
   - "blog"

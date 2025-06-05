@@ -4,7 +4,7 @@ title: "Wait, Why Did I Detrain Here?"
 date: 2021-07-01
 description: An unexpected adventure and spontaneous exploration of an unplanned destination
 tags: [travel, adventure, train, spontaneous, india]
-categories: [travel]
+categories: [life]
 giscus_comments: true
 related_posts: true
 toc:

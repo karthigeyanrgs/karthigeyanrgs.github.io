@@ -4,7 +4,7 @@ title: "GPS Says to Take a Left When I Can Clearly See No Left: Maybe the Phone 
 date: 2020-07-01
 description: Adventures and misadventures in navigation, trusting technology, and finding your way
 tags: [travel, adventure, navigation, humor]
-categories: [travel]
+categories: [life]
 giscus_comments: true
 related_posts: true
 toc:
