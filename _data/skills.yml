@@ -3,22 +3,22 @@
     - name: Python
       level: 95
     - name: C++
-      level: 90
+      level: 85
     - name: MATLAB
       level: 85
     - name: Bash
-      level: 80
+      level: 85
+    - name: Git
+      level: 90
     - name: Julia
-      level: 75
+      level: 40
 
 - name: Development Tools
   items:
-    - name: Git
-      level: 90
     - name: Docker
-      level: 85
+      level: 90
     - name: Kubernetes
-      level: 80
+      level: 75
     - name: Bazel
       level: 85
     - name: Poetry
@@ -38,15 +38,17 @@
       level: 80
     - name: Gmsh
       level: 75
+    - name: LaTeX
+      level: 85
 
 - name: Languages
   items:
     - name: English
       level: 100
     - name: Tamil
-      level: 100
+      level: 90
     - name: French
-      level: 70
+      level: 40
     - name: German
       level: 50
     - name: Hindi

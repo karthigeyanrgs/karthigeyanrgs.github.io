@@ -17,8 +17,8 @@ profile:
     <p>RWTH Aachen, Germany</p>
 
 news: false
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 ---
 
 {% include common_styles.liquid %}
@@ -31,7 +31,6 @@ social: true # includes social icons at the bottom of the page
   margin: 20px 0;
   font-family: 'Courier New', monospace;
   color: #fff;
-  overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
@@ -39,6 +38,8 @@ social: true # includes social icons at the bottom of the page
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
 }
 
 .terminal-button {
@@ -56,12 +57,12 @@ social: true # includes social icons at the bottom of the page
   color: #fff;
   margin-left: 10px;
   font-size: 14px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .terminal-content {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .terminal-prompt {
@@ -79,23 +80,73 @@ social: true # includes social icons at the bottom of the page
 
 .command-list {
   color: #fff;
-  margin: 10px 0;
+  margin: 15px 0;
   padding-left: 20px;
 }
 
 .command-list dt {
   color: #00ff00;
-  margin-top: 10px;
+  margin-top: 12px;
+  font-weight: bold;
 }
 
 .command-list dd {
   color: #888;
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.section {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote {
+  border-left: 4px solid #3498db;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: #f1f8ff;
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-author {
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+.list-styled {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-styled li {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.list-styled li:before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 </style>
 
-<!-- Terminal container -->
+<!-- Terminal Interface -->
 <div class="terminal-container">
   <div class="terminal-header">
     <div class="terminal-button terminal-close"></div>
@@ -143,72 +194,66 @@ social: true # includes social icons at the bottom of the page
   </div>
 </div>
 
-Vanakkam 🙏 (Greetings in Tamil),
+<!-- Introduction Section -->
+<div class="section">
+  <h2 class="section-title">Introduction</h2>
+  <p>Vanakkam 🙏 (Greetings in Tamil),</p>
+  
+  <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
+  
+  <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
+</div>
 
-I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations. I moved to non-technical line of work from ground up - Community and Growth manager, Customer Success Engineer to becoming the Head of Growth. After a year, I found my feet again at Ati motors doing what I am extremely passionate about - improving technology for humankind's benefit.
+<!-- Current Work Section -->
+<div class="section">
+  <h2 class="section-title">Current Focus</h2>
+  <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
+</div>
 
-I am currently working on bringing robotics simulations closer to reality. Through Nvidia Isaac Sim, we are translating real world scenarios to the simulation framework and creating the near-perfect digital twins of the bots and environment wherein they are deployed.
+<!-- Testimonials Section -->
+<div class="section">
+  <h2 class="section-title">What Others Say</h2>
+  
+  <div class="quote">
+    <p>"Someone who is reliable, generous, kind, intellectually honest, welcoming and accepting, curious about new things, and simply someone who <strong>cares</strong>. That last bit is so rare these days -- not just in caring about the people you work with, but caring about the details of what you do and how you do it. You're emotionally intelligent and empathetic. Two of the finest virtues. 🙂"</p>
+    <p class="quote-author">- Rishabh</p>
+  </div>
 
----
-<!-- Load terminal dependencies -->
-<link rel="stylesheet" href="{{ '/assets/css/custom/terminal.css' | relative_url }}">
+  <div class="quote">
+    <p>"Karthig, you are such a pure human being. Of the time that I've had the pleasure of knowing you, I've seen nothing but goodness and curiosity and kindness in you (and little bit of nervousness too haha!). You amaze me every week as we work together with your work ethic, proactiveness and ability to learn fast."</p>
+    <p class="quote-author">- Soundarya</p>
+  </div>
+</div>
+
+<!-- Personal Traits Section -->
+<div class="section">
+  <h2 class="section-title">Personal Traits</h2>
+  <ul class="list-styled">
+    <li>I find peace in solitude - one's mind is one's greatest company</li>
+    <li>I'm an active listener who values thoughtful communication</li>
+    <li>Writing is my preferred medium of expression</li>
+    <li>I maintain healthy boundaries and respect others' privacy</li>
+    <li>My curiosity is driven more by internal reflection than external validation</li>
+    <li>Nature brings out my most calm and composed self</li>
+    <li>I cherish memories above material possessions</li>
+    <li>I approach challenges with humor while staying neutral on political and religious matters</li>
+  </ul>
+</div>
+
+<!-- Principles Section -->
+<div class="section">
+  <h2 class="section-title">Core Principles</h2>
+  <ul class="list-styled">
+    <li>Committed vegetarian lifestyle</li>
+    <li>Value punctuality and others' time</li>
+    <li>Practice mindful communication both online and offline</li>
+    <li>Reflect deeply on the consequences of my actions</li>
+    <li>Share only positive and constructive content on social media</li>
+  </ul>
+</div>
+
+<!-- Scripts -->
 <script src="{{ '/assets/js/custom/typing-effect.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/custom/matrix-rain.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/custom/terminal.js' | relative_url }}" defer></script>
-
-<!-- Terminal container -->
-<div id="terminal" class="terminal-container"></div>
-
-
-<div class="hidden-content" style="display: none;">
-  <!-- Original content preserved but hidden -->
-  ## **Alternate Perspectives**
-
-  I requested some of the people I know, what happens to be their perception of me. Because, honestly I wasn't quite sure of my own qualities.
-
-  > "Someone who is reliable, generous, kind, intellectually honest, welcoming and accepting, curious about new things, and simply someone who **cares**. That last bit is so rare these days -- not just in caring about the people you work with, but caring about the details of what you do and how you do it. You're emotionally intelligent and empathetic. Two of the finest virtues. 🙂"
-  > 
-  > \- Rishabh
-
-  > "Karthig, you are such a pure human being. Of the time that I've had the pleasure of knowing you, I've seen nothing but goodness and curiosity and kindness in you (and little bit of nervousness too haha!). You amaze me every week as we work together with your work ethic, proactiveness and ability to learn fast."
-  > 
-  > \- Soundarya
-
-  ## **Introspection**
-
-  - I tend to enjoy Solitude. After all, one's mind is one's greatest company. :)
-  - I speak less and tend to listen more.
-  - My most comfortable medium of communication is writing.
-  - I set boundaries for myself and rarely ask intrusive questions.
-  - I love to help everyone in the best way I could.
-  - I question everything around me. Curiosity is less outbound and more inbound.
-  - I feel calm and composed in a natural setting.
-  - I always think before I write or speak.
-  - If I love someone, I tend to love them deeply and truly. :)
-  - Memories are my biggest treasures. Not knowledge, money, or power.
-  - Humour has always been my forte to handle situations. I am not politically, spiritually, or religiously inclined.
-
-  ## **Skills/Habits**
-
-  - Ability to remember numbers for more than a considerable duration
-  - I only post positive content on my social media handles (_Twitter and LinkedIn_)
-  - I tend to watch documentaries and uncharted media
-  - I spend a good amount of my time reading others' works
-  - I prefer meeting people in-person or through texts/emails
-
-  ## **Principles**
-
-  - I don't smoke or drink alcohol
-  - I am a vegetarian
-  - I don't cuss both online or offline
-  - I'm punctual and value others' time
-  - I reflect on the consequence of every one of my actions
-
-  ## **Case Scenarios**
-
-  - **When I'm angry**: I try to be rational about the situation. I usually turn silent and don't speak in the heat of the moment.
-  - **When I'm happy**: I share this moment with my loved ones. I don't get overwhelmed with joy.
-  - **When I'm sad**: I generally spend time alone in these situations.
-  - **When I'm scared**: I divert my complete attention toward the source of it. I have acrophobia (_fear of heights_) which I am in the process of overcoming.
-</div>
 
