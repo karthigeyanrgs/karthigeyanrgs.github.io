@@ -21,6 +21,16 @@ selected_papers: false
 social: true
 ---
 
+<!-- Introduction Section -->
+<div class="section">
+  <h2 class="section-title">Introduction</h2>
+  <p>Vanakkam 🙏 (Greetings in Tamil),</p>
+  
+  <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
+  
+  <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
+</div>
+
 {% include common_styles.liquid %}
 
 <style>
@@ -87,6 +97,7 @@ social: true
 .terminal-output {
   color: #888;
   margin: 10px 0;
+  display: none;
 }
 
 .command-list {
@@ -110,28 +121,34 @@ social: true
 .section {
   margin: 2.5rem 0;
   padding: 1.5rem;
-  background: #f8f9fa;
+  background: var(--global-bg-color);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--global-divider-color);
 }
 
 .section-title {
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: var(--global-text-color);
+  border-bottom: 2px solid var(--global-theme-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
 
 .quote {
-  border-left: 4px solid #3498db;
+  border-left: 4px solid var(--global-theme-color);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
-  background: #f1f8ff;
+  background: var(--global-code-bg-color);
   border-radius: 0 8px 8px 0;
 }
 
+.quote p {
+  color: var(--global-text-color);
+  margin: 0;
+}
+
 .quote-author {
-  color: #666;
+  color: var(--global-text-color-light);
   font-style: italic;
   margin-top: 0.5rem;
   text-align: right;
@@ -146,11 +163,12 @@ social: true
   margin: 0.8rem 0;
   padding-left: 1.5rem;
   position: relative;
+  color: var(--global-text-color);
 }
 
 .list-styled li:before {
   content: "•";
-  color: #3498db;
+  color: var(--global-theme-color);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -195,6 +213,22 @@ social: true
   color: #00ff00;
 }
 
+.terminal-history {
+  margin-bottom: 15px;
+}
+
+.terminal-line {
+  margin: 5px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -210,74 +244,11 @@ social: true
     transform: translateY(0);
   }
 }
+
+p {
+  color: var(--global-text-color);
+}
 </style>
-
-<!-- Terminal Interface -->
-<div class="terminal-container">
-  <div class="terminal-header">
-    <div class="terminal-button terminal-close"></div>
-    <div class="terminal-button terminal-minimize"></div>
-    <div class="terminal-button terminal-maximize"></div>
-    <span class="terminal-title">kgs@portfolio ~ </span>
-  </div>
-  <div class="terminal-content">
-    <div class="terminal-line">
-      <span class="terminal-prompt">$ </span>
-      <span class="terminal-command">help</span>
-    </div>
-    <div class="terminal-output">
-      Welcome to Terminal! Here are the available commands:
-    </div>
-    <dl class="command-list">
-      <dt>about</dt>
-      <dd>Display information about my background and current role</dd>
-      
-      <dt>skills</dt>
-      <dd>List my technical skills and expertise</dd>
-      
-      <dt>projects</dt>
-      <dd>Show my featured projects and contributions</dd>
-      
-      <dt>experience</dt>
-      <dd>View my professional experience and achievements</dd>
-      
-      <dt>education</dt>
-      <dd>Display my educational background</dd>
-      
-      <dt>contact</dt>
-      <dd>Show ways to get in touch with me</dd>
-      
-      <dt>blog</dt>
-      <dd>Read my latest technical posts on Reinforcement Learning and more</dd>
-      
-      <dt>gallery</dt>
-      <dd>View my travel memories, including experiences from Berlin</dd>
-      
-      <dt>clear</dt>
-      <dd>Clear the terminal screen</dd>
-      
-      <dt>latest</dt>
-      <dd>Show my most recent updates:
-          - New blog post: Foundations of Reinforcement Learning
-          - Added Berlin travel gallery
-          - Updated professional experience</dd>
-    </dl>
-    <div class="terminal-line">
-      <span class="terminal-prompt">$ </span>
-      <span class="terminal-command blink">_</span>
-    </div>
-  </div>
-</div>
-
-<!-- Introduction Section -->
-<div class="section">
-  <h2 class="section-title">Introduction</h2>
-  <p>Vanakkam 🙏 (Greetings in Tamil),</p>
-  
-  <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
-  
-  <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
-</div>
 
 <!-- Current Work Section -->
 <div class="section">
@@ -285,6 +256,7 @@ social: true
   <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
 </div>
 
+{% comment %}
 <!-- Testimonials Section -->
 <div class="section">
   <h2 class="section-title">What Others Say</h2>
@@ -297,6 +269,24 @@ social: true
   <div class="quote">
     <p>"Karthig, you are such a pure human being. Of the time that I've had the pleasure of knowing you, I've seen nothing but goodness and curiosity and kindness in you (and little bit of nervousness too haha!). You amaze me every week as we work together with your work ethic, proactiveness and ability to learn fast."</p>
     <p class="quote-author">- Soundarya</p>
+  </div>
+</div>
+{% endcomment %}
+
+<!-- Terminal Interface -->
+<div class="terminal-container">
+  <div class="terminal-header">
+    <div class="terminal-button terminal-close"></div>
+    <div class="terminal-button terminal-minimize"></div>
+    <div class="terminal-button terminal-maximize"></div>
+    <span class="terminal-title">kgs@portfolio ~ </span>
+  </div>
+  <div class="terminal-content">
+    <div class="terminal-history"></div>
+    <div class="terminal-line">
+      <span class="terminal-prompt">$ </span>
+      <input type="text" class="terminal-input" autofocus placeholder="Type a command..." />
+    </div>
   </div>
 </div>
 
@@ -319,7 +309,7 @@ social: true
 <div class="section">
   <h2 class="section-title">Core Principles</h2>
   <ul class="list-styled">
-    <li>Committed vegetarian lifestyle</li>
+    <li>Vegetarian lifestyle</li>
     <li>Value punctuality and others' time</li>
     <li>Practice mindful communication both online and offline</li>
     <li>Reflect deeply on the consequences of my actions</li>
@@ -327,9 +317,96 @@ social: true
   </ul>
 </div>
 
-<!-- Scripts -->
-<script src="{{ '/assets/js/custom/typing-effect.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/custom/matrix-rain.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/custom/terminal.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/custom/terminal-autocomplete.js' | relative_url }}" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const terminal = document.querySelector('.terminal-container');
+  const input = terminal.querySelector('.terminal-input');
+  const history = terminal.querySelector('.terminal-history');
+  
+  const commands = {
+    help: function() {
+      return `Available commands:
+- about: Display information about my background and current role
+- skills: List my technical skills and expertise
+- projects: Show my featured projects and contributions
+- experience: View my professional experience and achievements
+- education: Display my educational background
+- contact: Show ways to get in touch with me
+- blog: Read my latest technical posts
+- gallery: View my travel memories
+- clear: Clear the terminal screen
+- help: Show this help message`;
+    },
+    about: function() {
+      return "I'm Karthigeyan, a Lead Engineer in Autonomy at Ati Motors. I specialize in Reinforcement Learning, Nvidia Isaac Sim, and VSLAM technologies.";
+    },
+    skills: function() {
+      return "Technical Skills:\n- Reinforcement Learning\n- Nvidia Isaac Sim\n- Jetson Platform\n- VSLAM\n- Foundational Models\n- Robotics Simulation";
+    },
+    projects: function() {
+      return "Featured Projects:\n- Digital Twin Development using Nvidia Isaac Sim\n- Reinforcement Learning for Robot Navigation\n- VSLAM Implementation for Autonomous Systems";
+    },
+    experience: function() {
+      return "Professional Experience:\n- Lead Engineer - Autonomy @ Ati Motors\n- Head of Growth\n- Customer Success Engineer\n- Community and Growth Manager";
+    },
+    education: function() {
+      return "Education:\n- Master's in Simulation Sciences, RWTH Aachen, Germany\n- Specialization in Fluid Simulations and Transport Equations";
+    },
+    contact: function() {
+      return "Get in touch:\n- Email: [Contact form on website]\n- LinkedIn: [Profile link]\n- GitHub: [Username]";
+    },
+    blog: function() {
+      return "Latest blog posts:\n- Foundations of Reinforcement Learning\n- Digital Twin Development with Isaac Sim\n- VSLAM: Theory and Practice";
+    },
+    gallery: function() {
+      return "Travel Memories:\n- Berlin Adventures\n- German Engineering Museums\n- Research Conferences";
+    },
+    clear: function() {
+      history.innerHTML = '';
+      return '';
+    }
+  };
+
+  function addToHistory(command, output) {
+    const commandLine = document.createElement('div');
+    commandLine.className = 'terminal-line';
+    commandLine.innerHTML = `<span class="terminal-prompt">$ </span><span class="terminal-command">${command}</span>`;
+    
+    const outputLine = document.createElement('div');
+    outputLine.className = 'terminal-output visible';
+    outputLine.style.whiteSpace = 'pre-line';
+    outputLine.textContent = output;
+    
+    history.appendChild(commandLine);
+    if (output) {
+      history.appendChild(outputLine);
+    }
+    
+    // Scroll to bottom
+    terminal.scrollTop = terminal.scrollHeight;
+  }
+
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      const command = input.value.trim().toLowerCase();
+      input.value = '';
+      
+      if (command) {
+        let output = '';
+        if (commands[command]) {
+          output = commands[command]();
+        } else {
+          output = `Command not found: ${command}\nType 'help' to see available commands.`;
+        }
+        addToHistory(command, output);
+      }
+    }
+  });
+
+  // Focus input when clicking anywhere in the terminal
+  terminal.addEventListener('click', function() {
+    input.focus();
+  });
+});
+</script>
 

@@ -102,196 +102,64 @@ toc:
 </div>
 
 <div class="cv-content" style="display: none;">
-  <!-- General Information -->
-  <div class="general-info-section" data-aos="fade-up">
-    <h2 class="section-title">General Information</h2>
-    <div class="info-grid">
-      <div class="info-item">
-        <h3>Full Name</h3>
-        <p>Karthigeyan Ganesh Shankar</p>
+  <div class="cv">
+    {% for entry in site.data.cv %}
+      <div class="cv-section">
+        <h2 class="cv-section-title">{{ entry.title }}</h2>
+        {% if entry.type == "map" %}
+          <table class="cv-map">
+            {% for item in entry.contents %}
+              <tr>
+                <td class="cv-field">{{ item.name }}</td>
+                <td class="cv-value">{{ item.value }}</td>
+              </tr>
+            {% endfor %}
+          </table>
+        {% elsif entry.type == "nested_list" %}
+          {% for item in entry.contents %}
+            <h3 class="cv-subsection-title">{{ item.title }}</h3>
+            <ul class="cv-list">
+            {% for point in item.items %}
+              <li>{{ point }}</li>
+            {% endfor %}
+            </ul>
+          {% endfor %}
+        {% elsif entry.type == "time_table" %}
+          <div class="cv-timeline">
+            {% for item in entry.contents %}
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <h3>{{ item.title }}</h3>
+                  {% if item.institution %}
+                    <h4>{{ item.institution }}</h4>
+                  {% endif %}
+                </div>
+                <div class="cv-item-meta">
+                  <span class="cv-item-year">{{ item.year }}</span>
+                  {% if item.location %}
+                    <span class="cv-item-location">{{ item.location }}</span>
+                  {% endif %}
+                </div>
+                {% if item.description %}
+                  <ul class="cv-description">
+                    {% for desc in item.description %}
+                      <li>{{ desc }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
-      <div class="info-item">
-        <h3>Email</h3>
-        <p>karthigeyanrgs@gmail.com</p>
-      </div>
-      <div class="info-item">
-        <h3>Languages</h3>
-        <p>English (Fluent), French (Intermediate), German (Beginner), Hindi (Intermediate), Tamil (Native)</p>
-      </div>
+    {% endfor %}
+
+    <div class="cv-footer">
+      <a href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}" class="download-cv">
+        <i class="fas fa-download"></i>
+        Download PDF Version
+      </a>
     </div>
-  </div>
-
-  <!-- Experience Section -->
-  <div class="experience-section" data-aos="fade-up">
-    <h2 class="section-title">Experience</h2>
-    <div class="timeline-container">
-      <div class="timeline-item" data-aos="fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Lead Autonomy Engineer</h3>
-            <span class="timeline-date">April 2025 - Present</span>
-          </div>
-          <h4>Ati Motors, Bengaluru, India</h4>
-          <ul>
-            <li>Led to widespread adoption of simulation-first development and testing</li>
-            <li>Kick-started the map-free visual navigation models which are generalized and reliable</li>
-            <li>Supported the evaluation of different novel, state-of-the-art VSLAM methods</li>
-            <li>Technologies: Nvidia Isaac Sim, Nvidia Warp, Pytorch</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-aos="fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Senior Autonomy Engineer</h3>
-            <span class="timeline-date">April 2024 - Present</span>
-          </div>
-          <h4>Ati Motors, Bengaluru, India</h4>
-          <ul>
-            <li>Spearheading team developing one button press simulation workflow with Nvidia's Isaac Sim</li>
-            <li>Evaluated different OTS carrier boards (Jetson) for bot control</li>
-            <li>Built production ready architecture for bot and fleet manager application</li>
-            <li>Technologies: Nvidia Isaac Sim, Kubernetes, Bazel, Python, Make, Unix, Embedded C</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-aos="fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Autonomy Engineer</h3>
-            <span class="timeline-date">Sept 2022 - March 2024</span>
-          </div>
-          <h4>Ati Motors, Bengaluru, India</h4>
-          <ul>
-            <li>Optimized software build systems improving efficiency by 40%</li>
-            <li>Developed software-in-loop (CI/CD) frameworks to automate release process</li>
-            <li>Increased team productivity by 30% through system improvements</li>
-            <li>Technologies: Kubernetes, Bazel, Poetry, Docker, C++, Python, Make, Unix, Bash</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-aos="fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Research Assistant</h3>
-            <span class="timeline-date">Oct 2018 - Mar 2019</span>
-          </div>
-          <h4>Institute for Aerodynamics and Fluid Mechanics, RWTH Aachen</h4>
-          <ul>
-            <li>Developed parallel simulations for 1M cells through 24 cores</li>
-            <li>Automated visualization pipeline through Python</li>
-            <li>Technologies: C++, Python, ParaView, Unix, Bash, OpenMPI</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Education Section -->
-  <div class="education-section" data-aos="fade-up">
-    <h2 class="section-title">Education</h2>
-    <div class="timeline-container">
-      <div class="timeline-item" data-aos="fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Master of Sciences in Simulation Sciences</h3>
-            <span class="timeline-date">Oct 2017 - Mar 2020</span>
-          </div>
-          <h4>RWTH Aachen</h4>
-          <p>Coursework: High Performance Computing, High dimensional Probability theory, Stochastic Numeric, Kinetic Description of Interacting Multi-agent Systems</p>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-aos="fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Bachelor of Technology in Mechanical Engineering</h3>
-            <span class="timeline-date">May 2013 - May 2017</span>
-          </div>
-          <h4>SRM University, Chennai, India</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Projects Section -->
-  <div class="projects-section" data-aos="fade-up">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card" data-aos="flip-up">
-        <div class="project-header">
-          <i class="fas fa-project-diagram"></i>
-          <h3>Master Thesis - Kinetic Model on Unemployment</h3>
-          <span class="project-date">Sep 2019 - Mar 2021</span>
-        </div>
-        <ul>
-          <li>Developed mesoscopic models to characterize unemployment</li>
-          <li>Performed Monte-Carlo simulations for complex scenarios</li>
-          <li>Advanced research in transport equations with limited prior literature</li>
-        </ul>
-      </div>
-
-      <div class="project-card" data-aos="flip-up">
-        <div class="project-header">
-          <i class="fas fa-code"></i>
-          <h3>Unstructured Finite Element Solver</h3>
-          <span class="project-date">Sep 2020 - Nov 2020</span>
-        </div>
-        <ul>
-          <li>Programmed solver using Python (FeNiCS) for unstructured meshes</li>
-          <li>Implemented automatic differentiation using dolfin-adjoint</li>
-          <li>Enhanced code through parallelization</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Skills Section -->
-  <div class="skills-section" data-aos="fade-up">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-category" data-aos="zoom-in">
-        <h3>Programming</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">C++</span>
-          <span class="skill-tag">MATLAB</span>
-          <span class="skill-tag">Bash</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">Julia</span>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">Dolfin</span>
-          <span class="skill-tag">ScoreP</span>
-          <span class="skill-tag">LaTeX</span>
-          <span class="skill-tag">Gmsh</span>
-          <span class="skill-tag">ParaView</span>
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">SciPy</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Poetry</span>
-          <span class="skill-tag">Bazel</span>
-          <span class="skill-tag">Makefile</span>
-          <span class="skill-tag">Kubernetes</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-footer" data-aos="fade-up">
-    <a href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}" class="download-cv">
-      <i class="fas fa-download"></i>
-      Download PDF Version
-    </a>
   </div>
 </div>
 
