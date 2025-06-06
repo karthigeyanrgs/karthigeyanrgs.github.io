@@ -63,6 +63,17 @@ social: true
 .terminal-content {
   font-size: 14px;
   line-height: 1.6;
+  position: relative;
+}
+
+.terminal-banner {
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in;
+}
+
+.terminal-welcome {
+  margin-bottom: 1.5rem;
+  animation: slideIn 1s ease-out;
 }
 
 .terminal-prompt {
@@ -144,6 +155,61 @@ social: true
   position: absolute;
   left: 0;
 }
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  outline: none;
+  width: calc(100% - 20px);
+  caret-color: #00ff00;
+}
+
+.terminal-suggestions {
+  display: none;
+  position: absolute;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  width: calc(100% - 40px);
+  margin-top: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: #3a3a3a;
+}
+
+.suggestion-item.selected {
+  background-color: #444;
+  color: #00ff00;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
 
 <!-- Terminal Interface -->
@@ -182,10 +248,19 @@ social: true
       <dd>Show ways to get in touch with me</dd>
       
       <dt>blog</dt>
-      <dd>Read my latest blog posts and articles</dd>
+      <dd>Read my latest technical posts on Reinforcement Learning and more</dd>
+      
+      <dt>gallery</dt>
+      <dd>View my travel memories, including experiences from Berlin</dd>
       
       <dt>clear</dt>
       <dd>Clear the terminal screen</dd>
+      
+      <dt>latest</dt>
+      <dd>Show my most recent updates:
+          - New blog post: Foundations of Reinforcement Learning
+          - Added Berlin travel gallery
+          - Updated professional experience</dd>
     </dl>
     <div class="terminal-line">
       <span class="terminal-prompt">$ </span>
@@ -256,4 +331,5 @@ social: true
 <script src="{{ '/assets/js/custom/typing-effect.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/custom/matrix-rain.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/custom/terminal.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/custom/terminal-autocomplete.js' | relative_url }}" defer></script>
 

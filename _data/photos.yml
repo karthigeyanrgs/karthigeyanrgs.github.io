@@ -1,0 +1,17 @@
+# Example photo entries - replace with your own photos
+
+- image: IMG_8756.jpg
+  caption: Unforgettable experience
+  location: Berlin, Germany
+  year: 2020
+
+- image: IMG_8757.jpg
+  caption: Unforgettable experience
+  location: Berlin, Germany
+  year: 2020
+
+# Add more photos by following the same format:
+# - image: your-image-filename.jpg
+#   caption: Your photo caption
+#   location: Location name
+#   year: Year taken 
