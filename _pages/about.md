@@ -7,7 +7,7 @@ nav_order: 1
 nav: true
 
 profile:
-  align: centre
+  align: right
   image: profile.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
@@ -19,16 +19,140 @@ profile:
 news: false
 selected_papers: false
 social: true
+
+.profile {
+  width: 100%;
+  margin-bottom: 3rem;  /* Add margin to create space between profile and content */
+
+  .more-info {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: monospace;
+
+    p {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}
+
+.profile.float-right {
+  margin-left: 1rem;
+}
+
+.profile.float-left {
+  margin-right: 1rem;
+}
+
+@media (min-width: 576px) {
+  .profile {
+    width: 30%;
+    
+    .address {
+      p {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Clear the float after profile section */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add margin to the first section after profile */
+.section:first-of-type {
+  margin-top: 2rem;
+}
+
+/* Ensure content flows properly */
+.content {
+  clear: both;
+}
 ---
 
-<!-- Introduction Section -->
-<div class="section">
-  <h2 class="section-title">Introduction</h2>
-  <p>Vanakkam 🙏 (Greetings in Tamil),</p>
-  
-  <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
-  
-  <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
+<div class="row">
+  <div class="col-12 col-lg-8">
+    <!-- Introduction Section -->
+    <div class="section">
+      <h2 class="section-title">Introduction</h2>
+      <p>Vanakkam 🙏 (Greetings in Tamil),</p>
+      
+      <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
+      
+      <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
+    </div>
+
+    <!-- Current Work Section -->
+    <div class="section">
+      <h2 class="section-title">Current Focus</h2>
+      <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
+    </div>
+
+    {% comment %}
+    <!-- Testimonials Section -->
+    <div class="section">
+      <h2 class="section-title">What Others Say</h2>
+      
+      <div class="quote">
+        <p>"Someone who is reliable, generous, kind, intellectually honest, welcoming and accepting, curious about new things, and simply someone who <strong>cares</strong>. That last bit is so rare these days -- not just in caring about the people you work with, but caring about the details of what you do and how you do it. You're emotionally intelligent and empathetic. Two of the finest virtues. 🙂"</p>
+        <p class="quote-author">- Rishabh</p>
+      </div>
+
+      <div class="quote">
+        <p>"Karthig, you are such a pure human being. Of the time that I've had the pleasure of knowing you, I've seen nothing but goodness and curiosity and kindness in you (and little bit of nervousness too haha!). You amaze me every week as we work together with your work ethic, proactiveness and ability to learn fast."</p>
+        <p class="quote-author">- Soundarya</p>
+      </div>
+    </div>
+    {% endcomment %}
+
+    <!-- Terminal Interface -->
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <div class="terminal-button terminal-close"></div>
+        <div class="terminal-button terminal-minimize"></div>
+        <div class="terminal-button terminal-maximize"></div>
+        <span class="terminal-title">kgs@portfolio ~ </span>
+      </div>
+      <div class="terminal-content">
+        <div class="terminal-history"></div>
+        <div class="terminal-line">
+          <span class="terminal-prompt">$ </span>
+          <input type="text" class="terminal-input" autofocus placeholder="Type a command..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal Traits Section -->
+    <div class="section">
+      <h2 class="section-title">Personal Traits</h2>
+      <ul class="list-styled">
+        <li>I find peace in solitude - one's mind is one's greatest company</li>
+        <li>I'm an active listener who values thoughtful communication</li>
+        <li>Writing is my preferred medium of expression</li>
+        <li>I maintain healthy boundaries and respect others' privacy</li>
+        <li>My curiosity is driven more by internal reflection than external validation</li>
+        <li>Nature brings out my most calm and composed self</li>
+        <li>I cherish memories above material possessions</li>
+        <li>I approach challenges with humor while staying neutral on political and religious matters</li>
+      </ul>
+    </div>
+
+    <!-- Principles Section -->
+    <div class="section">
+      <h2 class="section-title">Core Principles</h2>
+      <ul class="list-styled">
+        <li>Vegetarian lifestyle</li>
+        <li>Value punctuality and others' time</li>
+        <li>Practice mindful communication both online and offline</li>
+        <li>Reflect deeply on the consequences of my actions</li>
+        <li>Share only positive and constructive content on social media</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 {% include common_styles.liquid %}
@@ -250,73 +374,6 @@ p {
 }
 </style>
 
-<!-- Current Work Section -->
-<div class="section">
-  <h2 class="section-title">Current Focus</h2>
-  <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
-</div>
-
-{% comment %}
-<!-- Testimonials Section -->
-<div class="section">
-  <h2 class="section-title">What Others Say</h2>
-  
-  <div class="quote">
-    <p>"Someone who is reliable, generous, kind, intellectually honest, welcoming and accepting, curious about new things, and simply someone who <strong>cares</strong>. That last bit is so rare these days -- not just in caring about the people you work with, but caring about the details of what you do and how you do it. You're emotionally intelligent and empathetic. Two of the finest virtues. 🙂"</p>
-    <p class="quote-author">- Rishabh</p>
-  </div>
-
-  <div class="quote">
-    <p>"Karthig, you are such a pure human being. Of the time that I've had the pleasure of knowing you, I've seen nothing but goodness and curiosity and kindness in you (and little bit of nervousness too haha!). You amaze me every week as we work together with your work ethic, proactiveness and ability to learn fast."</p>
-    <p class="quote-author">- Soundarya</p>
-  </div>
-</div>
-{% endcomment %}
-
-<!-- Terminal Interface -->
-<div class="terminal-container">
-  <div class="terminal-header">
-    <div class="terminal-button terminal-close"></div>
-    <div class="terminal-button terminal-minimize"></div>
-    <div class="terminal-button terminal-maximize"></div>
-    <span class="terminal-title">kgs@portfolio ~ </span>
-  </div>
-  <div class="terminal-content">
-    <div class="terminal-history"></div>
-    <div class="terminal-line">
-      <span class="terminal-prompt">$ </span>
-      <input type="text" class="terminal-input" autofocus placeholder="Type a command..." />
-    </div>
-  </div>
-</div>
-
-<!-- Personal Traits Section -->
-<div class="section">
-  <h2 class="section-title">Personal Traits</h2>
-  <ul class="list-styled">
-    <li>I find peace in solitude - one's mind is one's greatest company</li>
-    <li>I'm an active listener who values thoughtful communication</li>
-    <li>Writing is my preferred medium of expression</li>
-    <li>I maintain healthy boundaries and respect others' privacy</li>
-    <li>My curiosity is driven more by internal reflection than external validation</li>
-    <li>Nature brings out my most calm and composed self</li>
-    <li>I cherish memories above material possessions</li>
-    <li>I approach challenges with humor while staying neutral on political and religious matters</li>
-  </ul>
-</div>
-
-<!-- Principles Section -->
-<div class="section">
-  <h2 class="section-title">Core Principles</h2>
-  <ul class="list-styled">
-    <li>Vegetarian lifestyle</li>
-    <li>Value punctuality and others' time</li>
-    <li>Practice mindful communication both online and offline</li>
-    <li>Reflect deeply on the consequences of my actions</li>
-    <li>Share only positive and constructive content on social media</li>
-  </ul>
-</div>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const terminal = document.querySelector('.terminal-container');
@@ -332,10 +389,7 @@ document.addEventListener('DOMContentLoaded', function() {
 - experience: View my professional experience and achievements
 - education: Display my educational background
 - contact: Show ways to get in touch with me
-- blog: Read my latest technical posts
-- gallery: View my travel memories
-- clear: Clear the terminal screen
-- help: Show this help message`;
+- clear: Clear the terminal screen`;
     },
     about: function() {
       return "I'm Karthigeyan, a Lead Engineer in Autonomy at Ati Motors. I specialize in Reinforcement Learning, Nvidia Isaac Sim, and VSLAM technologies.";
@@ -353,20 +407,14 @@ document.addEventListener('DOMContentLoaded', function() {
       return "Education:\n- Master's in Simulation Sciences, RWTH Aachen, Germany\n- Specialization in Fluid Simulations and Transport Equations";
     },
     contact: function() {
-      return "Get in touch:\n- Email: [Contact form on website]\n- LinkedIn: [Profile link]\n- GitHub: [Username]";
-    },
-    blog: function() {
-      return "Latest blog posts:\n- Foundations of Reinforcement Learning\n- Digital Twin Development with Isaac Sim\n- VSLAM: Theory and Practice";
-    },
-    gallery: function() {
-      return "Travel Memories:\n- Berlin Adventures\n- German Engineering Museums\n- Research Conferences";
+      return "Get in touch:\n- Email: karthigeyanrgs@gmail.com\n- LinkedIn: [Profile link]\n- GitHub: [Username]";
     },
     clear: function() {
       history.innerHTML = '';
       return '';
     }
   };
-
+  
   function addToHistory(command, output) {
     const commandLine = document.createElement('div');
     commandLine.className = 'terminal-line';
@@ -385,6 +433,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll to bottom
     terminal.scrollTop = terminal.scrollHeight;
   }
+
+  // Show help by default when terminal loads
+  addToHistory('help', commands.help());
 
   input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {

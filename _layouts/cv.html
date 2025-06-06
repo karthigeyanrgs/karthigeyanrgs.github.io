@@ -1,1 +1,270 @@
- 
+---
+layout: default
+---
+<!-- CV -->
+<div class="row">
+  <!-- Sidebar -->
+  <div class="col-12 col-md-3 col-xl-2">
+    <div class="sidebar sticky-top">
+      <h4>Sections</h4>
+      <ul>
+        {% for section in site.data.cv %}
+          <li>
+            <a href="#{{ section.title | slugify }}" class="nav-link">{{ section.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="col-12 col-md-9 col-xl-10">
+    <div class="cv">
+      {{ content }}
+
+      {%- if page.cv_pdf -%}
+      <div class="cv-pdf">
+        <a href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-pdf"></i> Download CV
+        </a>
+      </div>
+      {%- endif -%}
+
+      <!-- Sections from _data/cv.yml -->
+      {% for section in site.data.cv %}
+        <div class="cv-section" id="{{ section.title | slugify }}">
+          <h2 class="cv-section-title">{{ section.title }}</h2>
+
+          {%- if section.type == "map" -%}
+            <table class="table table-cv table-borderless">
+              {% for content in section.contents %}
+                <tr>
+                  <td class="td-left" style="width: 200px;">
+                    <b>{{ content.name }}</b>
+                  </td>
+                  <td class="td-right">
+                    {{ content.value }}
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+
+          {%- elsif section.type == "time_table" -%}
+            <table class="table table-cv table-borderless">
+              {% assign positions = section.contents | reverse %}
+              {% for content in positions %}
+                <tr>
+                  <td class="td-left" style="width: 200px;">
+                    <span class="cv-year">{{ content.year }}</span>
+                  </td>
+                  <td class="td-right">
+                    <b>{{ content.title }}</b><br>
+                    {%- if content.institution -%}
+                      {{ content.institution }}
+                    {%- endif -%}
+                    {%- if content.location -%}
+                      , {{ content.location }}
+                    {%- endif -%}
+                    {%- if content.description -%}
+                      <ul class="cv-description">
+                        {% for item in content.description %}
+                          <li>{{ item }}</li>
+                        {% endfor %}
+                      </ul>
+                    {%- endif -%}
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+
+          {%- elsif section.type == "nested_list" -%}
+            {% for content in section.contents %}
+              <div class="cv-subsection">
+                <h3 class="cv-subsection-title">{{ content.title }}</h3>
+                <ul class="cv-description">
+                  {% for item in content.items %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+/* CV styles */
+.cv {
+  margin: 2rem 0;
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+  scroll-margin-top: 70px;
+}
+
+.cv-section-title {
+  color: var(--global-theme-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.cv-subsection {
+  margin: 1rem 0;
+}
+
+.cv-subsection-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.table-cv {
+  width: 100%;
+}
+
+.td-left {
+  vertical-align: top;
+  color: var(--global-text-color);
+}
+
+.td-right {
+  vertical-align: top;
+  color: var(--global-text-color);
+}
+
+.cv-year {
+  color: var(--global-text-color-light);
+}
+
+.cv-description {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.cv-description li {
+  margin-bottom: 0.2rem;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.cv-description li::before {
+  content: "•";
+  position: absolute;
+  left: -0.8rem;
+  color: var(--global-theme-color);
+}
+
+.cv-pdf {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.cv-pdf a {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-pdf a:hover {
+  background-color: var(--global-hover-color);
+  text-decoration: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+  padding: 1rem;
+  background-color: var(--global-bg-color);
+  border-radius: 8px;
+  border: 1px solid var(--global-divider-color);
+  margin-top: 2rem;
+}
+
+.sidebar h4 {
+  color: var(--global-theme-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .nav-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  padding: 0.25rem 0;
+  display: block;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: var(--global-theme-color);
+}
+
+@media (max-width: 576px) {
+  .td-left {
+    width: 120px !important;
+  }
+  
+  .sidebar {
+    position: relative !important;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+<script>
+// Add active class to sidebar links based on scroll position
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.cv-section');
+  const navLinks = document.querySelectorAll('.sidebar .nav-link');
+  
+  function setActiveLink() {
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - 100) {
+        current = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').slice(1) === current) {
+        link.classList.add('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', setActiveLink);
+  setActiveLink(); // Set initial active state
+});
+</script> 

@@ -6,8 +6,6 @@ nav: true
 nav_order: 5
 cv_pdf: Karthigeyan_Resume_2025_May.pdf
 description: A showcase of my professional journey, skills, and achievements in technology and innovation.
-toc:
-  sidebar: left
 ---
 
 {% include common_styles.liquid %}
@@ -103,53 +101,60 @@ toc:
 
 <div class="cv-content" style="display: none;">
   <div class="cv">
-    {% for entry in site.data.cv %}
+    {% for section in site.data.cv %}
       <div class="cv-section">
-        <h2 class="cv-section-title">{{ entry.title }}</h2>
-        {% if entry.type == "map" %}
-          <table class="cv-map">
-            {% for item in entry.contents %}
+        <h2 class="cv-section-title">{{ section.title }}</h2>
+        {% if section.type == "map" %}
+          <table class="table table-cv table-borderless">
+            {% for content in section.contents %}
               <tr>
-                <td class="cv-field">{{ item.name }}</td>
-                <td class="cv-value">{{ item.value }}</td>
+                <td class="td-left"><b>{{ content.name }}</b></td>
+                <td class="td-right">{{ content.value }}</td>
               </tr>
             {% endfor %}
           </table>
-        {% elsif entry.type == "nested_list" %}
-          {% for item in entry.contents %}
-            <h3 class="cv-subsection-title">{{ item.title }}</h3>
-            <ul class="cv-list">
-            {% for point in item.items %}
-              <li>{{ point }}</li>
+        {% elsif section.type == "time_table" %}
+          <table class="table table-cv table-borderless">
+            {% assign positions = section.contents | reverse %}
+            {% for content in positions %}
+              <tr>
+                <td class="td-left" style="width: 160px">
+                  {% if content.year %}
+                    <span class="cv-year">{{ content.year }}</span>
+                  {% endif %}
+                </td>
+                <td class="td-right">
+                  {% if content.title %}
+                    <b>{{ content.title }}</b>
+                  {% endif %}
+                  {% if content.institution %}
+                    <div class="institution">{{ content.institution }}</div>
+                  {% endif %}
+                  {% if content.location %}
+                    <div class="location">{{ content.location }}</div>
+                  {% endif %}
+                  {% if content.description %}
+                    <ul class="items">
+                      {% for item in content.description %}
+                        <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </td>
+              </tr>
             {% endfor %}
-            </ul>
+          </table>
+        {% elsif section.type == "nested_list" %}
+          {% for content in section.contents %}
+            <div class="cv-subsection">
+              <h3 class="cv-subsection-title">{{ content.title }}</h3>
+              <ul class="items">
+                {% for item in content.items %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            </div>
           {% endfor %}
-        {% elsif entry.type == "time_table" %}
-          <div class="cv-timeline">
-            {% for item in entry.contents %}
-              <div class="cv-item">
-                <div class="cv-item-header">
-                  <h3>{{ item.title }}</h3>
-                  {% if item.institution %}
-                    <h4>{{ item.institution }}</h4>
-                  {% endif %}
-                </div>
-                <div class="cv-item-meta">
-                  <span class="cv-item-year">{{ item.year }}</span>
-                  {% if item.location %}
-                    <span class="cv-item-location">{{ item.location }}</span>
-                  {% endif %}
-                </div>
-                {% if item.description %}
-                  <ul class="cv-description">
-                    {% for desc in item.description %}
-                      <li>{{ desc }}</li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-              </div>
-            {% endfor %}
-          </div>
         {% endif %}
       </div>
     {% endfor %}
