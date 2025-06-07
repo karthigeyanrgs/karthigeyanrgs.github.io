@@ -49,11 +49,21 @@ nav_order: 6
 }
 
 .note-box {
-  background: #e8f4f8;
-  border-left: 4px solid #3498db;
+  background: var(--global-code-bg-color);
+  border-left: 4px solid var(--global-theme-color);
   padding: 1rem;
   margin: 2rem 0;
   border-radius: 0 8px 8px 0;
+  color: var(--global-text-color);
+}
+
+.note-box p {
+  margin: 0;
+  color: var(--global-text-color);
+}
+
+.note-box strong {
+  color: var(--global-theme-color);
 }
 
 .resources-section {

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /skills/
-title: skills
+title: Skills
 description: A comprehensive overview of my technical and professional skills.
 nav: true
 nav_order: 7

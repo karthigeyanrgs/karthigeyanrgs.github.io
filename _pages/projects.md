@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: A showcase of my research and development projects in simulation, modeling, and engineering.
 nav: true

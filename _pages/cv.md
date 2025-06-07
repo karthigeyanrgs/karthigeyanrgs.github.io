@@ -31,7 +31,117 @@ description: A showcase of my professional journey, skills, and achievements in 
 
   <!-- Main Content -->
   <div class="cv-content">
-    <!-- The CV content will be automatically populated here -->
+    <!-- General Information -->
+    <section id="general-information" class="cv-section">
+      <h2>General Information</h2>
+      {% for item in site.data.cv.general_info %}
+      <div class="info-item">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.value }}</p>
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="cv-section">
+      <h2>Education</h2>
+      {% for edu in site.data.cv.education %}
+      <div class="education-item">
+        <h3>{{ edu.institution }}</h3>
+        <p class="degree">{{ edu.degree }}</p>
+        <p class="period">{{ edu.period }}</p>
+        {% if edu.description %}
+        <p class="description">{{ edu.description }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="cv-section">
+      <h2>Experience</h2>
+      
+      <!-- Current Roles -->
+      <div id="current-roles">
+        <h3>Current Roles</h3>
+        {% for role in site.data.cv.experience.current %}
+        <div class="experience-item">
+          <h4>{{ role.position }}</h4>
+          <p class="company">{{ role.company }}</p>
+          <p class="period">{{ role.period }}</p>
+          <ul class="responsibilities">
+            {% for item in role.responsibilities %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Previous Roles -->
+      <div id="previous-roles">
+        <h3>Previous Roles</h3>
+        {% for role in site.data.cv.experience.previous %}
+        <div class="experience-item">
+          <h4>{{ role.position }}</h4>
+          <p class="company">{{ role.company }}</p>
+          <p class="period">{{ role.period }}</p>
+          <ul class="responsibilities">
+            {% for item in role.responsibilities %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Early Career -->
+      <div id="early-career">
+        <h3>Early Career</h3>
+        {% for role in site.data.cv.experience.early %}
+        <div class="experience-item">
+          <h4>{{ role.position }}</h4>
+          <p class="company">{{ role.company }}</p>
+          <p class="period">{{ role.period }}</p>
+          <ul class="responsibilities">
+            {% for item in role.responsibilities %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="cv-section">
+      <h2>Projects</h2>
+      {% for project in site.data.cv.projects %}
+      <div class="project-item">
+        <h3>{{ project.name }}</h3>
+        <p class="period">{{ project.period }}</p>
+        <p class="description">{{ project.description }}</p>
+        {% if project.technologies %}
+        <p class="technologies">Technologies: {{ project.technologies | join: ", " }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="cv-section">
+      <h2>Skills</h2>
+      {% for category in site.data.cv.skills %}
+      <div class="skill-category">
+        <h3>{{ category.category }}</h3>
+        <ul class="skill-list">
+          {% for skill in category.items %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </section>
   </div>
 </div>
 
@@ -99,6 +209,76 @@ description: A showcase of my professional journey, skills, and achievements in 
   max-width: 800px;
 }
 
+/* CV Section Styles */
+.cv-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--global-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--global-divider-color);
+}
+
+.cv-section h2 {
+  color: var(--global-theme-color);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--global-theme-color);
+}
+
+.cv-section h3 {
+  color: var(--global-text-color);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-section h4 {
+  color: var(--global-theme-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-item, .education-item, .experience-item, .project-item {
+  margin-bottom: 1.5rem;
+}
+
+.period {
+  color: var(--global-theme-color);
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.company {
+  font-weight: 500;
+  margin: 0.25rem 0;
+}
+
+.responsibilities {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-list li {
+  background: var(--global-code-bg-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .cv-container {
     flex-direction: column;
@@ -111,5 +291,65 @@ description: A showcase of my professional journey, skills, and achievements in 
     max-height: none;
     margin-bottom: 2rem;
   }
+
+  .cv-section {
+    padding: 1.5rem;
+  }
+
+  .skill-list {
+    flex-direction: column;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Active Section Highlight */
+.sidebar-nav a.active {
+  color: var(--global-theme-color);
+  font-weight: 600;
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all sections
+  const sections = document.querySelectorAll('.cv-section');
+  const navLinks = document.querySelectorAll('.sidebar-nav a');
+
+  // Highlight active section in sidebar
+  function highlightActiveSection() {
+    let currentSection = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - 100) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').slice(1) === currentSection) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', highlightActiveSection);
+
+  // Smooth scroll to section when clicking sidebar links
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').slice(1);
+      const targetSection = document.getElementById(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
+</script>
