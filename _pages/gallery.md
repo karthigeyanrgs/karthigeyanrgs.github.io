@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /gallery/
-title: Travel Gallery
+title: Gallery
 description: A collection of memories from my travels around the world
 nav: true
 nav_order: 7

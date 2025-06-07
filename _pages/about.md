@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Homepage
+title: About Me
 permalink: /
 subtitle: Reinforcement Learning | Nvidia Isaac Sim and Jetson Expert | VSLAM and Foundational models
 nav_order: 1
@@ -38,6 +38,15 @@ social: true
   margin: 0.5rem 0;
   color: var(--global-text-color);
   font-size: 1.1rem;
+}
+
+/* Add profile image specific styling */
+.profile img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .main-content {
@@ -90,82 +99,6 @@ social: true
   color: var(--global-theme-color);
 }
 
-.terminal-container {
-  background: #1e1e1e;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 2.5rem 0;
-  font-family: 'Courier New', monospace;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.terminal-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 10px;
-}
-
-.terminal-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin-right: 8px;
-}
-
-.terminal-close { background: #ff5f56; }
-.terminal-minimize { background: #ffbd2e; }
-.terminal-maximize { background: #27c93f; }
-
-.terminal-title {
-  color: #fff;
-  margin-left: 10px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.terminal-content {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.terminal-history {
-  margin-bottom: 15px;
-}
-
-.terminal-line {
-  margin: 5px 0;
-  display: flex;
-  align-items: flex-start;
-}
-
-.terminal-prompt {
-  color: #00ff00;
-  margin-right: 8px;
-}
-
-.terminal-command {
-  color: #fff;
-}
-
-.terminal-output {
-  color: #ccc;
-  white-space: pre-wrap;
-  margin: 5px 0 10px 20px;
-}
-
-.terminal-input {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-family: inherit;
-  font-size: inherit;
-  width: calc(100% - 20px);
-  outline: none;
-}
-
 @media (max-width: 768px) {
   .main-content {
     padding: 0 0.5rem;
@@ -198,23 +131,6 @@ social: true
     <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
   </div>
 
-  <!-- Terminal Interface -->
-  <div class="terminal-container">
-    <div class="terminal-header">
-      <div class="terminal-button terminal-close"></div>
-      <div class="terminal-button terminal-minimize"></div>
-      <div class="terminal-button terminal-maximize"></div>
-      <span class="terminal-title">kgs@portfolio ~ </span>
-    </div>
-    <div class="terminal-content">
-      <div class="terminal-history"></div>
-      <div class="terminal-line">
-        <span class="terminal-prompt">$</span>
-        <input type="text" class="terminal-input" autofocus placeholder="Type 'help' for available commands" />
-      </div>
-    </div>
-  </div>
-
   <!-- Personal Traits Section -->
   <div class="section">
     <h2 class="section-title">Personal Traits</h2>
@@ -244,111 +160,4 @@ social: true
 </div>
 
 {% include common_styles.liquid %}
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const terminal = document.querySelector('.terminal-container');
-  const input = terminal.querySelector('.terminal-input');
-  const history = terminal.querySelector('.terminal-history');
-  
-  const commands = {
-    help: function() {
-      return `Available commands:
-- about: Display information about my background and current role
-- skills: List my technical skills and expertise
-- projects: Show my featured projects and contributions
-- experience: View my professional experience and achievements
-- education: Display my educational background
-- contact: Show ways to get in touch with me
-- clear: Clear the terminal screen
-Type any command to begin...`;
-    },
-    about: function() {
-      return "I'm Karthigeyan, a Lead Engineer in Autonomy at Ati Motors. I specialize in Reinforcement Learning, Nvidia Isaac Sim, and VSLAM technologies.";
-    },
-    skills: function() {
-      return `Technical Skills:
-• Reinforcement Learning
-• Nvidia Isaac Sim & Jetson Platform
-• VSLAM & Foundational Models
-• Python, C++, MATLAB
-• Docker, Kubernetes, Bazel
-• High Performance Computing`;
-    },
-    projects: function() {
-      return `Featured Projects:
-• Digital Twin Development using Nvidia Isaac Sim
-• Reinforcement Learning for Robot Navigation
-• VSLAM Implementation for Autonomous Systems
-• Kinetic Model for Unemployment Analysis
-• Unstructured Finite Element Solver Development`;
-    },
-    experience: function() {
-      return `Professional Experience:
-• Lead Engineer - Autonomy @ Ati Motors (Current)
-• Senior Autonomy Engineer @ Ati Motors
-• Autonomy Engineer @ Ati Motors
-• Research Assistant @ RWTH Aachen
-• Head of Growth @ Previous Company`;
-    },
-    education: function() {
-      return `Education:
-• Master's in Simulation Sciences
-  RWTH Aachen, Germany
-  Focus: High Performance Computing, Stochastic Numerics
-
-• Bachelor of Technology in Mechanical Engineering
-  SRM University, Chennai, India`;
-    },
-    contact: function() {
-      return `Get in touch:
-• Email: karthigeyanrgs@gmail.com
-• LinkedIn: linkedin.com/in/karthigeyanrgs
-• GitHub: github.com/karthigeyanrgs`;
-    },
-    clear: function() {
-      history.innerHTML = '';
-      return '';
-    }
-  };
-  
-  function addToHistory(command, output) {
-    const commandDiv = document.createElement('div');
-    commandDiv.className = 'terminal-line';
-    commandDiv.innerHTML = `<span class="terminal-prompt">$</span><span class="terminal-command">${command}</span>`;
-    history.appendChild(commandDiv);
-    
-    if (output) {
-      const outputDiv = document.createElement('div');
-      outputDiv.className = 'terminal-output';
-      outputDiv.textContent = output;
-      history.appendChild(outputDiv);
-    }
-    
-    terminal.scrollTop = terminal.scrollHeight;
-  }
-
-  input.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') {
-      const command = input.value.trim().toLowerCase();
-      input.value = '';
-      
-      if (command) {
-        if (commands[command]) {
-          addToHistory(command, commands[command]());
-        } else {
-          addToHistory(command, `Command not found: ${command}\nType 'help' to see available commands.`);
-        }
-      }
-    }
-  });
-
-  terminal.addEventListener('click', function() {
-    input.focus();
-  });
-
-  // Show help message on load
-  addToHistory('help', commands.help());
-});
-</script>
 
