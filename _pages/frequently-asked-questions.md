@@ -67,8 +67,9 @@ nav_order: 6
 <div class="faq-header">
   <h1>Masters in Simulation Sciences (SiSc)</h1>
   
-  {: .text-center}
-  <img src="/assets/img/RWTH-Aachen-University_500x500.jpg" alt="RWTH Aachen University" width="300" class="mx-auto d-block" style="margin: 2rem auto;">
+  <div class="text-center">
+    <img src="/assets/img/RWTH-Aachen-University_500x500.jpg" alt="RWTH Aachen University" width="300" class="mx-auto d-block" style="margin: 2rem auto;">
+  </div>
 
   <div class="d-flex justify-content-center gap-3">
     <a href="https://www.aices.rwth-aachen.de/en/academics/masters-program-simulation-sciences" class="btn btn-primary">Program Details</a>

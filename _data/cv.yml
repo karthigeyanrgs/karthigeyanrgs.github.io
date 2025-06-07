@@ -55,6 +55,48 @@
         - Increased team productivity by 30% through system improvements
         - "Technologies: Kubernetes, Bazel, Poetry, Docker, C++, Python, Make, Unix, Bash"
 
+    - title: Head of Growth & Customer Success Engineer
+      institution: Gradly
+      year: June 2021 - April 2022
+      location: Bengaluru, India
+      description:
+        - Guided prospects through sales funnel achieving 40% activation/retention
+        - Acquired 200+ customers and processed 100+ support tickets
+        - Designed automation reducing manual effort and boosting overall efficiency by 30%
+        - Co-developed insurance backend and knowledge base
+        - Yielded net revenue of $100k+ in sales
+        - "Technologies: Notion, Figma, Linear, Zapier, ParseHub, Airtable, Canva, Front"
+
+    - title: Course Manager
+      institution: Flourish By Design
+      year: April 2022 - June 2022
+      location: Bengaluru, India
+      description:
+        - Onboarded and regulated 45+ cohort participants with 60% active participation
+        - Developed robust system to monitor and track tasks effectively
+        - Facilitated engaging live sessions with 25+ average attendance
+        - "Technologies: Notion, Maven, MailerLite, WordPress"
+
+    - title: Community Manager
+      institution: More Time Everyday
+      year: January 2022 - March 2022
+      location: Bengaluru, India
+      description:
+        - Managed onboarding of 25+ participants with 50% active community participation
+        - Orchestrated content pipeline with 30% platform stickiness
+        - Increased participant engagement by 60% during live sessions
+        - "Technologies: Notion, Circle, Canva, Airtable"
+
+    - title: Community and Growth Manager
+      institution: Admitted
+      year: April 2021 - January 2022
+      location: Bengaluru, India
+      description:
+        - Supported community of 1350+ aspirants with 100+ successful admissions per cycle
+        - Enhanced backend system performance by 70%
+        - Optimized member acquisition through paid ads and strategic partnerships
+        - "Technologies: Notion, Zapier, Figma, Airtable"
+
     - title: Research Assistant
       institution: Institute for Aerodynamics and Fluid Mechanics, RWTH Aachen
       year: Oct 2018 - Mar 2019
@@ -72,6 +114,26 @@
         - Implemented data fitting models for 250,000+ data points
         - Analyzed unemployment data from Luxembourg Information Centre
         - "Technologies: Matlab, Python, Seaborn, Numpy"
+
+    - title: Research Intern
+      institution: Heat Transfer Lab, Indian Institute of Technology Guwahati
+      year: June 2016 - July 2016
+      location: Guwahati, India
+      description:
+        - Worked on heat recovery and utilization systems
+        - Modeled porous media with 100 pores using COMSOL
+        - Assisted with solar air dryer experiments using LabView
+        - "Technologies: COMSOL, Python, LabView"
+
+    - title: Intern
+      institution: Devi Polymers Pvt. Ltd.
+      year: June 2015 - July 2015
+      location: Chennai, India
+      description:
+        - Trained on shop floor equipment including lathe, grinding, CNC, and drilling machines
+        - Learned quality control and polishing techniques
+        - Worked with 400-tonne hydraulic presses and injection molding
+        - Manufactured molds to specification
 
 - title: Projects
   type: time_table

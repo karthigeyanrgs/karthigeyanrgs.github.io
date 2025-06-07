@@ -37,6 +37,56 @@
     - Unix
     - Bash
 
+- title: Head of Growth & Customer Success Engineer
+  company: Gradly
+  period: June 2021 - April 2022
+  description: Guided sales funnel achieving 40% activation/retention, acquired 200+ customers, and yielded $100k+ in sales. Designed automation boosting efficiency by 30% and co-developed insurance backend.
+  skills:
+    - Notion
+    - Figma
+    - Linear
+    - Zapier
+    - ParseHub
+    - Airtable
+    - Canva
+    - Front
+
+- title: Course Manager
+  company: Flourish By Design
+  period: April 2022 - June 2022
+  description: Onboarded 45+ cohort participants achieving 60% active participation. Developed robust task tracking system and facilitated live sessions with 25+ average attendance.
+  skills:
+    - Notion
+    - Maven
+    - MailerLite
+    - WordPress
+    - Community Management
+    - Project Management
+
+- title: Community Manager
+  company: More Time Everyday
+  period: January 2022 - March 2022
+  description: Managed 25+ participants achieving 50% active participation. Orchestrated content pipeline with 30% platform stickiness and increased engagement by 60%.
+  skills:
+    - Notion
+    - Circle
+    - Canva
+    - Airtable
+    - Community Management
+    - Content Strategy
+
+- title: Community and Growth Manager
+  company: Admitted
+  period: April 2021 - January 2022
+  description: Supported 1350+ aspirants community with 100+ successful admissions per cycle. Enhanced backend performance by 70% and optimized member acquisition through strategic partnerships.
+  skills:
+    - Notion
+    - Zapier
+    - Figma
+    - Airtable
+    - Community Management
+    - Growth Strategy
+
 - title: Research Assistant
   company: Institute for Aerodynamics and Fluid Mechanics, RWTH Aachen
   period: Oct 2018 - Mar 2019
@@ -58,4 +108,26 @@
     - Python
     - Seaborn
     - Numpy
-    - Data Analysis 
+    - Data Analysis
+
+- title: Research Intern
+  company: Heat Transfer Lab, Indian Institute of Technology Guwahati
+  period: June 2016 - July 2016
+  description: Worked on heat recovery systems, modeled porous media with 100 pores using COMSOL, and assisted with solar air dryer experiments using LabView.
+  skills:
+    - COMSOL
+    - Python
+    - LabView
+    - Heat Transfer
+    - Experimental Methods
+
+- title: Intern
+  company: Devi Polymers Pvt. Ltd.
+  period: June 2015 - July 2015
+  description: Trained on manufacturing equipment including lathe, CNC, and drilling machines. Learned quality control, worked with 400-tonne hydraulic presses, and manufactured molds to specification.
+  skills:
+    - Manufacturing
+    - Quality Control
+    - CNC Operation
+    - Injection Molding
+    - Industrial Equipment 
