@@ -1,6 +1,114 @@
 # Frequently Asked Questions
 
+<style>
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--global-text-color);
+}
+
+.faq-toc {
+  background: var(--global-code-bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border: 1px solid var(--global-divider-color);
+}
+
+.faq-toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.faq-toc li {
+  margin: 0.75rem 0;
+}
+
+.faq-toc a {
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.faq-toc a:hover {
+  color: var(--global-theme-color);
+}
+
+.faq-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--global-bg-color);
+  border-radius: 8px;
+  border: 1px solid var(--global-divider-color);
+}
+
+.faq-section h3 {
+  color: var(--global-theme-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--global-theme-color);
+}
+
+.faq-section p {
+  color: var(--global-text-color);
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.faq-section code {
+  background: var(--global-code-bg-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  color: var(--global-theme-color);
+}
+
+.faq-section pre {
+  background: var(--global-code-bg-color);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--global-divider-color);
+}
+
+.faq-section pre code {
+  color: var(--global-text-color);
+  background: none;
+  padding: 0;
+}
+
+.faq-section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid var(--global-divider-color);
+}
+
+.faq-section a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.faq-section a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 2rem 0;
+}
+</style>
+
+<div class="faq-container">
+
 Here are some frequently asked questions. If you have a different question, please check if it was not already answered in the Q&A section of the [GitHub Discussions](https://github.com/alshedivat/al-folio/discussions/categories/q-a). If not, feel free to ask a new question there.
+
+<div class="faq-toc">
+
+## Table of Contents
 
 - [After I create a new repository from this template and setup the repo, I get a deployment error. Isn't the website supposed to correctly deploy automatically?](#after-i-create-a-new-repository-from-this-template-and-setup-the-repo-i-get-a-deployment-error-isnt-the-website-supposed-to-correctly-deploy-automatically)
 - [I am using a custom domain (e.g., `foo.com`). My custom domain becomes blank in the repository settings after each deployment. How do I fix that?](#i-am-using-a-custom-domain-eg-foocom-my-custom-domain-becomes-blank-in-the-repository-settings-after-each-deployment-how-do-i-fix-that)
@@ -16,25 +124,33 @@ Here are some frequently asked questions. If you have a different question, plea
 - [How can I update Font Awesome version on the template](#how-can-i-update-font-awesome-version-on-the-template)
 - [What do all these GitHub actions/workflows mean?](#what-do-all-these-github-actionsworkflows-mean)
 
----
+</div>
+
+<div class="faq-section">
 
 ### After I create a new repository from this template and setup the repo, I get a deployment error. Isn't the website supposed to correctly deploy automatically?
 
 Yes, if you are using release `v0.3.5` or later, the website will automatically and correctly re-deploy right after your first commit. Please make some changes (e.g., change your website info in `_config.yml`), commit, and push. Make sure to follow [deployment instructions](https://github.com/alshedivat/al-folio#deployment). (Relevant issue: [209](https://github.com/alshedivat/al-folio/issues/209#issuecomment-798849211).)
 
----
+</div>
+
+<div class="faq-section">
 
 ### I am using a custom domain (e.g., `foo.com`). My custom domain becomes blank in the repository settings after each deployment. How do I fix that?
 
 You need to add `CNAME` file to the `main` or `source` branch of your repository. The file should contain your custom domain name. (Relevant issue: [130](https://github.com/alshedivat/al-folio/issues/130).)
 
----
+</div>
+
+<div class="faq-section">
 
 ### My webpage works locally. But after deploying, it fails to build and throws `Unknown tag 'toc'`. How do I fix that?
 
 Make sure you followed through the [deployment instructions](#deployment) in the previous section. You should have set the deployment branch to `gh-pages`. (Related issue: [1438](https://github.com/alshedivat/al-folio/issues/1438).)
 
----
+</div>
+
+<div class="faq-section">
 
 ### My webpage works locally. But after deploying, it is not displayed correctly (CSS and JS are not loaded properly). How do I fix that?
 
@@ -48,13 +164,17 @@ make sure to correctly specify the `url` and `baseurl` paths in `_config.yml`. S
 - clean your browser history
 - simply try it in a private session, here's how to do it in [Chrome](https://support.google.com/chrome/answer/95464) and [Firefox](https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history)
 
----
+</div>
+
+<div class="faq-section">
 
 ### Atom feed doesn't work. Why?
 
 Make sure to correctly specify the `url` and `baseurl` paths in `_config.yml`. RSS Feed plugin works with these correctly set up fields: `title`, `url`, `description` and `author`. Make sure to fill them in an appropriate way and try again.
 
----
+</div>
+
+<div class="faq-section">
 
 ### My site doesn't work when I enable `related_blog_posts`. Why?
 

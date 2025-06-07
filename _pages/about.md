@@ -19,21 +19,23 @@ profile:
 news: false
 selected_papers: false
 social: true
+---
 
+<style>
 .profile {
   width: 100%;
-  margin-bottom: 3rem;  /* Add margin to create space between profile and content */
+  margin-bottom: 3rem;
+}
 
-  .more-info {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+.profile .more-info {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: monospace;
+}
 
-    p {
-      display: inline-block;
-      margin: 0;
-    }
-  }
+.profile .more-info p {
+  display: inline-block;
+  margin: 0;
 }
 
 .profile.float-right {
@@ -47,117 +49,57 @@ social: true
 @media (min-width: 576px) {
   .profile {
     width: 30%;
-    
-    .address {
-      p {
-        display: block;
-      }
-    }
+  }
+  .profile .address p {
+    display: block;
   }
 }
 
-/* Clear the float after profile section */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* Add margin to the first section after profile */
 .section:first-of-type {
   margin-top: 2rem;
 }
 
-/* Ensure content flows properly */
 .content {
   clear: both;
 }
----
 
-<div class="row">
-  <div class="col-12 col-lg-8">
-    <!-- Introduction Section -->
-    <div class="section">
-      <h2 class="section-title">Introduction</h2>
-      <p>Vanakkam 🙏 (Greetings in Tamil),</p>
-      
-      <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
-      
-      <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
-    </div>
+.section {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: var(--global-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-    <!-- Current Work Section -->
-    <div class="section">
-      <h2 class="section-title">Current Focus</h2>
-      <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
-    </div>
+.section-title {
+  color: var(--global-theme-color);
+  margin-bottom: 1.5rem;
+}
 
-    {% comment %}
-    <!-- Testimonials Section -->
-    <div class="section">
-      <h2 class="section-title">What Others Say</h2>
-      
-      <div class="quote">
-        <p>"Someone who is reliable, generous, kind, intellectually honest, welcoming and accepting, curious about new things, and simply someone who <strong>cares</strong>. That last bit is so rare these days -- not just in caring about the people you work with, but caring about the details of what you do and how you do it. You're emotionally intelligent and empathetic. Two of the finest virtues. 🙂"</p>
-        <p class="quote-author">- Rishabh</p>
-      </div>
+.list-styled {
+  list-style-type: none;
+  padding-left: 0;
+}
 
-      <div class="quote">
-        <p>"Karthig, you are such a pure human being. Of the time that I've had the pleasure of knowing you, I've seen nothing but goodness and curiosity and kindness in you (and little bit of nervousness too haha!). You amaze me every week as we work together with your work ethic, proactiveness and ability to learn fast."</p>
-        <p class="quote-author">- Soundarya</p>
-      </div>
-    </div>
-    {% endcomment %}
+.list-styled li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
 
-    <!-- Terminal Interface -->
-    <div class="terminal-container">
-      <div class="terminal-header">
-        <div class="terminal-button terminal-close"></div>
-        <div class="terminal-button terminal-minimize"></div>
-        <div class="terminal-button terminal-maximize"></div>
-        <span class="terminal-title">kgs@portfolio ~ </span>
-      </div>
-      <div class="terminal-content">
-        <div class="terminal-history"></div>
-        <div class="terminal-line">
-          <span class="terminal-prompt">$ </span>
-          <input type="text" class="terminal-input" autofocus placeholder="Type a command..." />
-        </div>
-      </div>
-    </div>
+.list-styled li:before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--global-theme-color);
+}
 
-    <!-- Personal Traits Section -->
-    <div class="section">
-      <h2 class="section-title">Personal Traits</h2>
-      <ul class="list-styled">
-        <li>I find peace in solitude - one's mind is one's greatest company</li>
-        <li>I'm an active listener who values thoughtful communication</li>
-        <li>Writing is my preferred medium of expression</li>
-        <li>I maintain healthy boundaries and respect others' privacy</li>
-        <li>My curiosity is driven more by internal reflection than external validation</li>
-        <li>Nature brings out my most calm and composed self</li>
-        <li>I cherish memories above material possessions</li>
-        <li>I approach challenges with humor while staying neutral on political and religious matters</li>
-      </ul>
-    </div>
-
-    <!-- Principles Section -->
-    <div class="section">
-      <h2 class="section-title">Core Principles</h2>
-      <ul class="list-styled">
-        <li>Vegetarian lifestyle</li>
-        <li>Value punctuality and others' time</li>
-        <li>Practice mindful communication both online and offline</li>
-        <li>Reflect deeply on the consequences of my actions</li>
-        <li>Share only positive and constructive content on social media</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-{% include common_styles.liquid %}
-
-<style>
 .terminal-container {
   background: #1e1e1e;
   border-radius: 8px;
@@ -197,182 +139,87 @@ social: true
 .terminal-content {
   font-size: 14px;
   line-height: 1.6;
-  position: relative;
-}
-
-.terminal-banner {
-  margin-bottom: 1rem;
-  animation: fadeIn 1s ease-in;
-}
-
-.terminal-welcome {
-  margin-bottom: 1.5rem;
-  animation: slideIn 1s ease-out;
 }
 
 .terminal-prompt {
   color: #00ff00;
 }
 
-.terminal-command {
-  color: #fff;
-}
-
-.terminal-output {
-  color: #888;
-  margin: 10px 0;
-  display: none;
-}
-
-.command-list {
-  color: #fff;
-  margin: 15px 0;
-  padding-left: 20px;
-}
-
-.command-list dt {
-  color: #00ff00;
-  margin-top: 12px;
-  font-weight: bold;
-}
-
-.command-list dd {
-  color: #888;
-  margin-left: 20px;
-  margin-bottom: 8px;
-}
-
-.section {
-  margin: 2.5rem 0;
-  padding: 1.5rem;
-  background: var(--global-bg-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border: 1px solid var(--global-divider-color);
-}
-
-.section-title {
-  color: var(--global-text-color);
-  border-bottom: 2px solid var(--global-theme-color);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.quote {
-  border-left: 4px solid var(--global-theme-color);
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
-  background: var(--global-code-bg-color);
-  border-radius: 0 8px 8px 0;
-}
-
-.quote p {
-  color: var(--global-text-color);
-  margin: 0;
-}
-
-.quote-author {
-  color: var(--global-text-color-light);
-  font-style: italic;
-  margin-top: 0.5rem;
-  text-align: right;
-}
-
-.list-styled {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.list-styled li {
-  margin: 0.8rem 0;
-  padding-left: 1.5rem;
-  position: relative;
-  color: var(--global-text-color);
-}
-
-.list-styled li:before {
-  content: "•";
-  color: var(--global-theme-color);
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-}
-
 .terminal-input {
   background: transparent;
   border: none;
   color: #fff;
-  font-family: 'Courier New', monospace;
-  font-size: 14px;
+  font-family: inherit;
+  font-size: inherit;
+  width: 80%;
   outline: none;
-  width: calc(100% - 20px);
-  caret-color: #00ff00;
-}
-
-.terminal-suggestions {
-  display: none;
-  position: absolute;
-  background: #2a2a2a;
-  border: 1px solid #444;
-  border-radius: 4px;
-  max-height: 150px;
-  overflow-y: auto;
-  width: calc(100% - 40px);
-  margin-top: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-
-.suggestion-item {
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.suggestion-item:hover {
-  background-color: #3a3a3a;
-}
-
-.suggestion-item.selected {
-  background-color: #444;
-  color: #00ff00;
-}
-
-.terminal-history {
-  margin-bottom: 15px;
-}
-
-.terminal-line {
-  margin: 5px 0;
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-p {
-  color: var(--global-text-color);
 }
 </style>
+
+<div class="row">
+  <div class="col-12 col-lg-8">
+    <!-- Introduction Section -->
+    <div class="section">
+      <h2 class="section-title">Introduction</h2>
+      <p>Vanakkam 🙏 (Greetings in Tamil),</p>
+      
+      <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
+      
+      <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
+    </div>
+
+    <!-- Current Work Section -->
+    <div class="section">
+      <h2 class="section-title">Current Focus</h2>
+      <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
+    </div>
+
+    <!-- Terminal Interface -->
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <div class="terminal-button terminal-close"></div>
+        <div class="terminal-button terminal-minimize"></div>
+        <div class="terminal-button terminal-maximize"></div>
+        <span class="terminal-title">kgs@portfolio ~ </span>
+      </div>
+      <div class="terminal-content">
+        <div class="terminal-line">
+          <span class="terminal-prompt">$ </span>
+          <input type="text" class="terminal-input" autofocus placeholder="Type a command..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal Traits Section -->
+    <div class="section">
+      <h2 class="section-title">Personal Traits</h2>
+      <ul class="list-styled">
+        <li>I find peace in solitude - one's mind is one's greatest company</li>
+        <li>I'm an active listener who values thoughtful communication</li>
+        <li>Writing is my preferred medium of expression</li>
+        <li>I maintain healthy boundaries and respect others' privacy</li>
+        <li>My curiosity is driven more by internal reflection than external validation</li>
+        <li>Nature brings out my most calm and composed self</li>
+        <li>I cherish memories above material possessions</li>
+        <li>I approach challenges with humor while staying neutral on political and religious matters</li>
+      </ul>
+    </div>
+
+    <!-- Principles Section -->
+    <div class="section">
+      <h2 class="section-title">Core Principles</h2>
+      <ul class="list-styled">
+        <li>Vegetarian lifestyle</li>
+        <li>Value punctuality and others' time</li>
+        <li>Practice mindful communication both online and offline</li>
+        <li>Reflect deeply on the consequences of my actions</li>
+        <li>Share only positive and constructive content on social media</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include common_styles.liquid %}
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

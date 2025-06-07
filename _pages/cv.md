@@ -68,6 +68,68 @@ description: A showcase of my professional journey, skills, and achievements in 
     max-width: 25%;
   }
 }
+
+.cv-section {
+  margin-bottom: 3rem;
+}
+
+.cv-section-title {
+  color: var(--global-theme-color);
+  margin-bottom: 1rem;
+}
+
+.cv-year {
+  color: var(--global-text-color-light);
+}
+
+.table-cv {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.td-left {
+  width: 200px;
+  vertical-align: top;
+  padding-right: 1rem;
+}
+
+.td-right {
+  vertical-align: top;
+}
+
+.cv-subsection-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ul.items {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+ul.items li {
+  margin-bottom: 0.25rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+ul.items li:before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--global-theme-color);
+}
+
+.institution {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
+.location {
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
 </style>
 
 <div class="cv-intro" data-aos="fade-in">
