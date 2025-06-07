@@ -315,7 +315,8 @@ class Terminal {
 
   showWelcome() {
     const welcome = `Welcome to Karthig's Terminal Portfolio! 🚀
-Type 'help' to see available commands.`;
+Type 'help' to see available commands.
+Hint: Try exploring with 'ls' to see available sections, or 'skills' to view my technical expertise.`;
     
     const welcomeDiv = document.createElement('div');
     welcomeDiv.className = 'terminal-line typing';

@@ -8,78 +8,43 @@ cv_pdf: Karthigeyan_Resume_2025_May.pdf
 description: A showcase of my professional journey, skills, and achievements in technology and innovation.
 ---
 
-{% include common_styles.liquid %}
-
 <style>
-/* Custom sidebar styling */
-.col-md-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
+.cv-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.col-xl-2 {
-  flex: 0 0 20%;
-  max-width: 20%;
+.cv-header {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.sidebar {
-  width: 100%;
-  padding: 2rem 1rem;
-  background-color: var(--global-bg-color);
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.cv-header h1 {
+  color: var(--global-theme-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.sidebar ul {
-  font-size: 1.1rem;
-  padding-left: 0;
-}
-
-.sidebar ul li {
-  list-style: none;
-  padding: 0.5rem 0;
-}
-
-.sidebar ul li a {
+.cv-header p {
   color: var(--global-text-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-  color: var(--global-theme-color);
-}
-
-.sidebar .nav-link.active {
-  color: var(--global-theme-color);
-  font-weight: bold;
-}
-
-@media (min-width: 768px) {
-  .col-md-3 {
-    flex: 0 0 30%;
-    max-width: 30%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .col-xl-2 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
+  font-size: 1.2rem;
 }
 
 .cv-section {
   margin-bottom: 3rem;
+  background: var(--global-bg-color);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--global-divider-color);
 }
 
 .cv-section-title {
   color: var(--global-theme-color);
-  margin-bottom: 1rem;
-}
-
-.cv-year {
-  color: var(--global-text-color-light);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--global-theme-color);
 }
 
 .table-cv {
@@ -91,77 +56,90 @@ description: A showcase of my professional journey, skills, and achievements in 
   width: 200px;
   vertical-align: top;
   padding-right: 1rem;
+  color: var(--global-text-color);
 }
 
 .td-right {
   vertical-align: top;
+  color: var(--global-text-color);
 }
 
-.cv-subsection-title {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-ul.items {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 0.5rem;
-}
-
-ul.items li {
-  margin-bottom: 0.25rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-ul.items li:before {
-  content: "•";
-  position: absolute;
-  left: 0.5rem;
-  color: var(--global-theme-color);
+.cv-year {
+  color: var(--global-text-color-light);
+  font-weight: 500;
 }
 
 .institution {
   color: var(--global-text-color);
   font-weight: 500;
+  margin: 0.5rem 0;
 }
 
 .location {
   color: var(--global-text-color-light);
   font-style: italic;
 }
+
+.items {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.items li {
+  color: var(--global-text-color);
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.items li:before {
+  content: "•";
+  color: var(--global-theme-color);
+  position: absolute;
+  left: 0.5rem;
+}
+
+.cv-footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.download-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: var(--global-hover-color);
+  text-decoration: none;
+}
+
+.cv-subsection {
+  margin-top: 2rem;
+}
+
+.cv-subsection-title {
+  color: var(--global-text-color);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
 </style>
 
-<div class="cv-intro" data-aos="fade-in">
-  <div class="intro-text">
-    <h1 class="typing-text">Discover my journey,<br>a story of passion and innovation,<br>crafted through code and creativity</h1>
-    <button class="start-experience" onclick="startCVExperience()">
-      Start the Experience
-      <i class="fas fa-arrow-right"></i>
-    </button>
+<div class="cv-container">
+  <div class="cv-header">
+    <h1>Curriculum Vitae</h1>
+    <p>{{ page.description }}</p>
   </div>
-  
-  <div class="parallax-elements">
-    <div class="code-element" data-depth="0.2">
-      <pre><code>while(true) { 
-  learn();
-  create();
-  innovate();
-}</code></pre>
-    </div>
-    <div class="tech-stack" data-depth="0.4">
-      <i class="fab fa-python"></i>
-      <i class="fab fa-cpp"></i>
-      <i class="fab fa-linux"></i>
-      <i class="fab fa-docker"></i>
-    </div>
-    <div class="design-elements" data-depth="0.6">
-      <svg class="circuit-paths"></svg>
-    </div>
-  </div>
-</div>
 
-<div class="cv-content" style="display: none;">
   <div class="cv">
     {% for section in site.data.cv %}
       <div class="cv-section">
@@ -180,7 +158,7 @@ ul.items li:before {
             {% assign positions = section.contents | reverse %}
             {% for content in positions %}
               <tr>
-                <td class="td-left" style="width: 160px">
+                <td class="td-left">
                   {% if content.year %}
                     <span class="cv-year">{{ content.year }}</span>
                   {% endif %}
@@ -229,46 +207,3 @@ ul.items li:before {
     </div>
   </div>
 </div>
-
-<script>
-function startCVExperience() {
-  document.querySelector('.cv-intro').style.transform = 'translateY(-100vh)';
-  document.querySelector('.cv-intro').style.opacity = '0';
-  
-  setTimeout(() => {
-    document.querySelector('.cv-intro').style.display = 'none';
-    document.querySelector('.cv-content').style.display = 'block';
-    AOS.refresh();
-  }, 1000);
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  const svg = document.querySelector('.circuit-paths');
-  createCircuitPaths(svg);
-  
-  const scene = document.querySelector('.parallax-elements');
-  const parallax = new Parallax(scene);
-  
-  const text = document.querySelector('.typing-text');
-  new TypeIt(text, {
-    speed: 50,
-    waitUntilVisible: true
-  }).go();
-});
-
-function createCircuitPaths(svg) {
-  const paths = [
-    'M10,10 L50,10 L50,50 L90,50',
-    'M10,90 L50,90 L50,50 L90,50',
-    'M50,10 L50,90',
-    'M10,50 L90,50'
-  ];
-  
-  paths.forEach(d => {
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', d);
-    path.classList.add('circuit-path');
-    svg.appendChild(path);
-  });
-}
-</script>
