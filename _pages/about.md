@@ -11,13 +11,10 @@ profile:
   image: profile.jpg
   image_circular: false
   more_info: >
-    <p>Karthigeyan Ganesh Shankar</p>
-
-    <p>Lead Engineer - Autonomy @ Ati Motors</p>
-
-    <p>Master's in Simulation Sciences</p>
-
-    <p>RWTH Aachen, Germany</p>
+    Karthigeyan Ganesh Shankar<br>
+    Lead Engineer - Autonomy @ Ati Motors<br>
+    Master's in Simulation Sciences<br>
+    RWTH Aachen, Germany<br>
 
 news: false
 selected_papers: false

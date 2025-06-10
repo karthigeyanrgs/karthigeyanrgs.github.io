@@ -243,6 +243,10 @@ description: A showcase of my professional journey, skills, and achievements in 
   margin-bottom: 1.5rem;
 }
 
+#current-roles, #previous-roles, #early-career {
+  margin-bottom: 2.5rem;
+}
+
 .experience-item {
   border-bottom: 1px solid var(--global-divider-color);
   padding-bottom: 1.5rem;

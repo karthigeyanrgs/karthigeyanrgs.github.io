@@ -53,37 +53,6 @@ horizontal: false
 }
 </style>
 
-<!-- Latest Posts Preview Section -->
-<div class="latest-posts mb-5">
-  <h2>Latest Posts</h2>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    {%- assign latest_posts = site.posts | sort: "date" | reverse | limit: 3 %}
-    {%- for post in latest_posts %}
-    <div class="col mb-4">
-      <div class="card h-100 rounded-3 shadow-sm hoverable">
-        {%- if post.coverImage %}
-        <img src="{{ '/assets/img/posts/' | append: post.coverImage | relative_url }}" class="card-img-top rounded-top" alt="post cover image" style="height: 200px; object-fit: cover;">
-        {%- endif %}
-        <div class="card-body">
-          <h3 class="card-title">{{ post.title }}</h3>
-          <p class="card-text">{{ post.description }}</p>
-          <div class="row ml-1 mr-1 p-0">
-            <div class="post-meta">
-              <i class="fas fa-calendar fa-sm"></i> {{ post.date | date: '%B %d, %Y' }}
-            </div>
-          </div>
-          <div class="row ml-1 mr-1 p-0">
-            <div class="btn-group">
-              <a href="{{ post.url | relative_url }}" class="btn btn-sm z-depth-0 rounded-pill" role="button">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {%- endfor %}
-  </div>
-</div>
-
 <hr class="mb-5">
 
 <!-- All Posts by Category -->
