@@ -1,11 +1,11 @@
 # Example photo entries - replace with your own photos
 
-- image: gallery/IMG_8756.JPG
+- image: IMG_8756.JPG
   caption: Unforgettable experience
   location: Berlin, Germany
   year: 2020
 
-- image: gallery/IMG_8757.jpg
+- image: IMG_8757.jpg
   caption: Unforgettable experience
   location: Berlin, Germany
   year: 2020

@@ -48,7 +48,7 @@ description: Ways to get in touch with me
 
 ## Get in Touch
 
-I'm always open to interesting conversations and collaborations. Feel free to reach out through any of the following channels:
+I'm always open to interesting conversations and collaborations. I am very social media averse, guarding my attention towards deep work. Feel free to reach out through any of the following channels but I would like to pre-emptively ask for an apology for a delayed response:
 
 <div class="contact-section">
   <h3>Social Media</h3>
@@ -101,9 +101,7 @@ I value clear and meaningful communication. When reaching out:
   <h3>Response Time</h3>
   <ul style="list-style-type: none; padding-left: 0;">
     <li><i class="fas fa-clock"></i> 24-48 hours for emails</li>
-    <li><i class="fas fa-comments"></i> 1-2 days for social media messages</li>
+    <li><i class="fas fa-comments"></i> 3-4 days for social media messages</li>
     <li><i class="fas fa-bolt"></i> Same day for urgent professional matters</li>
   </ul>
 </div>
-
-Looking forward to connecting with you!

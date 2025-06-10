@@ -4,7 +4,7 @@ permalink: /skills/
 title: Skills
 description: A comprehensive overview of my technical and professional skills.
 nav: true
-nav_order: 7
+nav_order: 5
 ---
 
 {% include common_styles.liquid %}

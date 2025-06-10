@@ -11,9 +11,12 @@ profile:
   image: profile.jpg
   image_circular: false
   more_info: >
-    <p>Karthigeyan Ganesh Shankar </p>
-    <p>Lead Engineer - Autonomy @ Ati Motors </p>
+    <p>Karthigeyan Ganesh Shankar</p>
+
+    <p>Lead Engineer - Autonomy @ Ati Motors</p>
+
     <p>Master's in Simulation Sciences</p>
+
     <p>RWTH Aachen, Germany</p>
 
 news: false
@@ -28,12 +31,12 @@ social: true
       <span class="terminal-button minimize"></span>
       <span class="terminal-button maximize"></span>
     </div>
-    <div class="terminal-title">visitor@portfolio:~$</div>
+    <div class="terminal-title">Friend@Shire:~$</div>
   </div>
   <div class="terminal-content" id="terminal">
-    <div class="terminal-line">Welcome! Here are the available commands:</div>
+    <div class="terminal-line">Welcome to the Terminal! Here are the available commands:</div>
     <div class="terminal-line">
-  about     - Learn more about me
+  about     - Learn about me in short
   skills    - View my technical skills
   contact   - Get my contact information
   projects  - View my notable projects
@@ -41,7 +44,7 @@ social: true
   help      - Show this help message</div>
     <div class="terminal-line">$ help</div>
     <div class="terminal-line">Available commands:
-  about     - Learn more about me
+  about     - Learn more about me in short
   skills    - View my technical skills
   contact   - Get my contact information
   projects  - View my notable projects
@@ -186,20 +189,23 @@ social: true
 
 .terminal-content {
   padding: 1rem;
-  color: #fff;
+  color: #e0e0e0;
   font-family: monospace;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
   min-height: 200px;
+  background: #2d2d2d;
 }
 
 .terminal-line {
   margin: 0.5rem 0;
   white-space: pre-wrap;
+  color: #e0e0e0;
 }
 
 .terminal-input {
   margin-left: 0.5rem;
+  color: #fff;
 }
 
 @keyframes blink {
@@ -223,6 +229,21 @@ social: true
 .terminal-line.info {
   color: #ffbd2e;
 }
+
+/* Dark mode specific styles */
+@media (prefers-color-scheme: dark) {
+  .terminal-container {
+    background: #1a1a1a;
+  }
+  
+  .terminal-header {
+    background: #2d2d2d;
+  }
+  
+  .terminal-content {
+    background: #1a1a1a;
+  }
+}
 </style>
 
 <script>
@@ -235,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const commands = {
     help: () => `Available commands:
-  about     - Learn more about me
+  about     - Learn more about me in short
   skills    - View my technical skills
   contact   - Get my contact information
   projects  - View my notable projects
@@ -247,21 +268,22 @@ Lead Engineer - Autonomy @ Ati Motors
 Specializing in Reinforcement Learning, Robotics, and Simulation`,
     
     skills: () => `Technical Skills:
-• Reinforcement Learning
-• Nvidia Isaac Sim & Jetson
-• VSLAM
-• Foundational Models
-• Robotics & Automation`,
+• Simulations
+• Nvidia Isaac Sim
+• Operating systems
+• Computer vision models
+• Docker and Kubernetes`,
     
     contact: () => `Email: karthigeyan.gs@gmail.com
 LinkedIn: linkedin.com/in/karthigeyan-ganesh-shankar
 GitHub: github.com/karthigeyanrgs`,
     
     projects: () => `Notable Projects:
-1. Autonomous Mobile Robot Development
-2. Digital Twin Creation using Isaac Sim
-3. RL-based Robot Control Systems
-4. VSLAM Implementation for Navigation`,
+1. 3D reconstruction methods - VGGT, Mast3R, Fast3R, Nerf models
+2. Isaac Sim highly fidel representations
+3. Migration from Monolithic to Microservices
+4. VSLAM Implementation for Lidar free navigation
+5. Upgrading the operating system with custom dts`,
     
     clear: () => {
       const welcomeLine = document.createElement('div');
@@ -345,17 +367,32 @@ GitHub: github.com/karthigeyanrgs`,
   <!-- Introduction Section -->
   <div class="section">
     <h2 class="section-title">Introduction</h2>
-    <p>Vanakkam 🙏 (Greetings in Tamil),</p>
+    <p><strong>Vanakkam</strong> 🙏 (<em>Greetings in Tamil</em>),</p>
     
-    <p>I started with core mechanical disciplines, finding my foot in fluid simulations with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing kinetic equations (mesoscopic) for unemployment using transport equations.</p>
+    <p>I started my professional journey with <strong>core mechanical disciplines</strong>, finding my foot in <em>fluid simulations</em> with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing <strong>kinetic equations</strong> (<em>mesoscopic</em>) for unemployment using transport equations as my master's thesis.</p>
     
-    <p>My journey took an unexpected turn as I explored non-technical roles - from Community and Growth Manager to Customer Success Engineer, eventually becoming the Head of Growth. After a year of valuable experience, I found my true calling at Ati Motors, where I pursue my passion for advancing technology to benefit humanity.</p>
+    <p>My journey took an unexpected turn as I explored <em>non-technical roles</em> - from <strong>Community and Growth Manager</strong> to <strong>Customer Success Engineer</strong>, eventually becoming the <strong>Head of Growth</strong>. After a year of valuable experience, I found my true calling at <strong>Ati Motors</strong>, where I pursue my passion for advancing technology to benefit humanity. I have worked on different technical verticals at Ati: </p>
+
+    <ul class="list-styled">
+      <li>Create a <strong>clean simulation-first</strong> software validation and regression framework.</li>
+      
+      <li>Develop an <strong>end-to-end operating system</strong> upgradation framework for our custom ARM machines based off <em>Nvidia Jetson SoM</em>.</li>
+      
+      <li>Integrate several <em>auxillary devices and peripherals</em> (<strong>CAN, HMI, Load Cell</strong>) with the robot all the way to a <strong>decentralised decision-making</strong> fleet management system.</li>
+      
+      <li>Mature the <strong>Isaac Sim pipeline</strong> to cleanly integrate with Ati's stack and help accelerate the software development and validation cycles.</li>
+      
+      <li>Kickstart the thread on <strong>General navigation models</strong> which are foundational and pave the way to <em>VSLAM methods</em>.</li>
+    </ul>
+
   </div>
 
   <!-- Current Work Section -->
   <div class="section">
     <h2 class="section-title">Current Focus</h2>
     <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
+
+    <p>Parallely, I have been involved in concentrated research efforts to create millimeter accuracy reconstructions of warehouse environments and integrate SOTA visual SLAM algorithms.</p>
   </div>
 
   <!-- Personal Traits Section -->
@@ -372,7 +409,7 @@ GitHub: github.com/karthigeyanrgs`,
       <li>I approach challenges with humor while staying neutral on political and religious matters</li>
     </ul>
   </div>
-
+  
   <!-- Principles Section -->
   <div class="section">
     <h2 class="section-title">Core Principles</h2>

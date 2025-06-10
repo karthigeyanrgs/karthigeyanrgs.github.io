@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 description: A collection of my thoughts, experiences, and adventures
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [Technical, Non-technical]
 horizontal: false
 ---
@@ -41,6 +41,15 @@ horizontal: false
 .card {
   height: 100%;
   margin: 0;
+}
+
+/* Category styling */
+.category {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--global-theme-color);
+  color: var(--global-theme-color);
 }
 </style>
 
@@ -85,10 +94,10 @@ horizontal: false
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {%- if category == "Non-technical" %}
-    {%- assign categorized_posts = site.posts | where_exp: "post", "post.category == 'life' or post.category == 'research'" %}
-  {%- else %}
-    {%- assign categorized_posts = site.posts | where: "category", "tech" %}
+  {%- if category == "Technical" %}
+    {%- assign categorized_posts = site.posts | where: "categories", "technical" %}
+  {%- elsif category == "Non-technical" %}
+    {%- assign categorized_posts = site.posts | where: "categories", "life" %}
   {%- endif %}
   {%- assign sorted_posts = categorized_posts | sort: "date" | reverse %}
   <div class="row row-cols-1 row-cols-md-3 g-4">

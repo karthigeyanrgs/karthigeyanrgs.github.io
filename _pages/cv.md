@@ -3,7 +3,7 @@ layout: cv
 permalink: /cv/
 title: CV
 nav: true
-nav_order: 5
+nav_order: 2
 cv_pdf: Karthigeyan_Resume_2025_May.pdf
 description: A showcase of my professional journey, skills, and achievements in technology and innovation.
 ---
@@ -241,6 +241,16 @@ description: A showcase of my professional journey, skills, and achievements in 
 
 .info-item, .education-item, .experience-item, .project-item {
   margin-bottom: 1.5rem;
+}
+
+.experience-item {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
 }
 
 .period {
