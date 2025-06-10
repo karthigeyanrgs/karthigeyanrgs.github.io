@@ -11,9 +11,9 @@ profile:
   image: profile.jpg
   image_circular: false
   more_info: >
-    Karthigeyan Ganesh Shankar<br>
-    Lead Engineer - Autonomy @ Ati Motors<br>
-    Master's in Simulation Sciences<br>
+    <b>Karthigeyan Ganesh Shankar</b><br>
+    <b><i>Lead Engineer - Autonomy @ Ati Motors</i></b><br>
+    <i>Master's in Simulation Sciences</i><br>
     RWTH Aachen, Germany<br>
 
 news: false
@@ -32,13 +32,6 @@ social: true
   </div>
   <div class="terminal-content" id="terminal">
     <div class="terminal-line">Welcome to the Terminal! Here are the available commands:</div>
-    <div class="terminal-line">
-  about     - Learn about me in short
-  skills    - View my technical skills
-  contact   - Get my contact information
-  projects  - View my notable projects
-  clear     - Clear the terminal
-  help      - Show this help message</div>
     <div class="terminal-line">$ help</div>
     <div class="terminal-line">Available commands:
   about     - Learn more about me in short
@@ -396,14 +389,13 @@ GitHub: github.com/karthigeyanrgs`,
   <div class="section">
     <h2 class="section-title">Personal Traits</h2>
     <ul class="list-styled">
-      <li>I find peace in solitude - one's mind is one's greatest company</li>
-      <li>I'm an active listener who values thoughtful communication</li>
-      <li>Writing is my preferred medium of expression</li>
-      <li>I maintain healthy boundaries and respect others' privacy</li>
-      <li>My curiosity is driven more by internal reflection than external validation</li>
-      <li>Nature brings out my most calm and composed self</li>
-      <li>I cherish memories above material possessions</li>
-      <li>I approach challenges with humor while staying neutral on political and religious matters</li>
+      <li><b>I find peace in solitude</b> – <i>one's mind is one's greatest company</i></li>
+      <li><b>Active listener</b> who values thoughtful communication</li>
+      <li><b>Writing</b> is my preferred medium of expression</li>
+      <li><b>Healthy boundaries</b> and respect for others' privacy</li>
+      <li><b>Curiosity</b> driven more by <i>internal reflection</i> than external validation</li>
+      <li><b>Cherish memories</b> above material possessions</li>
+      <li><b>Approach challenges with humor</b> while staying neutral on political and religious matters</li>
     </ul>
   </div>
   
@@ -411,11 +403,11 @@ GitHub: github.com/karthigeyanrgs`,
   <div class="section">
     <h2 class="section-title">Core Principles</h2>
     <ul class="list-styled">
-      <li>Vegetarian lifestyle</li>
-      <li>Value punctuality and others' time</li>
-      <li>Practice mindful communication both online and offline</li>
-      <li>Reflect deeply on the consequences of my actions</li>
-      <li>Share only positive and constructive content on social media</li>
+      <li><b>Vegetarian lifestyle</b></li>
+      <li><b>Value punctuality</b> and others' time</li>
+      <li><b>Practice mindful communication</b> both online and offline</li>
+      <li><b>Reflect deeply</b> on the consequences of my actions</li>
+      <li><b>Share only positive and constructive content</b> on social media</li>
     </ul>
   </div>
 </div>

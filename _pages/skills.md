@@ -238,13 +238,13 @@ nav_order: 5
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <h3>2024-Present</h3>
-          <p>Advanced Robotics & Simulation with Nvidia Isaac</p>
+          <p>Simulations, VSLAM and 3D reconstruction techniques</p>
         </div>
       </div>
       <div class="timeline-item" data-aos="fade-left">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>2022-2023</h3>
+          <h3>2022-2024</h3>
           <p>DevOps & Build System Optimization</p>
         </div>
       </div>

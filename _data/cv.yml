@@ -14,13 +14,20 @@
     - title: Master of Sciences in Simulation Sciences
       institution: RWTH Aachen
       year: Oct 2017 - Mar 2020
+      location: Aachen, Germany
       description:
         - "Coursework: High Performance Computing, High dimensional Probability theory, Stochastic Numeric, Kinetic Description of Interacting Multi-agent Systems"
+        - "Thesis: Kinetic Model on Unemployment"
+        - "Research: Transport Equations, Laminar Pre-Mixed Flame, Socio-economic modelling, Stochastic, High Performance Computing"
 
     - title: Bachelor of Technology in Mechanical Engineering
       institution: SRM University
       year: May 2013 - May 2017
       location: Chennai, India
+      description:
+        - "Coursework:  Fluid & Solid Mechanics, Vibrations, Heat engineering, Computational Fluid Dynamics, Metallurgy, Metrology and Material Science"
+        - "Thesis: Fatigue modelling of Functionally Graded Materials"
+        - "Research: Phase Change Heat Storage, Myoskin powered Prosthetic Arm"
 
 - title: Experience
   type: time_table
@@ -33,7 +40,7 @@
         - Led to widespread adoption of simulation-first development and testing
         - Kick-started the map-free visual navigation models which are generalized and reliable
         - Supported the evaluation of different novel, state-of-the-art VSLAM methods
-        - "Technologies: Nvidia Isaac Sim, Nvidia Warp, Pytorch"
+        - "Skills: Nvidia Isaac Sim, Nvidia Warp, Pytorch"
 
     - title: Senior Autonomy Engineer
       institution: Ati Motors
@@ -43,7 +50,7 @@
         - Spearheading team developing one button press simulation workflow with Nvidia's Isaac Sim
         - Evaluated different OTS carrier boards (Jetson) for bot control
         - Built production ready architecture for bot and fleet manager application
-        - "Technologies: Nvidia Isaac Sim, Kubernetes, Bazel, Python, Make, Unix, Embedded C"
+        - "Skills: Nvidia Isaac Sim, Kubernetes, Bazel, Python, Make, Unix, Embedded C"
 
     - title: Autonomy Engineer
       institution: Ati Motors
@@ -53,7 +60,7 @@
         - Optimized software build systems improving efficiency by 40%
         - Developed software-in-loop (CI/CD) frameworks to automate release process
         - Increased team productivity by 30% through system improvements
-        - "Technologies: Kubernetes, Bazel, Poetry, Docker, C++, Python, Make, Unix, Bash"
+        - "Skills: Kubernetes, Bazel, Poetry, Docker, C++, Python, Make, Unix, Bash"
 
     - title: Head of Growth & Customer Success Engineer
       institution: Gradly
@@ -65,7 +72,7 @@
         - Designed automation reducing manual effort and boosting overall efficiency by 30%
         - Co-developed insurance backend and knowledge base
         - Yielded net revenue of $100k+ in sales
-        - "Technologies: Notion, Figma, Linear, Zapier, ParseHub, Airtable, Canva, Front"
+        - "Skills: Notion, Figma, Linear, Zapier, ParseHub, Airtable, Canva, Front"
 
     - title: Course Manager
       institution: Flourish By Design
@@ -75,27 +82,27 @@
         - Onboarded and regulated 45+ cohort participants with 60% active participation
         - Developed robust system to monitor and track tasks effectively
         - Facilitated engaging live sessions with 25+ average attendance
-        - "Technologies: Notion, Maven, MailerLite, WordPress"
+        - "Skills: Notion, Maven, MailerLite, WordPress"
 
     - title: Community Manager
       institution: More Time Everyday
-      year: January 2022 - March 2022
+      year: Jan 2022 - Mar 2022
       location: Bengaluru, India
       description:
         - Managed onboarding of 25+ participants with 50% active community participation
         - Orchestrated content pipeline with 30% platform stickiness
         - Increased participant engagement by 60% during live sessions
-        - "Technologies: Notion, Circle, Canva, Airtable"
+        - "Skills: Notion, Circle, Canva, Airtable"
 
     - title: Community and Growth Manager
       institution: Admitted
-      year: April 2021 - January 2022
+      year: Apr 2021 - Jan 2022
       location: Bengaluru, India
       description:
         - Supported community of 1350+ aspirants with 100+ successful admissions per cycle
         - Enhanced backend system performance by 70%
         - Optimized member acquisition through paid ads and strategic partnerships
-        - "Technologies: Notion, Zapier, Figma, Airtable"
+        - "Skills: Notion, Zapier, Figma, Airtable"
 
     - title: Research Assistant
       institution: Institute for Aerodynamics and Fluid Mechanics, RWTH Aachen
@@ -104,7 +111,7 @@
       description:
         - Developed parallel simulations for 1M cells through 24 cores
         - Automated visualization pipeline through Python
-        - "Technologies: C++, Python, ParaView, Unix, Bash, OpenMPI"
+        - "Skills: C++, Python, ParaView, Unix, Bash, OpenMPI"
 
     - title: Research Assistant
       institution: Institute for Geometric and Applied Mathematics, RWTH Aachen
@@ -113,7 +120,7 @@
       description:
         - Implemented data fitting models for 250,000+ data points
         - Analyzed unemployment data from Luxembourg Information Centre
-        - "Technologies: Matlab, Python, Seaborn, Numpy"
+        - "Skills: Matlab, Python, Seaborn, Numpy"
 
     - title: Research Intern
       institution: Heat Transfer Lab, Indian Institute of Technology Guwahati
@@ -123,7 +130,7 @@
         - Worked on heat recovery and utilization systems
         - Modeled porous media with 100 pores using COMSOL
         - Assisted with solar air dryer experiments using LabView
-        - "Technologies: COMSOL, Python, LabView"
+        - "Skills: COMSOL, Python, LabView"
 
     - title: Intern
       institution: Devi Polymers Pvt. Ltd.
