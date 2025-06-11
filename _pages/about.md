@@ -39,12 +39,8 @@ social: true
   contact   - Get my contact information
   projects  - View my notable projects
   clear     - Clear the terminal
-<<<<<<< HEAD
-  help      - Show this help message</div><div class="terminal-line">$ <span class="terminal-input" id="terminal-input"></span><span class="terminal-cursor">█</span></div>
-=======
   help      - Show this help message</div>
     <div class="terminal-line">$ <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false"><span class="terminal-cursor">█</span></div>
->>>>>>> 7f156f5e51aeaae784441cb16c9ae245d9745a8e
   </div>
 </div>
 

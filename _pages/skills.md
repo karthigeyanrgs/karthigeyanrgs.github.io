@@ -17,56 +17,23 @@ nav_order: 5
     <p class="subtitle">A journey through my technical capabilities</p>
   </div>
 
-  <div class="skill-section programming-languages" data-aos="fade-right">
-    <h2><i class="fas fa-code"></i> Programming Languages</h2>
-    <div class="skills-grid">
-      <div class="skill-card" data-aos="zoom-in">
-        <i class="fab fa-python"></i>
-        <h3>Python</h3>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 95%">
-            <span class="skill-percent">95%</span>
+  {% for category in site.data.skills %}
+    <div class="skill-section" data-aos="fade-up">
+      <h2><i class="fas fa-code"></i> {{ category.name }}</h2>
+      <div class="skills-grid">
+        {% for skill in category.items %}
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="{{ forloop.index0 | times: 100 }}">
+            <h3>{{ skill.name }}</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: {{ skill.level }}%">
+                <span class="skill-percent">{{ skill.level }}%</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-        <i class="fas fa-plus-square"></i>
-        <h3>C++</h3>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 90%">
-            <span class="skill-percent">90%</span>
-          </div>
-        </div>
-      </div>
-      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-        <i class="fas fa-calculator"></i>
-        <h3>MATLAB</h3>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 85%">
-            <span class="skill-percent">85%</span>
-          </div>
-        </div>
-      </div>
-      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-        <i class="fas fa-terminal"></i>
-        <h3>Bash</h3>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 80%">
-            <span class="skill-percent">80%</span>
-          </div>
-        </div>
-      </div>
-      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
-        <i class="fas fa-infinity"></i>
-        <h3>Julia</h3>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 75%">
-            <span class="skill-percent">75%</span>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
-  </div>
+  {% endfor %}
 
   <div class="skill-section development-tools" data-aos="fade-left">
     <h2><i class="fas fa-tools"></i> Development Tools</h2>
@@ -153,36 +120,29 @@ nav_order: 5
   <div class="skill-section languages" data-aos="fade-left">
     <h2><i class="fas fa-language"></i> Language Proficiency</h2>
     <div class="language-grid">
-      <div class="language-card native" data-aos="zoom-in">
-        <div class="lang-icon">🇬🇧</div>
-        <h3>English</h3>
-        <span class="lang-level">Native</span>
-        <div class="lang-bar" style="width: 100%"></div>
-      </div>
-      <div class="language-card native" data-aos="zoom-in" data-aos-delay="100">
-        <div class="lang-icon">🇮🇳</div>
-        <h3>Tamil</h3>
-        <span class="lang-level">Native</span>
-        <div class="lang-bar" style="width: 100%"></div>
-      </div>
-      <div class="language-card professional" data-aos="zoom-in" data-aos-delay="200">
-        <div class="lang-icon">🇫🇷</div>
-        <h3>French</h3>
-        <span class="lang-level">Professional</span>
-        <div class="lang-bar" style="width: 70%"></div>
-      </div>
-      <div class="language-card intermediate" data-aos="zoom-in" data-aos-delay="300">
-        <div class="lang-icon">🇮🇳</div>
-        <h3>Hindi</h3>
-        <span class="lang-level">Intermediate</span>
-        <div class="lang-bar" style="width: 60%"></div>
-      </div>
-      <div class="language-card basic" data-aos="zoom-in" data-aos-delay="400">
-        <div class="lang-icon">🇩🇪</div>
-        <h3>German</h3>
-        <span class="lang-level">Basic</span>
-        <div class="lang-bar" style="width: 50%"></div>
-      </div>
+      {% assign languages = site.data.skills | where: "name", "Languages" | first %}
+      {% for lang in languages.items %}
+        {% assign level = lang.level | plus: 0 %}
+        {% if level >= 90 %}
+          {% assign proficiency = "Native" %}
+          {% assign flag = "🇬🇧" %}
+        {% elsif level >= 70 %}
+          {% assign proficiency = "Professional" %}
+          {% assign flag = "🇫🇷" %}
+        {% elsif level >= 50 %}
+          {% assign proficiency = "Intermediate" %}
+          {% assign flag = "🇮🇳" %}
+        {% else %}
+          {% assign proficiency = "Basic" %}
+          {% assign flag = "🇩🇪" %}
+        {% endif %}
+        <div class="language-card {{ proficiency | downcase }}" data-aos="zoom-in" data-aos-delay="{{ forloop.index0 | times: 100 }}">
+          <div class="lang-icon">{{ flag }}</div>
+          <h3>{{ lang.name }}</h3>
+          <span class="lang-level">{{ proficiency }}</span>
+          <div class="lang-bar" style="width: {{ lang.level }}%"></div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 
@@ -298,6 +258,10 @@ nav_order: 5
 </div>
 
 <style>
+html, body {
+  overflow-x: hidden;
+}
+
 .skills-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -305,14 +269,19 @@ nav_order: 5
   color: var(--global-text-color);
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
-.skills-grid {
+.skills-grid,
+.tools-grid,
+.sci-comp-grid,
+.language-grid,
+.expertise-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .skill-category {
@@ -357,9 +326,12 @@ nav_order: 5
     padding: 1rem;
   }
   
-  .skills-grid {
+  .skills-grid,
+  .tools-grid,
+  .sci-comp-grid,
+  .language-grid,
+  .expertise-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
   
   .skill-category {
@@ -590,37 +562,6 @@ nav_order: 5
 .timeline-content p {
   color: var(--global-text-color);
   margin: 0;
-}
-
-/* Grid Layouts */
-.skills-grid,
-.tools-grid,
-.sci-comp-grid,
-.language-grid,
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .skills-container {
-    padding: 1rem;
-    overflow-x: auto;
-  }
-  
-  .skill-section {
-    padding: 1.5rem;
-  }
-  
-  .skills-grid,
-  .tools-grid,
-  .sci-comp-grid,
-  .language-grid,
-  .expertise-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Animations */
