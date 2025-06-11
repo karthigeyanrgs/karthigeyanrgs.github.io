@@ -39,8 +39,7 @@ social: true
   contact   - Get my contact information
   projects  - View my notable projects
   clear     - Clear the terminal
-  help      - Show this help message</div>
-    <div class="terminal-line">$ <span class="terminal-input" id="terminal-input"></span><span class="terminal-cursor">█</span></div>
+  help      - Show this help message</div><div class="terminal-line">$ <span class="terminal-input" id="terminal-input"></span><span class="terminal-cursor">█</span></div>
   </div>
 </div>
 
@@ -380,16 +379,17 @@ GitHub: github.com/karthigeyanrgs`,
   <!-- Current Work Section -->
   <div class="section">
     <h2 class="section-title">Current Focus</h2>
-    <p>I am currently working on bridging the gap between robotics simulations and reality. Using Nvidia Isaac Sim, we are creating highly accurate digital twins of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</p>
-
-    <p>Parallely, I have been involved in concentrated research efforts to create millimeter accuracy reconstructions of warehouse environments and integrate SOTA visual SLAM algorithms.</p>
+    <ul class="list-styled">
+      <li>Working on bridging the gap between <strong>robotics simulations</strong> and <strong>reality</strong>. Using <strong>Nvidia Isaac Sim</strong>, we are creating <em>highly accurate digital twins</em> of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</li>
+      <li>Leading concentrated research efforts to create <strong>millimeter accuracy reconstructions</strong> of warehouse environments and integrate <em>state-of-the-art Visual SLAM algorithms</em> for robust navigation.</li>
+    </ul>
   </div>
 
   <!-- Personal Traits Section -->
   <div class="section">
     <h2 class="section-title">Personal Traits</h2>
     <ul class="list-styled">
-      <li><b>I find peace in solitude</b> – <i>one's mind is one's greatest company</i></li>
+      <li><b>I find peace in solitude during my time off work</b> – after all <i>one's mind is one's greatest company</i></li>
       <li><b>Active listener</b> who values thoughtful communication</li>
       <li><b>Writing</b> is my preferred medium of expression</li>
       <li><b>Healthy boundaries</b> and respect for others' privacy</li>

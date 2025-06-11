@@ -50,6 +50,28 @@ horizontal: false
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--global-theme-color);
   color: var(--global-theme-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-shadow: 0.5px 0.5px 1px rgba(var(--global-theme-color-rgb), 0.2);
+  opacity: 0.95;
+  transition: all 0.2s ease;
+}
+
+.category:hover {
+  opacity: 1;
+  color: var(--global-theme-color);
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 1px rgba(var(--global-theme-color-rgb), 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .category {
+    text-shadow: 0.5px 0.5px 1px rgba(var(--global-theme-color-rgb), 0.4);
+  }
+  
+  .category:hover {
+    text-shadow: 0.5px 0.5px 1px rgba(var(--global-theme-color-rgb), 0.5);
+  }
 }
 </style>
 

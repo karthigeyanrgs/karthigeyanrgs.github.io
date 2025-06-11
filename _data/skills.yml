@@ -52,4 +52,6 @@
     - name: German
       level: 50
     - name: Hindi
-      level: 60 
+      level: 40
+    - name: Kannada
+      level: 40

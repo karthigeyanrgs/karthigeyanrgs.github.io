@@ -303,6 +303,9 @@ nav_order: 5
   margin: 0 auto;
   padding: 2rem;
   color: var(--global-text-color);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .skills-intro {
@@ -545,6 +548,7 @@ nav_order: 5
 @media (max-width: 768px) {
   .skills-container {
     padding: 1rem;
+    overflow-x: auto;
   }
   
   .skill-section {
