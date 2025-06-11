@@ -23,3 +23,27 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+.terminal {
+  &-input {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    caret-color: transparent; /* Hide the default cursor */
+  }
+
+  &-cursor {
+    animation: blink 1s step-end infinite;
+    margin-left: -1px; /* Adjust cursor position */
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
