@@ -203,6 +203,7 @@ social: true
   width: 200px;
   margin: 0;
   padding: 0;
+  margin-left: 0.5rem;
 }
 
 .terminal-input:focus {
