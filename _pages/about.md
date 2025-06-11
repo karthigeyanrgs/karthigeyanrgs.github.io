@@ -40,7 +40,7 @@ social: true
   projects  - View my notable projects
   clear     - Clear the terminal
   help      - Show this help message</div>
-    <div class="terminal-line">$ <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false"><span class="terminal-cursor">█</span></div>
+    <div class="terminal-line">$ <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span></div>
   </div>
 </div>
 
@@ -194,8 +194,19 @@ social: true
 }
 
 .terminal-input {
-  margin-left: 0.5rem;
+  background: transparent;
+  border: none;
   color: #fff;
+  font-family: monospace;
+  font-size: 0.95rem;
+  outline: none;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.terminal-input:focus {
+  outline: none;
 }
 
 @keyframes blink {
@@ -240,10 +251,9 @@ social: true
 document.addEventListener('DOMContentLoaded', function() {
   const terminal = document.getElementById('terminal');
   const input = document.getElementById('terminal-input');
-  let commandHistory = ['help'];  // Initialize with 'help' command
+  let commandHistory = ['help'];
   let historyIndex = commandHistory.length;
   let currentInput = '';
-  let lastTabPress = 0;  // For double-tab detection
 
   const commands = {
     help: () => `Available commands:
@@ -318,48 +328,14 @@ GitHub: github.com/karthigeyanrgs`,
     input.value = '';
   }
 
-  function getAutocompleteSuggestions(partial) {
-    return Object.keys(commands).filter(cmd => 
-      cmd.toLowerCase().startsWith(partial.toLowerCase())
-    );
-  }
-
-  function handleTabCompletion() {
-    const currentTime = new Date().getTime();
-    const partial = input.value.toLowerCase();
-    const suggestions = getAutocompleteSuggestions(partial);
-    
-    if (suggestions.length === 0) {
-      return;
-    }
-    
-    if (suggestions.length === 1) {
-      // Single match - complete it
-      input.value = suggestions[0];
-    } else if (currentTime - lastTabPress < 500) {
-      // Double tab - show all suggestions
-      addLine('Available completions:', 'info');
-      suggestions.forEach(suggestion => {
-        addLine(`  ${suggestion}`, 'info');
-      });
-    }
-    
-    lastTabPress = currentTime;
-  }
-
-  // Test command execution
-  setTimeout(() => {
-    const testCommand = 'about';
-    input.value = testCommand;
-    executeCommand(testCommand);
-  }, 1000);
+  // Focus input when clicking anywhere in terminal
+  terminal.addEventListener('click', () => {
+    input.focus();
+  });
 
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       executeCommand(input.value);
-    } else if (e.key === 'Tab') {
-      e.preventDefault();
-      handleTabCompletion();
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       if (historyIndex > 0) {
@@ -381,6 +357,9 @@ GitHub: github.com/karthigeyanrgs`,
   input.addEventListener('input', () => {
     currentInput = input.value;
   });
+
+  // Focus input on load
+  input.focus();
 });
 </script>
 
