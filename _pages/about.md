@@ -40,7 +40,7 @@ social: true
   projects  - View my notable projects
   clear     - Clear the terminal
   help      - Show this help message</div>
-    <div class="terminal-line">$ <span class="terminal-input" id="terminal-input"></span><span class="terminal-cursor">█</span></div>
+    <div class="terminal-line">$ <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false"><span class="terminal-cursor">█</span></div>
   </div>
 </div>
 
@@ -243,6 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let commandHistory = ['help'];  // Initialize with 'help' command
   let historyIndex = commandHistory.length;
   let currentInput = '';
+  let lastTabPress = 0;  // For double-tab detection
 
   const commands = {
     help: () => `Available commands:
@@ -314,41 +315,71 @@ GitHub: github.com/karthigeyanrgs`,
     }
     historyIndex = commandHistory.length;
     currentInput = '';
-    input.textContent = '';
+    input.value = '';
+  }
+
+  function getAutocompleteSuggestions(partial) {
+    return Object.keys(commands).filter(cmd => 
+      cmd.toLowerCase().startsWith(partial.toLowerCase())
+    );
+  }
+
+  function handleTabCompletion() {
+    const currentTime = new Date().getTime();
+    const partial = input.value.toLowerCase();
+    const suggestions = getAutocompleteSuggestions(partial);
+    
+    if (suggestions.length === 0) {
+      return;
+    }
+    
+    if (suggestions.length === 1) {
+      // Single match - complete it
+      input.value = suggestions[0];
+    } else if (currentTime - lastTabPress < 500) {
+      // Double tab - show all suggestions
+      addLine('Available completions:', 'info');
+      suggestions.forEach(suggestion => {
+        addLine(`  ${suggestion}`, 'info');
+      });
+    }
+    
+    lastTabPress = currentTime;
   }
 
   // Test command execution
   setTimeout(() => {
     const testCommand = 'about';
-    input.textContent = testCommand;
+    input.value = testCommand;
     executeCommand(testCommand);
   }, 1000);
 
-  document.addEventListener('keydown', (e) => {
+  input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-      executeCommand(input.textContent);
+      executeCommand(input.value);
+    } else if (e.key === 'Tab') {
+      e.preventDefault();
+      handleTabCompletion();
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       if (historyIndex > 0) {
         historyIndex--;
-        input.textContent = commandHistory[historyIndex];
+        input.value = commandHistory[historyIndex];
       }
     } else if (e.key === 'ArrowDown') {
       e.preventDefault();
       if (historyIndex < commandHistory.length - 1) {
         historyIndex++;
-        input.textContent = commandHistory[historyIndex];
+        input.value = commandHistory[historyIndex];
       } else {
         historyIndex = commandHistory.length;
-        input.textContent = currentInput;
+        input.value = currentInput;
       }
-    } else if (e.key === 'Backspace') {
-      input.textContent = input.textContent.slice(0, -1);
-      currentInput = input.textContent;
-    } else if (e.key.length === 1) {
-      input.textContent += e.key;
-      currentInput = input.textContent;
     }
+  });
+
+  input.addEventListener('input', () => {
+    currentInput = input.value;
   });
 });
 </script>
