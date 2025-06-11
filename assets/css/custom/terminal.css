@@ -84,10 +84,12 @@
   border-radius: 4px;
   margin-top: 8px;
   transition: background-color 0.2s ease;
+  min-height: 40px;
 }
 
 .terminal-input-line:focus-within {
   background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 2px rgba(80, 250, 123, 0.2);
 }
 
 .terminal-prompt {
@@ -105,6 +107,18 @@
   font-size: inherit;
   flex-grow: 1;
   outline: none;
+  padding: 4px 8px;
+  width: 100%;
+  min-width: 200px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.terminal-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
 }
 
 .terminal-cursor {

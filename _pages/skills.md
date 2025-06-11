@@ -262,6 +262,16 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Hide scrollbar for all devices */
+.skills-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.skills-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
 .skills-container {
   max-width: 1200px;
   margin: 0 auto;

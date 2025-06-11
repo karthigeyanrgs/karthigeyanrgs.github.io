@@ -128,6 +128,11 @@ class Terminal {
       this.showSuggestions();
     });
 
+    // Ensure input is focused when clicking anywhere in the terminal
+    this.container.addEventListener('click', () => {
+      this.input.focus();
+    });
+
     // Close suggestions when clicking outside
     document.addEventListener('click', (e) => {
       if (!this.container.contains(e.target)) {
@@ -334,22 +339,15 @@ Hint: Try exploring with 'ls' to see available sections, or 'skills' to view my 
   }
 
   showHelp() {
-    const help = `
-Available commands:
-  help      : Show this help message
-  clear     : Clear the terminal
-  ls        : List available sections
-  cat       : View a section (e.g., 'cat skills')
-  skills    : Show skills section
-  principles: Show principles section
-  contact   : Show contact information
-  matrix    : Toggle matrix background effect
-  theme     : Cycle through terminal themes
-  history   : Show command history
-  time      : Show current date and time
-  fortune   : Get a random fortune
-  search    : Search available commands`;
-    this.printOutput(help);
+    const helpText = `Available commands:
+  about     - Learn more about me in short
+  skills    - View my technical skills
+  contact   - Get my contact information
+  projects  - View my notable projects
+  clear     - Clear the terminal
+  help      - Show this help message`;
+    this.printOutput(helpText);
+    this.input.focus();
   }
 
   listSections() {
