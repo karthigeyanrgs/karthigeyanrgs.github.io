@@ -40,7 +40,7 @@ social: true
   projects  - View my notable projects
   clear     - Clear the terminal
   help      - Show this help message</div>
-    <div class="terminal-line">$ <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span></div>
+    <div class="terminal-line">$<input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span></div>
   </div>
 </div>
 
@@ -406,7 +406,7 @@ GitHub: github.com/karthigeyanrgs`,
       <li><b>Healthy boundaries</b> and respect for others' privacy</li>
       <li><b>Curiosity</b> driven more by <i>internal reflection</i> than external validation</li>
       <li><b>Cherish memories</b> above material possessions</li>
-      <li><b>Approach challenges with humor</b> while staying neutral on political and religious matters</li>
+      <li><b>Approach challenges with humor</b> and thrive when I am most challenged. All my past work is a testament for that.</li>
     </ul>
   </div>
   

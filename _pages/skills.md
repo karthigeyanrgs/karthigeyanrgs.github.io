@@ -37,36 +37,7 @@ nav_order: 5
     </div>
   {% endfor %}
 
-  <div class="skill-section development-tools" data-aos="fade-left">
-    <h2><i class="fas fa-tools"></i> Development Tools</h2>
-    <div class="tools-grid">
-      <div class="tool-item" data-aos="flip-up">
-        <i class="fab fa-git-alt"></i>
-        <span>Git</span>
-        <div class="tool-level">90%</div>
-      </div>
-      <div class="tool-item" data-aos="flip-up" data-aos-delay="100">
-        <i class="fab fa-docker"></i>
-        <span>Docker</span>
-        <div class="tool-level">85%</div>
-      </div>
-      <div class="tool-item" data-aos="flip-up" data-aos-delay="200">
-        <i class="fas fa-cube"></i>
-        <span>Bazel</span>
-        <div class="tool-level">85%</div>
-      </div>
-      <div class="tool-item" data-aos="flip-up" data-aos-delay="300">
-        <i class="fas fa-dharmachakra"></i>
-        <span>Kubernetes</span>
-        <div class="tool-level">80%</div>
-      </div>
-      <div class="tool-item" data-aos="flip-up" data-aos-delay="400">
-        <i class="fas fa-book"></i>
-        <span>Poetry</span>
-        <div class="tool-level">80%</div>
-      </div>
-    </div>
-  </div>
+
 
   <div class="skill-section scientific-computing" data-aos="fade-right">
     <h2><i class="fas fa-brain"></i> Scientific Computing</h2>
