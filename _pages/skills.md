@@ -17,6 +17,8 @@ nav_order: 5
     <p class="subtitle">A journey through my technical capabilities</p>
   </div>
 
+
+
   {% for category in site.data.skills %}
     <div class="skill-section" data-aos="fade-up">
       <h2><i class="fas fa-code"></i> {{ category.name }}</h2>
@@ -172,10 +174,10 @@ nav_order: 5
         <i class="fas fa-server"></i>
         <h3>DevOps & Build Systems</h3>
         <ul>
-          <li>Docker</li>
-          <li>Kubernetes</li>
-          <li>Bazel</li>
-          <li>Poetry</li>
+          <li>CI/CD Pipelines</li>
+          <li>Infrastructure as Code</li>
+          <li>Container Orchestration</li>
+          <li>Automated Deployments</li>
         </ul>
       </div>
       <div class="expertise-card" data-aos="flip-left" data-aos-delay="300">
@@ -540,6 +542,43 @@ html, body {
   color: var(--global-theme-color);
   position: absolute;
   left: 0.5rem;
+}
+
+/* Professional Competencies */
+.competencies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.competency-card {
+  background: var(--global-code-bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--global-divider-color);
+  text-align: center;
+}
+
+.competency-card i {
+  font-size: 2.5rem;
+  color: var(--global-theme-color);
+  margin-bottom: 1rem;
+}
+
+.competency-card h3 {
+  color: var(--global-text-color);
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.competency-card p {
+  color: var(--global-text-color);
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 /* Learning Journey */
