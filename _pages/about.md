@@ -200,7 +200,8 @@ social: true
   font-family: monospace;
   font-size: 0.95rem;
   outline: none;
-  width: 200px;
+  width: auto;
+  min-width: 1ch;
   margin: 0;
   padding: 0;
 }
