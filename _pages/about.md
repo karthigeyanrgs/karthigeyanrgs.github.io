@@ -316,26 +316,41 @@ GitHub: github.com/karthigeyanrgs`,
     terminal.scrollTop = terminal.scrollHeight;
   }
 
+  function createInputLine() {
+    // Remove any existing input line
+    const oldInput = document.getElementById('terminal-input');
+    if (oldInput && oldInput.parentElement) {
+      oldInput.parentElement.remove();
+    }
+    // Create new input line
+    const inputLine = document.createElement('div');
+    inputLine.className = 'terminal-line';
+    inputLine.innerHTML = '<span class="prompt">$</span><input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span>';
+    terminal.appendChild(inputLine);
+    document.getElementById('terminal-input').focus();
+  }
+
   function executeCommand(cmd) {
     const command = cmd.toLowerCase().trim();
     if (command === '') return;
-    
     addLine(`$ ${command}`);
-    
     if (commands[command]) {
       const output = commands[command]();
       if (output) addLine(output);
     } else {
       addLine(`Command not found: ${command}. Type 'help' for available commands.`, 'error');
     }
-    
     if (!commandHistory.includes(command)) {
       commandHistory.push(command);
     }
     historyIndex = commandHistory.length;
     currentInput = '';
-    input.value = '';
+    // Always re-create the input line after command execution
+    createInputLine();
   }
+
+  // On initial load, ensure only one input line exists
+  createInputLine();
 
   // Focus input when clicking anywhere in terminal
   terminal.addEventListener('click', () => {
