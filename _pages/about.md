@@ -202,15 +202,8 @@ social: true
 }
 
 .terminal-input {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-family: monospace;
-  font-size: 0.95rem;
-  outline: none;
   width: 1ch;
   min-width: 1ch;
-  flex: 1 1 auto;
   margin-left: 0;
   padding-left: 0;
 }
@@ -299,9 +292,13 @@ GitHub: github.com/karthigeyanrgs`,
     clear: () => {
       const welcomeLine = document.createElement('div');
       welcomeLine.className = 'terminal-line';
-      welcomeLine.textContent = 'Welcome! Type \'help\' to see available commands.';
-      
-      const inputLine = terminal.lastElementChild;
+      welcomeLine.textContent = "Welcome! Type 'help' to see available commands.";
+
+      // Create the input line with the $ prompt
+      const inputLine = document.createElement('div');
+      inputLine.className = 'terminal-line';
+      inputLine.innerHTML = '<span class="prompt">$</span><input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span>';
+
       terminal.innerHTML = '';
       terminal.appendChild(welcomeLine);
       terminal.appendChild(inputLine);
