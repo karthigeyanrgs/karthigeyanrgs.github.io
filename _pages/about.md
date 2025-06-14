@@ -316,6 +316,33 @@ GitHub: github.com/karthigeyanrgs`,
     terminal.scrollTop = terminal.scrollHeight;
   }
 
+  function attachInputListeners() {
+    const input = document.getElementById('terminal-input');
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        executeCommand(input.value);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (historyIndex > 0) {
+          historyIndex--;
+          input.value = commandHistory[historyIndex];
+        }
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (historyIndex < commandHistory.length - 1) {
+          historyIndex++;
+          input.value = commandHistory[historyIndex];
+        } else {
+          historyIndex = commandHistory.length;
+          input.value = currentInput;
+        }
+      }
+    });
+    input.addEventListener('input', () => {
+      currentInput = input.value;
+    });
+  }
+
   function createInputLine() {
     // Remove any existing input line
     const oldInput = document.getElementById('terminal-input');
@@ -328,6 +355,7 @@ GitHub: github.com/karthigeyanrgs`,
     inputLine.innerHTML = '<span class="prompt">$</span><input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span>';
     terminal.appendChild(inputLine);
     document.getElementById('terminal-input').focus();
+    attachInputListeners();
   }
 
   function executeCommand(cmd) {
@@ -354,36 +382,9 @@ GitHub: github.com/karthigeyanrgs`,
 
   // Focus input when clicking anywhere in terminal
   terminal.addEventListener('click', () => {
-    input.focus();
+    const input = document.getElementById('terminal-input');
+    if (input) input.focus();
   });
-
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      executeCommand(input.value);
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      if (historyIndex > 0) {
-        historyIndex--;
-        input.value = commandHistory[historyIndex];
-      }
-    } else if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      if (historyIndex < commandHistory.length - 1) {
-        historyIndex++;
-        input.value = commandHistory[historyIndex];
-      } else {
-        historyIndex = commandHistory.length;
-        input.value = currentInput;
-      }
-    }
-  });
-
-  input.addEventListener('input', () => {
-    currentInput = input.value;
-  });
-
-  // Focus input on load
-  input.focus();
 });
 </script>
 
