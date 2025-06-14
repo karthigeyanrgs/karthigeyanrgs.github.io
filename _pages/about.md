@@ -40,7 +40,7 @@ social: true
   projects  - View my notable projects
   clear     - Clear the terminal
   help      - Show this help message</div>
-    <div class="terminal-line">$<input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span></div>
+    <div class="terminal-line"><span class="prompt">$</span><input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span></div>
   </div>
 </div>
 
@@ -193,6 +193,12 @@ social: true
   color: #e0e0e0;
   display: flex;
   align-items: center;
+  gap: 0;
+}
+
+.prompt {
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .terminal-input {
@@ -202,11 +208,11 @@ social: true
   font-family: monospace;
   font-size: 0.95rem;
   outline: none;
-  width: auto;
+  width: 1ch;
   min-width: 1ch;
-  margin: 0;
-  padding: 0;
-  display: inline;
+  flex: 1 1 auto;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .terminal-input:focus {
