@@ -211,8 +211,7 @@ social: true
   margin-left: 0;
   padding-left: 0;
   flex: 1;
-  min-width: 0;
-  display: inline;
+  min-width: 2ch;
 }
 
 @keyframes blink {
