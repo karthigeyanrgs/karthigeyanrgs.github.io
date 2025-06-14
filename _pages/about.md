@@ -191,6 +191,8 @@ social: true
   margin: 0.5rem 0;
   white-space: pre-wrap;
   color: #e0e0e0;
+  display: flex;
+  align-items: center;
 }
 
 .terminal-input {
@@ -204,6 +206,7 @@ social: true
   min-width: 1ch;
   margin: 0;
   padding: 0;
+  display: inline;
 }
 
 .terminal-input:focus {
