@@ -202,14 +202,17 @@ social: true
 }
 
 .terminal-input {
-  width: 1ch;
-  min-width: 1ch;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: monospace;
+  font-size: 0.95rem;
+  outline: none;
   margin-left: 0;
   padding-left: 0;
-}
-
-.terminal-input:focus {
-  outline: none;
+  flex: 1;
+  min-width: 0;
+  display: inline;
 }
 
 @keyframes blink {
