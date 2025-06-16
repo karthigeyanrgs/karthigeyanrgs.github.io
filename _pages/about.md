@@ -31,16 +31,7 @@ social: true
     <div class="terminal-title">Friend@Shire:~$</div>
   </div>
   <div class="terminal-content" id="terminal">
-    <div class="terminal-line">Welcome to the Terminal! Here are the available commands:</div>
-    <div class="terminal-line">$ help</div>
-    <div class="terminal-line">Available commands:
-  about     - Learn more about me in short
-  skills    - View my technical skills
-  contact   - Get my contact information
-  projects  - View my notable projects
-  clear     - Clear the terminal
-  help      - Show this help message</div>
-    <div class="terminal-line"><span class="prompt">$</span><input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span></div>
+    <!-- JS will populate terminal lines here -->
   </div>
 </div>
 
@@ -188,7 +179,7 @@ social: true
 }
 
 .terminal-line {
-  margin: 0.5rem 0;
+  margin: 0.1rem 0;
   white-space: pre-wrap;
   color: #e0e0e0;
   display: flex;
@@ -198,9 +189,16 @@ social: true
 
 .prompt {
   margin-right: 0;
-  padding-right: 0;
+  color: #e0e0e0;
 }
 
+.terminal-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 2ch;
+  width: auto;
+}
 .terminal-input {
   background: transparent;
   border: none;
@@ -208,20 +206,40 @@ social: true
   font-family: monospace;
   font-size: 0.95rem;
   outline: none;
+  min-width: 2ch;
+  caret-color: transparent;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: auto;
+  z-index: 2;
   margin-left: 0;
   padding-left: 0;
-  flex: 1;
-  min-width: 2ch;
+}
+.terminal-fake-text {
+  visibility: hidden;
+  white-space: pre;
+  font-family: monospace;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+.terminal-cursor {
+  animation: blink 1s infinite;
+  color: #fff;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.terminal-cursor.inactive {
+  animation: none;
+  opacity: 0.3;
 }
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
-}
-
-.terminal-cursor {
-  animation: blink 1s infinite;
-  color: #fff;
 }
 
 .terminal-line.error {
@@ -255,10 +273,10 @@ social: true
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const terminal = document.getElementById('terminal');
-  const input = document.getElementById('terminal-input');
   let commandHistory = ['help'];
   let historyIndex = commandHistory.length;
   let currentInput = '';
+  let initialLoad = true;
 
   const commands = {
     help: () => `Available commands:
@@ -268,42 +286,19 @@ document.addEventListener('DOMContentLoaded', function() {
   projects  - View my notable projects
   clear     - Clear the terminal
   help      - Show this help message`,
-    
-    about: () => `Karthigeyan Ganesh Shankar
-Lead Engineer - Autonomy @ Ati Motors
-Specializing in Reinforcement Learning, Robotics, and Simulation`,
-    
-    skills: () => `Technical Skills:
-• Simulations
-• Nvidia Isaac Sim
-• Operating systems
-• Computer vision models
-• Docker and Kubernetes`,
-    
-    contact: () => `Email: karthigeyan.gs@gmail.com
-LinkedIn: linkedin.com/in/karthigeyan-ganesh-shankar
-GitHub: github.com/karthigeyanrgs`,
-    
-    projects: () => `Notable Projects:
-1. 3D reconstruction methods - VGGT, Mast3R, Fast3R, Nerf models
-2. Isaac Sim highly fidel representations
-3. Migration from Monolithic to Microservices
-4. VSLAM Implementation for Lidar free navigation
-5. Upgrading the operating system with custom dts`,
-    
+
+    about: () => `Karthigeyan Ganesh Shankar\nLead Engineer - Autonomy @ Ati Motors\nSpecializing in Reinforcement Learning, Robotics, and Simulation`,
+
+    skills: () => `Technical Skills:\n• Simulations\n• Nvidia Isaac Sim\n• Operating systems\n• Computer vision models\n• Docker and Kubernetes`,
+
+    contact: () => `Email: karthigeyan.gs@gmail.com\nLinkedIn: linkedin.com/in/karthigeyan-ganesh-shankar\nGitHub: github.com/karthigeyanrgs`,
+
+    projects: () => `Notable Projects:\n1. 3D reconstruction methods - VGGT, Mast3R, Fast3R, Nerf models\n2. Isaac Sim highly fidel representations\n3. Migration from Monolithic to Microservices\n4. VSLAM Implementation for Lidar free navigation\n5. Upgrading the operating system with custom dts`,
+
     clear: () => {
-      const welcomeLine = document.createElement('div');
-      welcomeLine.className = 'terminal-line';
-      welcomeLine.textContent = "Welcome! Type 'help' to see available commands.";
-
-      // Create the input line with the $ prompt
-      const inputLine = document.createElement('div');
-      inputLine.className = 'terminal-line';
-      inputLine.innerHTML = '<span class="prompt">$</span><input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span>';
-
       terminal.innerHTML = '';
-      terminal.appendChild(welcomeLine);
-      terminal.appendChild(inputLine);
+      addLine("Welcome! Type 'help' to see available commands.");
+      createInputLine(false);
       return '';
     }
   };
@@ -312,12 +307,19 @@ GitHub: github.com/karthigeyanrgs`,
     const line = document.createElement('div');
     line.className = `terminal-line ${className}`;
     line.textContent = text;
-    terminal.insertBefore(line, terminal.lastElementChild);
+    // Insert before the input line if it exists, else at the end
+    const inputWrapper = terminal.querySelector('.terminal-input-wrapper')?.parentElement;
+    if (inputWrapper) {
+      terminal.insertBefore(line, inputWrapper);
+    } else {
+      terminal.appendChild(line);
+    }
     terminal.scrollTop = terminal.scrollHeight;
   }
 
   function attachInputListeners() {
     const input = document.getElementById('terminal-input');
+    const cursor = document.getElementById('terminal-cursor');
     input.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         executeCommand(input.value);
@@ -326,42 +328,90 @@ GitHub: github.com/karthigeyanrgs`,
         if (historyIndex > 0) {
           historyIndex--;
           input.value = commandHistory[historyIndex];
+          updateCursorPosition();
         }
       } else if (e.key === 'ArrowDown') {
         e.preventDefault();
         if (historyIndex < commandHistory.length - 1) {
           historyIndex++;
           input.value = commandHistory[historyIndex];
+          updateCursorPosition();
         } else {
           historyIndex = commandHistory.length;
           input.value = currentInput;
+          updateCursorPosition();
         }
       }
     });
     input.addEventListener('input', () => {
       currentInput = input.value;
+      updateCursorPosition();
     });
+    // Initial position
+    updateCursorPosition();
+
+    // Cursor blinking only when focused
+    input.addEventListener('focus', () => {
+      if (cursor) cursor.classList.remove('inactive');
+    });
+    input.addEventListener('blur', () => {
+      if (cursor) cursor.classList.add('inactive');
+    });
+    // Set initial state
+    if (document.activeElement !== input && cursor) {
+      cursor.classList.add('inactive');
+    }
   }
 
-  function createInputLine() {
-    // Remove any existing input line
-    const oldInput = document.getElementById('terminal-input');
-    if (oldInput && oldInput.parentElement) {
-      oldInput.parentElement.remove();
+  function createInputLine(autofocus = true) {
+    // Remove any existing input line (prompt + input + cursor)
+    const oldInputLine = terminal.querySelector('.terminal-line .terminal-input-wrapper')?.parentElement;
+    if (oldInputLine) {
+      oldInputLine.remove();
     }
-    // Create new input line
+    // Create new input line with proper spacing and cursor
     const inputLine = document.createElement('div');
     inputLine.className = 'terminal-line';
-    inputLine.innerHTML = '<span class="prompt">$</span><input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" autofocus><span class="terminal-cursor">█</span>';
+    inputLine.innerHTML = `
+      <span class="prompt">$ </span>
+      <span class="terminal-input-wrapper">
+        <span class="terminal-fake-text" id="terminal-fake-text"></span>
+        <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false">
+        <span class="terminal-cursor" id="terminal-cursor">█</span>
+      </span>
+    `;
     terminal.appendChild(inputLine);
-    document.getElementById('terminal-input').focus();
     attachInputListeners();
+    updateCursorPosition();
+    if (autofocus) {
+      document.getElementById('terminal-input').focus();
+    }
+  }
+
+  function updateCursorPosition() {
+    const input = document.getElementById('terminal-input');
+    const fakeText = document.getElementById('terminal-fake-text');
+    const cursor = document.getElementById('terminal-cursor');
+    if (!input || !fakeText || !cursor) return;
+    fakeText.textContent = input.value;
+    // Position the cursor after the text
+    cursor.style.left = fakeText.offsetWidth + 'px';
   }
 
   function executeCommand(cmd) {
     const command = cmd.toLowerCase().trim();
-    if (command === '') return;
-    addLine(`$ ${command}`);
+    if (command === '') {
+      // If empty, just re-focus the input (no new static prompt line)
+      createInputLine(true);
+      return;
+    }
+    // Convert the previous input line to a static command line
+    const oldInputLine = terminal.querySelector('.terminal-line .terminal-input-wrapper')?.parentElement;
+    if (oldInputLine) {
+      const prompt = oldInputLine.querySelector('.prompt')?.textContent || '$ ';
+      const inputValue = oldInputLine.querySelector('.terminal-input')?.value || '';
+      oldInputLine.innerHTML = `<span class="prompt">${prompt}</span>${inputValue}`;
+    }
     if (commands[command]) {
       const output = commands[command]();
       if (output) addLine(output);
@@ -373,12 +423,14 @@ GitHub: github.com/karthigeyanrgs`,
     }
     historyIndex = commandHistory.length;
     currentInput = '';
-    // Always re-create the input line after command execution
-    createInputLine();
+    // Always re-create the input line after command execution, autofocus it
+    createInputLine(true);
   }
 
-  // On initial load, ensure only one input line exists
-  createInputLine();
+  // On initial load, ensure only one input line exists and show welcome/help
+  terminal.innerHTML = '';
+  addLine("Welcome! Type 'help' to see available commands.");
+  createInputLine(false);
 
   // Focus input when clicking anywhere in terminal
   terminal.addEventListener('click', () => {
