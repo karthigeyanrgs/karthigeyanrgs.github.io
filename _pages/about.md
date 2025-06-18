@@ -188,17 +188,17 @@ social: true
 }
 
 .prompt {
-  margin-right: 0;
   color: #e0e0e0;
+  margin-right: 4px;
 }
 
 .terminal-input-wrapper {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   position: relative;
-  min-width: 2ch;
-  width: auto;
+  flex-grow: 1;
 }
+
 .terminal-input {
   background: transparent;
   border: none;
@@ -206,32 +206,32 @@ social: true
   font-family: monospace;
   font-size: 0.95rem;
   outline: none;
-  min-width: 2ch;
-  caret-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   position: relative;
-  left: 0;
-  top: 0;
-  width: auto;
   z-index: 2;
-  margin-left: 0;
-  padding-left: 0;
 }
+
 .terminal-fake-text {
   visibility: hidden;
   white-space: pre;
   font-family: monospace;
   font-size: 0.95rem;
-  display: inline-block;
-}
-.terminal-cursor {
-  animation: blink 1s infinite;
-  color: #fff;
-  position: relative;
+  position: absolute;
   left: 0;
   top: 0;
-  z-index: 3;
+}
+
+.terminal-cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  z-index: 1;
   pointer-events: none;
 }
+
 .terminal-cursor.inactive {
   animation: none;
   opacity: 0.3;
