@@ -213,6 +213,9 @@ latest_posts:
 
 # Markdown and syntax highlight
 markdown: kramdown
+
+# Allow future posts to be published
+future: true
 highlighter: rouge
 kramdown:
   input: GFM
