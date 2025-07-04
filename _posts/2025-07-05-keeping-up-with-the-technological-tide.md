@@ -27,10 +27,9 @@ I am _happy_ to announce the start of my technical writing journey within the wh
 Since this is the _first blog_ in this setting, I will _reduce the technical jargon_.
 
 <br>
-<br>
 
 ## Workshop: Systems for Machine Learning - ACM student chapter, IISc
-
+<br>
 A visit to **IISc** always reminds me of what Bengaluru used to look like when I was young, and how it should have looked if not for the population influx. _I am part of the influx, so guilty as charged._
 
 <img src="/assets/img/posts/iisc.jpg" style="display: block; margin: 2em auto; max-width: 50%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
@@ -59,12 +58,12 @@ The series was initiated by talk from [**Dr. Amod**](https://www.linkedin.com/in
 - There was a sneak peek towards what would turn out to be a hands-on session – **Federated Learning**. 
 
 <br>
----
-<br>
 
 Moving on, we had a deep dive session from [**Divij**](https://divijghose.github.io/) who gave a very crisp introduction to **machine learning** and systems developed for machine learning. If you are someone who works in the **CFD** space, you should take a look at their work with **FastVPINNs**. Divij also explained the nature of parallelism that is exploited through **GPUs** – Model and Data parallelism and gave a distinct and clear understanding where one can be leveraged over the other.
 
 As part of my notes was the online textbook – [**MLSysBook**](https://mlsysbook.ai/) which I am yet to read.
+
+<br>
 
 The final session for the day was delivered by **Dr. Alka** who was affiliated to Harman. She walked us through different **quantisation techniques** that can be leveraged in order to obtain optimal outputs with efficiency and reasonable accuracy. I have added some notes from the talk below:
 
@@ -85,7 +84,7 @@ The final session for the day was delivered by **Dr. Alka** who was affiliated t
 
 - Understand <u>Paged attention</u> and <u>flash attention</u> models. There seems to be more intricate thought put there to develop mathematically sourced transformer models.
 <br>
----
+
 <br>
 
 I wasn't able to attend the event the following day due to a planned farewell of my manager in Mysore. The final day of the workshop, the day started with a talk from [**Dr.Suparna**](https://www.linkedin.com/in/suparna-bhattacharya-5a7798b/) on <i>Foundational models as an OS</i>.
@@ -115,6 +114,8 @@ The idea of having a standalone, specialised **Operating system** which was buil
 
 - There is a lot of potential to bring out a **<u>foundational operating system in the robotics space</u>**. Given the real time kernel-like operational latencies and multimodal data ingestion, the computational overload between different process components can be greatly reduced. 
 
+<br>
+<br>
 
 I greatly admire **Dr.Suparna's** works and her journey so far. It was _inspirational_ to hear from a subject matter expert in **Unix systems** on how we could look to the future for operating systems.
 
