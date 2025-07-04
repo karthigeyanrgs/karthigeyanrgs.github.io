@@ -3,7 +3,7 @@ layout: post
 title: Keeping up with the technological tide
 date: 2025-07-05
 description: Setting the stage on what to expect here, in writing. My experience at a workshop covering systems for Machine Learning
-tags: Foundational models, edge computing, Distributed Machine learning, Model quantisation
+tags: Foundational_models, edge_computing, Distributed_Machine_learning, Model_quantisation
 categories: technical
 featured: true
 ---
@@ -26,13 +26,16 @@ I am _happy_ to announce the start of my technical writing journey within the wh
 
 Since this is the _first blog_ in this setting, I will _reduce the technical jargon_.
 
+<br>
+<br>
+
 ## Workshop: Systems for Machine Learning - ACM student chapter, IISc
 
 A visit to **IISc** always reminds me of what Bengaluru used to look like when I was young, and how it should have looked if not for the population influx. _I am part of the influx, so guilty as charged._
 
 <img src="/assets/img/posts/iisc.jpg" style="display: block; margin: 2em auto; max-width: 50%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
 
-*IISc being an epitome of poise and beauty :)*
+<p style="text-align: center;"><em>IISc being an epitome of poise and beauty :)</em></p>
 
 The premise of the workshop was to _introduce and motivate_ active work towards developing systems that are able to handle **large data workloads in real time**. Imagine being able to run advanced detection models on an edge device which can be slightly bigger than an average fist. 
 
@@ -55,7 +58,7 @@ The series was initiated by talk from [**Dr. Amod**](https://www.linkedin.com/in
 
 - There was a sneak peek towards what would turn out to be a hands-on session – **Federated Learning**. 
 
-
+<br>
 ---
 <br>
 
@@ -81,7 +84,7 @@ The final session for the day was delivered by **Dr. Alka** who was affiliated t
 
 
 - Understand <u>Paged attention</u> and <u>flash attention</u> models. There seems to be more intricate thought put there to develop mathematically sourced transformer models.
-
+<br>
 ---
 <br>
 
@@ -120,7 +123,7 @@ We completed the workshop with some thoughts on **distributed machine learning**
 
 To better supplement our understanding, we worked on a client dataset which had masked key value pairs. The workshop did _pique my interest_ and helped me think about different verticals that can be incorporated into my work and robotics in general.
 
----
+<br>
 
 Well, that's about it for my first blog here. The next blog will talk more about a talk I attended in Differential programming, which reminded me of my course on computational/automatic differentiation and work in computational fluid dynamics.
 
