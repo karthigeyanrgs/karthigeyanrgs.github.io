@@ -4,7 +4,7 @@ title: "How to Train a Graduate in Germany 2.2"
 date: 2020-08-20
 description: Continuing the journey through graduate studies in Germany, exploring academic and cultural experiences
 tags: [germany, education, graduate-life, international-student]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

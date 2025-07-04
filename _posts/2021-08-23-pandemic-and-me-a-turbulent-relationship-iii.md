@@ -1,8 +1,7 @@
 ---
 title: "Pandemic and me: A turbulent relationship III"
 date: 2021-08-23
-categories: 
-  - "special"
+categories: life
 tags: 
   - "india"
   - "isolation"

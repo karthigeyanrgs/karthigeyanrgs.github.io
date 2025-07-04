@@ -4,7 +4,7 @@ title: How to Train a Graduate in Germany (Part 1/3)
 date: 2018-06-13
 description: A visual journey through graduate training experiences in Germany
 tags: germany education personal-experience
-categories: personal
+categories: life
 ---
 
 ![](/assets/img/posts/img_20180620_wa0004.jpg)

@@ -4,7 +4,7 @@ title: "India: Never Heard of This Place"
 date: 2021-10-01
 description: Discovering hidden gems and unexplored locations in India's diverse landscape
 tags: [india, travel, exploration, adventure, hidden-gems]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

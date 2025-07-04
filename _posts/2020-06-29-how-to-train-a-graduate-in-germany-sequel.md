@@ -1,8 +1,7 @@
 ---
 title: "How to train a graduate in Germany Sequel"
 date: 2020-06-29
-categories: 
-  - "graduate-series"
+categories: life
 tags: 
   - "humour"
   - "masters-in-germany"

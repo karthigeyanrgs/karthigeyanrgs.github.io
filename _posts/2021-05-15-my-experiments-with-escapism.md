@@ -4,7 +4,7 @@ title: "My Experiments with Escapism"
 date: 2021-05-15
 description: Personal reflections on coping mechanisms and finding balance in life
 tags: [life, reflection, personal, mental-health]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

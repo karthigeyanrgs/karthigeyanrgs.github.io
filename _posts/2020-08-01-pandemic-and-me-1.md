@@ -4,7 +4,7 @@ title: "Pandemic and Me: Part 1"
 date: 2020-08-01
 description: Personal reflections and experiences during the first phase of the global pandemic
 tags: [pandemic, life, reflection, personal]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

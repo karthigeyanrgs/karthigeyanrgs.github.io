@@ -1,8 +1,7 @@
 ---
 title: "India: Anniversary Edition"
 date: 2021-06-27
-categories: 
-  - "life"
+categories: life
 tags: 
   - "anniversary"
   - "blog"

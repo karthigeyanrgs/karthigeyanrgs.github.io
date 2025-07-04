@@ -4,7 +4,7 @@ title: "The Vincent Ehindero Blogger Award"
 date: 2020-06-15
 description: A heartfelt reflection on receiving my first blogging award, sharing gratitude and passing it forward to other inspiring writers
 tags: [blogging, awards, writing, personal]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

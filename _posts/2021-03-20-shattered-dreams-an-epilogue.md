@@ -4,7 +4,7 @@ title: "Shattered Dreams: An Epilogue"
 date: 2021-03-20
 description: The final chapter in the series about rebuilding after broken dreams
 tags: [life, reflection, personal, dreams, epilogue]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

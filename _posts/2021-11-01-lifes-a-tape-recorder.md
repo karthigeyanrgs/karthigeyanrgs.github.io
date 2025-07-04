@@ -4,7 +4,7 @@ title: "Life's A Tape Recorder: Rewind"
 date: 2021-11-01
 description: A personal reflection on memories, family, and the journey through life
 tags: [life, memories, family, reflection]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

@@ -1,8 +1,7 @@
 ---
 title: "How to train a graduate in Germany |Sequel^Sequel"
 date: 2020-07-16
-categories: 
-  - "life"
+categories: life
 tags: 
   - "germany"
   - "graduate"

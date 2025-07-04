@@ -4,7 +4,7 @@ title: "How to Train a Graduate in Germany"
 date: 2020-05-01
 description: A guide and personal experience of graduate life in Germany
 tags: [germany, education, life, experience]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

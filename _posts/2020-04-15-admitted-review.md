@@ -4,7 +4,7 @@ title: "Admitted: A Review"
 date: 2020-04-15
 description: A personal review and reflection on the movie 'Admitted' and its impact
 tags: [movies, review, reflection, education]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

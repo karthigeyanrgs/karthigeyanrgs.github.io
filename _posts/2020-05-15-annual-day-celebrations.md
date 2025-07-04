@@ -4,7 +4,7 @@ title: "Annual Day Celebrations"
 date: 2020-05-15
 description: Reflections and memories from school annual day celebrations
 tags: [school, memories, celebration, performance]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

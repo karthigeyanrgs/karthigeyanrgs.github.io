@@ -4,7 +4,7 @@ title: "How to Train a Graduate in Germany: Hyperbole"
 date: 2020-08-21
 description: An exaggerated yet honest account of graduate student life in Germany
 tags: [germany, education, graduate-life, humor]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

@@ -2,7 +2,7 @@
 layout: post
 title: Keeping up with the technological tide
 date: 2025-07-05
-description: Setting the stage on what to aspect here, in writing. My exoerience at a workshop covering systems for Machine Learning
+description: Setting the stage on what to expect here, in writing. My experience at a workshop covering systems for Machine Learning
 tags: Foundational models, edge computing, Distributed Machine learning, Model quantisation
 categories: technical
 featured: true
@@ -10,7 +10,7 @@ featured: true
 
 I am _happy_ to announce the start of my technical writing journey within the whims and comforts of this rather isolated and cozy part of the internet. In my mind, this is a rough sketch of domains/areas that I would like to bring my perspective towards:
 
-- **Think like a Simulations engineer** – the blogs will revolve around using simulation tools, mathematical methods, and schools of thought to realise robust, stable, and high-fidelity computer simulations.
+- **Think like a Simulations engineer** – the blogs will revolve around using simulation tools, mathematical methods, and schools of thought to realize robust, stable, and high-fidelity computer simulations.
 
 
 - Observations from attending technical talks, workshops, and meeting eminent professionals.
@@ -65,10 +65,10 @@ As part of my notes was the online textbook – [**MLSysBook**](https://mlsysboo
 
 The final session for the day was delivered by **Dr. Alka** who was affiliated to Harman. She walked us through different **quantisation techniques** that can be leveraged in order to obtain optimal outputs with efficiency and reasonable accuracy. I have added some notes from the talk below:
 
-- Need to explore **LiteRT models** to be able to reduce model size and run at a faster interference time. Would be perfect for specific objection detection models on **Jetson Nano**. 
+- Need to explore **LiteRT models** to be able to reduce model size and run at a faster inference time. Would be perfect for specific object detection models on **Jetson Nano**. 
 
 
-- **ONNX alternative – TVM**. There is an option to perform graph rewrite for the specific hardware. ONNX already does a good job for Jetson boards, but it would be necessary to have an optimised graph for **RISC-V** or newer architectures/boards. TVM also has a ML based cost model incorporated which could help calculate the operational costs as and when the model gets deployed.
+- **ONNX alternative – TVM**. There is an option to perform graph rewrite for the specific hardware. ONNX already does a good job for Jetson boards, but it would be necessary to have an optimized graph for **RISC-V** or newer architectures/boards. TVM also has a ML based cost model incorporated which could help calculate the operational costs as and when the model gets deployed.
 
 
 - Go deeper into <u>Structured Pruning</u> of models based on the understanding of the model parameters and the hardware architectures.
@@ -89,13 +89,13 @@ I wasn't able to attend the event the following day due to a planned farewell of
 
 The idea of having a standalone, specialised **Operating system** which was built and functions for a specific use-case has been an idea which had been on the back burner for me and a couple of friends. The idea of packaging all the essential components of a foundational model into an operating system was perfect and had a very novel viewpoint towards systems design. I had several takeaways from the talk, I will share a few here:
 
-- **Foundational models** stem from the evolution of moving rapidly from task based scheduler to a transfer learned model to a <u>multimodal optimised large language model</u>.
+- **Foundational models** stem from the evolution of moving rapidly from task based scheduler to a transfer learned model to a <u>multimodal optimized large language model</u>.
 
 
 - The idea of having the foundational model as an OS was largely championed by arbiters who kept running into shared memory models or having to move with tweaking priority queues and doing effective resource allocation and tokenisation.
 
 
-- **Reinforcement learning methods** are data hungry, leading to accurate policies after ingesting billions of datasets with somewhat clear demarcation of the action and reward space. Foundational models were made possible due to availability of well curated and labelled datasets.
+- **Reinforcement learning methods** are data hungry, leading to accurate policies after ingesting billions of datasets with somewhat clear demarcation of the action and reward space. Foundational models were made possible due to availability of well curated and labeled datasets.
 
 
 - The computational overhead between the nodes, **LLM tokenisation**, keyframe matcher can be translated well into operating system subsystems.

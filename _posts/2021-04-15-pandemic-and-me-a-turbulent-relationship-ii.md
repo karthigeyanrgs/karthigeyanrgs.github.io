@@ -4,7 +4,7 @@ title: "Pandemic and Me: A Turbulent Relationship II"
 date: 2021-04-15
 description: The second part of a personal journey through the pandemic, exploring quarantine experiences and self-reflection
 tags: [pandemic, life, reflection, quarantine, india]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

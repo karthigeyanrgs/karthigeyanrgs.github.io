@@ -4,7 +4,7 @@ title: "How to Train a Graduate in Germany 2.1"
 date: 2020-08-15
 description: Continuing adventures and insights into graduate life in Germany, exploring academic challenges and cultural experiences
 tags: [germany, education, life, experience, aachen]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

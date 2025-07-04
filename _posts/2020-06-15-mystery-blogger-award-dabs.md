@@ -4,7 +4,7 @@ title: "Mystery Blogger Award: Dabs"
 date: 2020-06-15
 description: Reflections and responses to the Mystery Blogger Award nomination, sharing personal insights and stories
 tags: [blogging, awards, personal, writing]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

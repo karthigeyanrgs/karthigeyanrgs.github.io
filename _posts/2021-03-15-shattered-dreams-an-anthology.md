@@ -4,7 +4,7 @@ title: "Shattered Dreams: An Anthology"
 date: 2021-03-15
 description: A collection of personal stories about overcoming challenges and rebuilding dreams
 tags: [life, reflection, personal, dreams, anthology]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

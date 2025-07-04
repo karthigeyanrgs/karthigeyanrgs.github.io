@@ -4,7 +4,7 @@ title: "How to Train a Graduate in Germany: Sechs"
 date: 2020-08-05
 description: The sixth chapter in the graduate journey, exploring life and studies in Germany
 tags: [germany, education, graduate-life, international-student]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

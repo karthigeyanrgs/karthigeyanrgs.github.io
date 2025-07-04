@@ -5,7 +5,7 @@ permalink: /blog/
 description: A collection of my thoughts, experiences, and adventures
 nav: true
 nav_order: 4
-display_categories: [Technical, Non-technical]
+display_categories: [tech, life]
 horizontal: false
 ---
 
@@ -85,9 +85,9 @@ horizontal: false
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {%- if category == "Technical" %}
+  {%- if category == "tech" %}
     {%- assign categorized_posts = site.posts | where: "categories", "technical" %}
-  {%- elsif category == "Non-technical" %}
+  {%- elsif category == "life" %}
     {%- assign categorized_posts = site.posts | where: "categories", "life" %}
   {%- endif %}
   {%- assign sorted_posts = categorized_posts | sort: "date" | reverse %}

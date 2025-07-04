@@ -4,7 +4,7 @@ title: "Life's A Tape Recorder: Pause"
 date: 2021-11-15
 description: A moment of reflection and pause in life's journey, exploring memories and transitions
 tags: [life, reflection, memories, personal]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

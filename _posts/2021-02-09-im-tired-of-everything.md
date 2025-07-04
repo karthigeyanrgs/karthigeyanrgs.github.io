@@ -4,7 +4,7 @@ title: "I'm Tired of Everything"
 date: 2021-02-09
 description: Personal reflections on burnout, mental fatigue, and finding ways to cope
 tags: [life, mental-health, reflection, personal]
-categories: [life]
+categories: life
 giscus_comments: true
 related_posts: true
 toc:

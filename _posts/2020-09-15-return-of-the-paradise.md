@@ -4,7 +4,7 @@ title: "Return of the Paradise"
 date: 2020-09-15
 description: A journey back to a beloved destination and rediscovering its magic
 tags: [travel, nature, adventure, paradise, germany]
-categories: [travel]
+categories: travel
 giscus_comments: true
 related_posts: true
 toc:

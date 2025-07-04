@@ -4,7 +4,7 @@ title: "India: Code Green and Tranquillity"
 date: 2021-09-22
 description: A journey through the serene landscapes of India, exploring nature's beauty and finding inner peace
 tags: [india, nature, travel, tranquility, greenery]
-categories: [travel]
+categories: travel
 giscus_comments: true
 related_posts: true
 toc:

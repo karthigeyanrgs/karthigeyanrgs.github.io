@@ -4,7 +4,7 @@ title: "Monschau or More Like Manchow: The Story Begins"
 date: 2020-07-15
 description: Adventures and misadventures in the charming German town of Monschau
 tags: [germany, travel, adventure, monschau, hiking]
-categories: [travel]
+categories: travel
 giscus_comments: true
 related_posts: true
 toc:

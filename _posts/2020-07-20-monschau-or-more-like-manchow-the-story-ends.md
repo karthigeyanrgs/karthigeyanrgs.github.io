@@ -4,7 +4,7 @@ title: "Monschau or More Like Manchow: The Story Ends"
 date: 2020-07-20
 description: The conclusion of adventures in the charming German town of Monschau
 tags: [germany, travel, adventure, monschau, hiking]
-categories: [travel]
+categories: travel
 giscus_comments: true
 related_posts: true
 toc:

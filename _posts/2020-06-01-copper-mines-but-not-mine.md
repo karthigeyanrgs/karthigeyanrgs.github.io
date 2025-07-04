@@ -4,7 +4,7 @@ title: "Copper Mines, But Not Mine"
 date: 2020-06-01
 description: A journey through historic copper mines and reflections on exploration
 tags: [travel, history, exploration, germany]
-categories: [travel]
+categories: travel
 giscus_comments: true
 related_posts: true
 toc:

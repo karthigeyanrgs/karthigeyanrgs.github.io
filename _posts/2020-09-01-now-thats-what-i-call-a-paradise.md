@@ -4,7 +4,7 @@ title: "Now That's What I Call a Paradise"
 date: 2020-09-01
 description: A breathtaking journey through natural landscapes and the discovery of a personal paradise
 tags: [travel, nature, hiking, germany, paradise]
-categories: [trekking-series]
+categories: travel
 giscus_comments: true
 related_posts: true
 toc:
