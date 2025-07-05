@@ -6,6 +6,7 @@ description: Setting the stage on what to expect here, in writing. My experience
 tags: Foundational_models, edge_computing, Distributed_Machine_learning, Model_quantisation
 categories: technical
 featured: true
+giscus_comments: true
 ---
 
 I am _happy_ to announce the start of my technical writing journey within the whims and comforts of this rather isolated and cozy part of the internet. In my mind, this is a rough sketch of domains/areas that I would like to bring my perspective towards:

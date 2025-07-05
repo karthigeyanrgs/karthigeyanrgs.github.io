@@ -8,6 +8,7 @@ tags:
   - "humour"
   - "masters-in-germany"
   - "simulation-sciences"
+giscus_comments: true
 ---
 
 What a weird title, one might ask? Well internet is full of weird and obscure things, and my blogs are no different. In order to be partly rebellious against the Romans in support of my Greek friend, I thought long and hard to come up with such a creative title. To be honest, titles can be much more obscure too, "Honey, I blew up the kids" for a starter. As rightly pointed out by my soon-to-be blogger friend, I made a tremendous mistake. A sin, no priest can give me redemption from I guess. If you would have noticed, I had the sounds made by mouth as "white noise" instead of "brown noise". A grave mistake indeed, I already feel like I must have rice krispies as breakfast and slurp a glass of beer.

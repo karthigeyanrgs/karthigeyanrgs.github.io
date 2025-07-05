@@ -6,6 +6,7 @@ tags:
   - "humour"
   - "masters-in-germany"
   - "simulation-sciences"
+giscus_comments: true
 ---
 
 (Drum rolls) I know what you all would be thinking, sequels are terrible : Frozen 2, Jumanji (Even though I haven't watched it), Speed 2 or the next karate kid. But, hey, at least it is not a remastered edition which is quite unnerving. Why do people do it to classics, and both of us know the answer, money! After much excitement from my first blog (mostly from myself), I will continue to narrate my exquisite journey into stardom. Do I get recognized outside after writing this blog, and the answer is no, because I am currently under quarantine (believe me, kid, it is not going to change otherwise too). Though I did get a particular death threat from a certain central American. Know what, I am ready, though it might look like a butter knife.

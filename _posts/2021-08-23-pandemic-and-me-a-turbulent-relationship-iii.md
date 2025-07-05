@@ -9,6 +9,7 @@ tags:
   - "pandemic"
   - "protocols"
   - "quarantine"
+giscus_comments: true
 ---
 
 This post brings a conclusive closure to this series. The [previous](https://witfulmadrasi.wordpress.com/2021/05/21/pandemic-and-me-a-turbulent-relationship-ii/) post shone light on my experiences in India during the first peak of the pandemic.

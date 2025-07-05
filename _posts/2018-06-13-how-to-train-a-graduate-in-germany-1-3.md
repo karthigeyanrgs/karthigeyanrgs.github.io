@@ -5,6 +5,7 @@ date: 2018-06-13
 description: A visual journey through graduate training experiences in Germany
 tags: germany education personal-experience
 categories: life
+giscus_comments: true
 ---
 
 ![](/assets/img/posts/img_20180620_wa0004.jpg)

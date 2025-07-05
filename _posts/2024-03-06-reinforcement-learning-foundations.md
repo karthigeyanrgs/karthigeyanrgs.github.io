@@ -6,6 +6,7 @@ description: Exploring the fundamentals of Reinforcement Learning through the le
 tags: reinforcement-learning machine-learning AI technical
 categories: technical
 featured: true
+giscus_comments: true
 ---
 
 Barto & Sutton in their book "Introduction to Reinforcement Learning" beautifully bring out the stark distinction between the complexity of a task performed by a machine and a human. They take the simple example of preparing breakfast, which could be considered a mundane effort from a human, based on their onset trials and pre-configured motor controls, which happens to be a rather complex set of actions for a machine to perform.
