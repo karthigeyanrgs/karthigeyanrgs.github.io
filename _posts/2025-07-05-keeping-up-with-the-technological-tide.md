@@ -7,6 +7,14 @@ tags: Foundational_models, edge_computing, Distributed_Machine_learning, Model_q
 categories: technical
 featured: true
 giscus_comments: true
+_styles: |
+  .post-content a {
+    text-decoration: underline !important;
+  }
+  .post-content a:hover {
+    text-decoration: underline !important;
+    opacity: 0.8;
+  }
 ---
 
 I am _happy_ to announce the start of my technical writing journey within the whims and comforts of this rather isolated and cozy part of the internet. In my mind, this is a rough sketch of domains/areas that I would like to bring my perspective towards:
@@ -74,7 +82,7 @@ The final session for the day was delivered by **Dr. Alka** who was affiliated t
 - **ONNX alternative – TVM**. There is an option to perform graph rewrite for the specific hardware. ONNX already does a good job for Jetson boards, but it would be necessary to have an optimized graph for **RISC-V** or newer architectures/boards. TVM also has a ML based cost model incorporated which could help calculate the operational costs as and when the model gets deployed.
 
 
-- Go deeper into <u>Structured Pruning</u> of models based on the understanding of the model parameters and the hardware architectures.
+- Go deeper into Structured Pruning of models based on the understanding of the model parameters and the hardware architectures.
 
 
 - Look at lighter **GPT implementations** – **SpareGPT**, **DistilGPT** and **Tiny LLAMA** models.
@@ -92,7 +100,7 @@ I wasn't able to attend the event the following day due to a planned farewell of
 
 The idea of having a standalone, specialised **Operating system** which was built and functions for a specific use-case has been an idea which had been on the back burner for me and a couple of friends. The idea of packaging all the essential components of a foundational model into an operating system was perfect and had a very novel viewpoint towards systems design. I had several takeaways from the talk, I will share a few here:
 
-- **Foundational models** stem from the evolution of moving rapidly from task based scheduler to a transfer learned model to a <u>multimodal optimized large language model</u>.
+- **Foundational models** stem from the evolution of moving rapidly from task based scheduler to a transfer learned model to a multimodal optimized large language model.
 
 
 - The idea of having the foundational model as an OS was largely championed by arbiters who kept running into shared memory models or having to move with tweaking priority queues and doing effective resource allocation and tokenisation.
@@ -113,7 +121,7 @@ The idea of having a standalone, specialised **Operating system** which was buil
 - I need to dig deeper into **AIOS from Rutgers**.
 
 
-- There is a lot of potential to bring out a **<u>foundational operating system in the robotics space</u>**. Given the real time kernel-like operational latencies and multimodal data ingestion, the computational overload between different process components can be greatly reduced. 
+- There is a lot of potential to bring out a **foundational operating system in the robotics space**. Given the real time kernel-like operational latencies and multimodal data ingestion, the computational overload between different process components can be greatly reduced. 
 
 <br>
 <br>
