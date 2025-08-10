@@ -167,86 +167,127 @@ horizontal: false
   </div>
 </div>
 
-<div class="projects">
-{%- if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {%- for category in page.display_categories %}
-  <h2 class="category" id="{{ category }}">{{ category }}</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
-    {%- if category == "research" %}
-    <!-- Research Projects -->
-    <div class="col">
-      <div class="card h-100 rounded-3 shadow-sm hoverable">
-        <div class="card-body">
-          <div class="project-header d-flex align-items-center mb-3">
-            <i class="fas fa-chart-line fa-2x text-primary me-3"></i>
-            <h3 class="card-title mb-0">Kinetic Model on Unemployment</h3>
-          </div>
-          <p class="card-text">Developed mesoscopic models to characterize unemployment patterns, performed Monte-Carlo simulations, and advanced transport equations research with minimal prior literature.</p>
-          <div class="project-links">
-            <a href="https://github.com/karthigeyanrgs/kinetic-unemployment-model" class="btn btn-sm btn-outline-primary" target="_blank">
-              <i class="fab fa-github me-2"></i>View Code
-            </a>
-          </div>
+<!-- Completed Projects Section -->
+<div class="completed-projects-section">
+  <div class="container-fluid">
+    {%- if site.enable_project_categories and page.display_categories %}
+      <!-- Display categorized projects -->
+      {%- for category in page.display_categories %}
+      <div class="category-section mb-5">
+        <div class="category-header text-center mb-4">
+          <h2 class="display-5 fw-bold text-primary">
+            {% if category == "research" %}
+              <i class="fas fa-microscope me-3"></i>Research Projects
+            {% else %}
+              <i class="fas fa-cogs me-3"></i>Engineering Projects
+            {% endif %}
+          </h2>
+          <p class="lead text-muted">
+            {% if category == "research" %}
+              Academic research and scientific computing projects
+            {% else %}
+              Engineering applications and computational solutions
+            {% endif %}
+          </p>
         </div>
-      </div>
-    </div>
+        
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          {%- if category == "research" %}
+          <!-- Research Projects -->
+          <div class="col">
+            <div class="card h-100 project-card">
+              <div class="card-body">
+                <div class="project-header d-flex align-items-center mb-3">
+                  <i class="fas fa-chart-line fa-2x text-primary me-3"></i>
+                  <h4 class="card-title mb-0">Kinetic Model on Unemployment</h4>
+                </div>
+                <p class="card-text">Developed mesoscopic models to characterize unemployment patterns, performed Monte-Carlo simulations, and advanced transport equations research with minimal prior literature.</p>
+                <div class="project-meta">
+                  <span class="badge bg-primary me-2">Research</span>
+                  <span class="badge bg-secondary me-2">Simulation</span>
+                  <span class="badge bg-info">Python</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://github.com/karthigeyanrgs/kinetic-unemployment-model" class="btn btn-sm btn-outline-primary" target="_blank">
+                    <i class="fab fa-github me-2"></i>View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <div class="col">
-      <div class="card h-100 rounded-3 shadow-sm hoverable">
-        <div class="card-body">
-          <div class="project-header d-flex align-items-center mb-3">
-            <i class="fas fa-fire fa-2x text-primary me-3"></i>
-            <h3 class="card-title mb-0">Convection Coupled Simulation</h3>
+          <div class="col">
+            <div class="card h-100 project-card">
+              <div class="card-body">
+                <div class="project-header d-flex align-items-center mb-3">
+                  <i class="fas fa-fire fa-2x text-danger me-3"></i>
+                  <h4 class="card-title mb-0">Convection Coupled Simulation</h4>
+                </div>
+                <p class="card-text">Developed an enthalpy method for convection-coupled phase change simulation, reducing complexity and validating against the Stefan problem benchmark.</p>
+                <div class="project-meta">
+                  <span class="badge bg-danger me-2">Thermal</span>
+                  <span class="badge bg-secondary me-2">CFD</span>
+                  <span class="badge bg-info">Python</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://github.com/karthigeyanrgs/convection-simulation" class="btn btn-sm btn-outline-danger" target="_blank">
+                    <i class="fab fa-github me-2"></i>View Code
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="card-text">Developed an enthalpy method for convection-coupled phase change simulation, reducing complexity and validating against the Stefan problem benchmark.</p>
-          <div class="project-links">
-            <a href="https://github.com/karthigeyanrgs/convection-simulation" class="btn btn-sm btn-outline-primary" target="_blank">
-              <i class="fab fa-github me-2"></i>View Code
-            </a>
+          {%- else %}
+          <!-- Engineering Projects -->
+          <div class="col">
+            <div class="card h-100 project-card">
+              <div class="card-body">
+                <div class="project-header d-flex align-items-center mb-3">
+                  <i class="fas fa-code fa-2x text-success me-3"></i>
+                  <h4 class="card-title mb-0">Unstructured Finite Element Solver</h4>
+                </div>
+                <p class="card-text">Created a Python-based solver for unstructured meshes using FeNiCS, with mesh generation via Gmsh and visualization through ParaView. Implemented automatic differentiation and parallelization.</p>
+                <div class="project-meta">
+                  <span class="badge bg-success me-2">FEM</span>
+                  <span class="badge bg-secondary me-2">Computational</span>
+                  <span class="badge bg-info">Python</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://github.com/karthigeyanrgs/finite-element-solver" class="btn btn-sm btn-outline-success" target="_blank">
+                    <i class="fab fa-github me-2"></i>View Code
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    {%- else %}
-    <!-- Engineering Projects -->
-    <div class="col">
-      <div class="card h-100 rounded-3 shadow-sm hoverable">
-        <div class="card-body">
-          <div class="project-header d-flex align-items-center mb-3">
-            <i class="fas fa-code fa-2x text-primary me-3"></i>
-            <h3 class="card-title mb-0">Unstructured Finite Element Solver</h3>
-          </div>
-          <p class="card-text">Created a Python-based solver for unstructured meshes using FeNiCS, with mesh generation via Gmsh and visualization through ParaView. Implemented automatic differentiation and parallelization.</p>
-          <div class="project-links">
-            <a href="https://github.com/karthigeyanrgs/finite-element-solver" class="btn btn-sm btn-outline-primary" target="_blank">
-              <i class="fab fa-github me-2"></i>View Code
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card h-100 rounded-3 shadow-sm hoverable">
-        <div class="card-body">
-          <div class="project-header d-flex align-items-center mb-3">
-            <i class="fas fa-cogs fa-2x text-primary me-3"></i>
-            <h3 class="card-title mb-0">Fatigue Characteristics of FGM</h3>
+          <div class="col">
+            <div class="card h-100 project-card">
+              <div class="card-body">
+                <div class="project-header d-flex align-items-center mb-3">
+                  <i class="fas fa-cogs fa-2x text-warning me-3"></i>
+                  <h4 class="card-title mb-0">Fatigue Characteristics of FGM</h4>
+                </div>
+                <p class="card-text">Researched and manufactured Aluminium-based functionally graded materials with various fillers, conducting experimental analysis using tri-axial accelerometer for fatigue characteristics.</p>
+                <div class="project-meta">
+                  <span class="badge bg-warning me-2">Materials</span>
+                  <span class="badge bg-secondary me-2">Experimental</span>
+                  <span class="badge bg-info">Analysis</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://github.com/karthigeyanrgs/fgm-fatigue-analysis" class="btn btn-sm btn-outline-warning" target="_blank">
+                    <i class="fab fa-github me-2"></i>View Code
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="card-text">Researched and manufactured Aluminium-based functionally graded materials with various fillers, conducting experimental analysis using tri-axial accelerometer for fatigue characteristics.</p>
-          <div class="project-links">
-            <a href="https://github.com/karthigeyanrgs/fgm-fatigue-analysis" class="btn btn-sm btn-outline-primary" target="_blank">
-              <i class="fab fa-github me-2"></i>View Code
-            </a>
-          </div>
+          {%- endif %}
         </div>
       </div>
-    </div>
+      {%- endfor %}
     {%- endif %}
   </div>
-  {%- endfor %}
-{%- endif %}
 </div>
 
 <!-- Add custom styling -->
@@ -276,38 +317,6 @@ horizontal: false
 
 .col {
   padding: 1rem;
-}
-
-/* Project card styling */
-.card {
-  transition: transform 0.3s ease-in-out;
-  height: 100%;
-  margin: 0;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.project-header i {
-  opacity: 0.8;
-}
-
-.btn-outline-primary {
-  border-radius: 20px;
-  padding: 0.375rem 1rem;
-}
-
-.btn-outline-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Category headers */
-.category {
-  margin: 2rem 0 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--global-theme-color);
 }
 
 /* Coming Soon Section Styling */
@@ -348,6 +357,63 @@ horizontal: false
   border-color: var(--global-theme-color);
 }
 
+/* Completed Projects Section Styling */
+.completed-projects-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.category-header {
+  margin-bottom: 2rem;
+}
+
+.category-header h2 {
+  margin-bottom: 1rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  border: 2px solid transparent;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #28a745, #ffc107, #dc3545);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--global-theme-color);
+}
+
+.project-header {
+  margin-bottom: 1rem;
+}
+
+.project-header i {
+  opacity: 0.8;
+}
+
 .project-meta {
   margin-top: 1rem;
 }
@@ -356,6 +422,18 @@ horizontal: false
   font-size: 0.75rem;
   padding: 0.375rem 0.75rem;
   border-radius: 12px;
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 20px;
+  padding: 0.375rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .bg-purple {
@@ -417,7 +495,7 @@ horizontal: false
   color: white;
 }
 
-/* Animation for coming soon cards */
+/* Animation for all cards */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -429,7 +507,8 @@ horizontal: false
   }
 }
 
-.coming-soon-card {
+.coming-soon-card,
+.project-card {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
@@ -439,4 +518,24 @@ horizontal: false
 .coming-soon-card:nth-child(4) { animation-delay: 0.4s; }
 .coming-soon-card:nth-child(5) { animation-delay: 0.5s; }
 .coming-soon-card:nth-child(6) { animation-delay: 0.6s; }
+
+.project-card:nth-child(1) { animation-delay: 0.7s; }
+.project-card:nth-child(2) { animation-delay: 0.8s; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .coming-soon-section,
+  .completed-projects-section {
+    padding: 1rem;
+  }
+  
+  .category-header h2 {
+    font-size: 1.5rem;
+  }
+}
 </style>

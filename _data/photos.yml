@@ -1,17 +1,191 @@
-# Example photo entries - replace with your own photos
-
-- image: IMG_8756.JPG
-  caption: Unforgettable experience
+# Berlin Photos
+- image: Berlin/IMG_8727.JPG
+  caption: Brandenburg Gate - Iconic symbol of Berlin
   location: Berlin, Germany
   year: 2020
 
-- image: IMG_8757.jpg
-  caption: Unforgettable experience
+- image: Berlin/IMG_8787.JPG
+  caption: Berlin Wall Memorial - History preserved
   location: Berlin, Germany
   year: 2020
 
-# Add more photos by following the same format:
-# - image: your-image-filename.jpg
-#   caption: Your photo caption
-#   location: Location name
-#   year: Year taken 
+- image: Berlin/IMG_8709.JPG
+  caption: Museum Island - Cultural heart of Berlin
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8803.JPG
+  caption: Reichstag Building - German Parliament
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8790.JPG
+  caption: East Side Gallery - Street art on the Berlin Wall
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_20200314_112043.jpg
+  caption: Berlin Cathedral - Majestic architecture
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8829.JPG
+  caption: Checkpoint Charlie - Cold War history
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8753.JPG
+  caption: Alexanderplatz - Modern Berlin square
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8853.JPG
+  caption: Victory Column - Golden Angel of Victory
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_20200307_130905.jpg
+  caption: Potsdamer Platz - Contemporary Berlin
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8836.JPG
+  caption: Holocaust Memorial - Memorial to the Murdered Jews of Europe
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8745.JPG
+  caption: Unter den Linden - Historic boulevard
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8682.JPG
+  caption: Berlin TV Tower - Fernsehturm
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8747.JPG
+  caption: Gendarmenmarkt - Beautiful square
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8756.JPG
+  caption: Berlin streets - Urban exploration
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_20200308_152506.jpg
+  caption: Berlin sunset - Golden hour in the city
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8811.JPG
+  caption: Berlin architecture - Modern meets historic
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8925.JPG
+  caption: Berlin nightlife - City that never sleeps
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8890.JPG
+  caption: Berlin parks - Green spaces in the city
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8817.JPG
+  caption: Berlin culture - Art and expression
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8757.jpg
+  caption: Berlin memories - Unforgettable experience
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8863.JPG
+  caption: Berlin landmarks - City highlights
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8820.JPG
+  caption: Berlin charm - Hidden corners
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8893.JPG
+  caption: Berlin vibes - Urban atmosphere
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8887.JPG
+  caption: Berlin moments - Capturing the city
+  location: Berlin, Germany
+  year: 2020
+
+- image: Berlin/IMG_8916.JPG
+  caption: Berlin beauty - City of contrasts
+  location: Berlin, Germany
+  year: 2020
+
+# Germany Treks Photos
+- image: Treks in Germany/IMG_8055.JPG
+  caption: German countryside - Rolling hills and forests
+  location: German Countryside
+  year: 2020
+
+- image: Treks in Germany/IMG_7062.JPG
+  caption: Mountain trails - Hiking in the Alps
+  location: German Alps
+  year: 2020
+
+- image: Treks in Germany/IMG_7056.JPG
+  caption: Forest paths - Nature exploration
+  location: German Forests
+  year: 2020
+
+- image: Treks in Germany/IMG_6919.JPG
+  caption: Valley views - Scenic landscapes
+  location: German Valleys
+  year: 2020
+
+- image: Treks in Germany/IMG_8149.JPG
+  caption: Summit views - Mountain peaks
+  location: German Mountains
+  year: 2020
+
+- image: Treks in Germany/IMG_8138.JPG
+  caption: Trail adventures - Outdoor exploration
+  location: German Trails
+  year: 2020
+
+- image: Treks in Germany/IMG_6861.JPG
+  caption: Natural beauty - German wilderness
+  location: German Wilderness
+  year: 2020
+
+- image: Treks in Germany/IMG_7005.JPG
+  caption: Hiking memories - Outdoor experiences
+  location: German Hiking Trails
+  year: 2020
+
+- image: Treks in Germany/IMG_6891.JPG
+  caption: Panoramic views - Breathtaking landscapes
+  location: German Countryside
+  year: 2020
+
+- image: Treks in Germany/IMG_6915.JPG
+  caption: Nature trails - Exploring the outdoors
+  location: German Nature Reserves
+  year: 2020
+
+- image: Treks in Germany/IMG_6918.JPG
+  caption: Mountain vistas - Alpine scenery
+  location: German Alps
+  year: 2020
+
+- image: Treks in Germany/IMG_6850.JPG
+  caption: Trekking adventures - German outdoors
+  location: German Hiking Routes
+  year: 2020 

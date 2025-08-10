@@ -255,21 +255,6 @@ nav_order: 6
       </div>
     </div>
 
-    <!-- karthigeyanrgs.github.io -->
-    <div class="repo-card" data-category="scientific">
-      <h3 class="repo-title">
-        <a href="https://github.com/karthigeyanrgs/karthigeyanrgs.github.io" target="_blank">karthigeyanrgs.github.io</a>
-      </h3>
-      <p class="repo-description">Personal academic website built with Jekyll and al-folio theme. Features technical writing and giscus integration.</p>
-      <div class="repo-meta">
-        <div class="repo-language">
-          <span class="language-dot html"></span>
-          HTML
-        </div>
-        <span><i class="fas fa-star"></i> Original</span>
-      </div>
-    </div>
-
     <!-- mast3r -->
     <div class="repo-card" data-category="vision">
       <h3 class="repo-title">
@@ -462,6 +447,82 @@ nav_order: 6
           Python
         </div>
         <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- Scientific Computing Projects -->
+    <!-- computer-science -->
+    <div class="repo-card" data-category="scientific">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/computer-science" target="_blank">computer-science</a>
+      </h3>
+      <p class="repo-description">Path to a free self-taught education in Computer Science. Comprehensive curriculum covering fundamental CS concepts and algorithms.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot html"></span>
+          HTML
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- practical-python -->
+    <div class="repo-card" data-category="scientific">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/practical-python" target="_blank">practical-python</a>
+      </h3>
+      <p class="repo-description">Practical Python Programming course by @dabeaz. Hands-on Python programming with real-world applications and examples.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- mcmc-python -->
+    <div class="repo-card" data-category="scientific">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/mcmc-python" target="_blank">mcmc-python</a>
+      </h3>
+      <p class="repo-description">Create Your Own Metropolis-Hastings Markov Chain Monte Carlo Algorithm for Bayesian Inference. Statistical computing and probabilistic programming.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- lbm -->
+    <div class="repo-card" data-category="scientific">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/lbm" target="_blank">lbm</a>
+      </h3>
+      <p class="repo-description">A simple full-python 2D lattice-Boltzmann code. Computational fluid dynamics simulation using the lattice Boltzmann method.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- Our_love_for_math -->
+    <div class="repo-card" data-category="scientific">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/Our_love_for_math" target="_blank">Our_love_for_math</a>
+      </h3>
+      <p class="repo-description">Gitbook for sharing math notes. Mathematical concepts, proofs, and educational materials for advanced mathematics.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot markdown"></span>
+          Markdown
+        </div>
+        <span><i class="fas fa-star"></i> Original</span>
       </div>
     </div>
   </div>
