@@ -139,6 +139,19 @@ nav_order: 6
 .language-dot.python { background: #3572A5; }
 .language-dot.jupyter { background: #DA5B0B; }
 .language-dot.html { background: #e34c26; }
+.language-dot.cpp { background: #f34b7d; }
+.language-dot.javascript { background: #f1e05a; }
+.language-dot.go { background: #00ADD8; }
+.language-dot.rust { background: #dea584; }
+.language-dot.tex { background: #3D6117; }
+.language-dot.scss { background: #cf649a; }
+.language-dot.ruby { background: #701516; }
+.language-dot.typescript { background: #2b7489; }
+.language-dot.vue { background: #41b883; }
+.language-dot.julia { background: #a270ba; }
+.language-dot.java { background: #b07219; }
+.language-dot.matlab { background: #e16737; }
+.language-dot.css { background: #563d7c; }
 
 @media (max-width: 768px) {
   .repo-container {
@@ -170,72 +183,193 @@ nav_order: 6
 <div class="repo-container">
   <div class="repo-header">
     <h1>GitHub Repositories</h1>
-    <p>Exploring the intersection of scientific computing, robotics, and machine learning</p>
+    <p>Exploring the intersection of robotics, computer vision, and machine learning</p>
   </div>
 
   <div class="repo-categories">
     <button class="category-button active" data-category="all">All</button>
-    <button class="category-button" data-category="scientific">Scientific Computing</button>
+    <button class="category-button" data-category="robotics">Robotics & SLAM</button>
+    <button class="category-button" data-category="vision">Computer Vision</button>
     <button class="category-button" data-category="ml">Machine Learning</button>
-    <button class="category-button" data-category="robotics">Robotics</button>
+    <button class="category-button" data-category="scientific">Scientific Computing</button>
   </div>
 
   <div class="repo-grid">
-    <!-- CFDPython -->
-    <div class="repo-card" data-category="scientific">
+    <!-- rtabmap -->
+    <div class="repo-card" data-category="robotics">
       <h3 class="repo-title">
-        <a href="https://github.com/karthigeyanrgs/CFDPython" target="_blank">CFDPython</a>
+        <a href="https://github.com/karthigeyanrgs/rtabmap" target="_blank">rtabmap</a>
       </h3>
-      <p class="repo-description">A sequence of Jupyter notebooks featuring the "12 Steps to Navier-Stokes". Comprehensive guide to computational fluid dynamics.</p>
+      <p class="repo-description">RTAB-Map library and standalone application for real-time appearance-based mapping and localization.</p>
       <div class="repo-meta">
         <div class="repo-language">
-          <span class="language-dot jupyter"></span>
-          Jupyter Notebook
+          <span class="language-dot cpp"></span>
+          C++
         </div>
         <span><i class="fas fa-code-branch"></i> Forked</span>
       </div>
     </div>
 
-    <!-- gpubootcamp -->
-    <div class="repo-card" data-category="scientific">
+    <!-- VGGT-SLAM -->
+    <div class="repo-card" data-category="robotics">
       <h3 class="repo-title">
-        <a href="https://github.com/karthigeyanrgs/gpubootcamp" target="_blank">gpubootcamp</a>
+        <a href="https://github.com/karthigeyanrgs/VGGT-SLAM" target="_blank">VGGT-SLAM</a>
       </h3>
-      <p class="repo-description">GPU bootcamp material for HPC and AI applications. Comprehensive tutorials and examples for GPU computing.</p>
+      <p class="repo-description">VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold. Advanced SLAM implementation with geometric optimization.</p>
       <div class="repo-meta">
         <div class="repo-language">
-          <span class="language-dot jupyter"></span>
-          Jupyter Notebook
+          <span class="language-dot python"></span>
+          Python
         </div>
         <span><i class="fas fa-code-branch"></i> Forked</span>
       </div>
     </div>
 
-    <!-- IntroToJulia -->
+    <!-- vggt -->
+    <div class="repo-card" data-category="vision">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/vggt" target="_blank">vggt</a>
+      </h3>
+      <p class="repo-description">VGGT: Visual Geometry Grounded Transformer - CVPR 2025 Best Paper Award winner for 3D geometry understanding.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- IsaacSim -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/IsaacSim" target="_blank">IsaacSim</a>
+      </h3>
+      <p class="repo-description">NVIDIA Isaac Sim™ for developing, simulating, and testing AI-driven robots in realistic virtual environments.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- karthigeyanrgs.github.io -->
     <div class="repo-card" data-category="scientific">
       <h3 class="repo-title">
-        <a href="https://github.com/karthigeyanrgs/IntroToJulia" target="_blank">IntroToJulia</a>
+        <a href="https://github.com/karthigeyanrgs/karthigeyanrgs.github.io" target="_blank">karthigeyanrgs.github.io</a>
       </h3>
-      <p class="repo-description">A Deep Introduction to Julia for Data Science and Scientific Computing. Comprehensive guide to Julia programming.</p>
+      <p class="repo-description">Personal academic website built with Jekyll and al-folio theme. Features technical writing and giscus integration.</p>
       <div class="repo-meta">
         <div class="repo-language">
           <span class="language-dot html"></span>
           HTML
         </div>
-        <span><i class="fas fa-code-branch"></i> Forked</span>
+        <span><i class="fas fa-star"></i> Original</span>
       </div>
     </div>
 
-    <!-- ML-From-Scratch -->
-    <div class="repo-card" data-category="ml">
+    <!-- mast3r -->
+    <div class="repo-card" data-category="vision">
       <h3 class="repo-title">
-        <a href="https://github.com/karthigeyanrgs/ML-From-Scratch" target="_blank">ML-From-Scratch</a>
+        <a href="https://github.com/karthigeyanrgs/mast3r" target="_blank">mast3r</a>
       </h3>
-      <p class="repo-description">Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility.</p>
+      <p class="repo-description">Grounding Image Matching in 3D with MASt3R. Advanced 3D-aware image matching and reconstruction.</p>
       <div class="repo-meta">
         <div class="repo-language">
           <span class="language-dot python"></span>
           Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- LightGlue -->
+    <div class="repo-card" data-category="vision">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/LightGlue" target="_blank">LightGlue</a>
+      </h3>
+      <p class="repo-description">LightGlue: Local Feature Matching at Light Speed (ICCV 2023). High-performance feature matching for computer vision.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- IsaacSimZMQ -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/IsaacSimZMQ" target="_blank">IsaacSimZMQ</a>
+      </h3>
+      <p class="repo-description">Isaac SIM extension for communication with external applications via ZMQ. Enables real-time simulation integration.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- DROID-SLAM -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/DROID-SLAM" target="_blank">DROID-SLAM</a>
+      </h3>
+      <p class="repo-description">DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras. State-of-the-art SLAM implementation.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- MASt3R-SLAM -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/MASt3R-SLAM" target="_blank">MASt3R-SLAM</a>
+      </h3>
+      <p class="repo-description">MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors (CVPR 2025). Advanced dense SLAM system.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- rsl_rl -->
+    <div class="repo-card" data-category="ml">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/rsl_rl" target="_blank">rsl_rl</a>
+      </h3>
+      <p class="repo-description">Fast and simple implementation of RL algorithms, designed to run fully on GPU. Optimized for robotics applications.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- rl_games -->
+    <div class="repo-card" data-category="ml">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/rl_games" target="_blank">rl_games</a>
+      </h3>
+      <p class="repo-description">Reinforcement learning implementations and algorithms. Comprehensive RL framework with various algorithms.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot jupyter"></span>
+          Jupyter Notebook
         </div>
         <span><i class="fas fa-code-branch"></i> Forked</span>
       </div>
@@ -256,16 +390,76 @@ nav_order: 6
       </div>
     </div>
 
-    <!-- ThinkStats2 -->
-    <div class="repo-card" data-category="scientific">
+    <!-- jetbot -->
+    <div class="repo-card" data-category="robotics">
       <h3 class="repo-title">
-        <a href="https://github.com/karthigeyanrgs/ThinkStats2" target="_blank">ThinkStats2</a>
+        <a href="https://github.com/karthigeyanrgs/jetbot" target="_blank">jetbot</a>
       </h3>
-      <p class="repo-description">Text and supporting code for Think Stats, 2nd Edition. Statistical analysis and probability in Python.</p>
+      <p class="repo-description">An educational AI robot based on NVIDIA Jetson Nano. Complete robotics platform for learning AI and robotics.</p>
       <div class="repo-meta">
         <div class="repo-language">
           <span class="language-dot jupyter"></span>
           Jupyter Notebook
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- droid_metric -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/droid_metric" target="_blank">droid_metric</a>
+      </h3>
+      <p class="repo-description">Run DROID-SLAM with Metric3D to improve monocular performance. Enhanced SLAM with metric depth estimation.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- Autonomous-Aerial-Robotics-course -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/Autonomous-Aerial-Robotics-course" target="_blank">Autonomous-Aerial-Robotics-course</a>
+      </h3>
+      <p class="repo-description">Class notes from the Lectures on "Autonomous Aerial Robots". Comprehensive course materials on drone robotics.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot markdown"></span>
+          Markdown
+        </div>
+        <span><i class="fas fa-star"></i> Original</span>
+      </div>
+    </div>
+
+    <!-- AutonomousDrivingCookbook -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/AutonomousDrivingCookbook" target="_blank">AutonomousDrivingCookbook</a>
+      </h3>
+      <p class="repo-description">Scenarios, tutorials and demos for Autonomous Driving. Comprehensive guide to self-driving car development.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot jupyter"></span>
+          Jupyter Notebook
+        </div>
+        <span><i class="fas fa-code-branch"></i> Forked</span>
+      </div>
+    </div>
+
+    <!-- PathPlanning -->
+    <div class="repo-card" data-category="robotics">
+      <h3 class="repo-title">
+        <a href="https://github.com/karthigeyanrgs/PathPlanning" target="_blank">PathPlanning</a>
+      </h3>
+      <p class="repo-description">Common used path planning algorithms with animations. Visual demonstrations of various pathfinding algorithms.</p>
+      <div class="repo-meta">
+        <div class="repo-language">
+          <span class="language-dot python"></span>
+          Python
         </div>
         <span><i class="fas fa-code-branch"></i> Forked</span>
       </div>
