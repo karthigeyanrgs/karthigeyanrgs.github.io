@@ -2,7 +2,7 @@
 layout: page
 permalink: /gallery/
 title: Gallery
-description: A collection of memories from my travels around Germany - from the vibrant streets of Berlin to the breathtaking landscapes of the German countryside
+description: A collection of memories from my travels around the world - from the vibrant streets of Berlin to the breathtaking landscapes of Oman and beyond. I run half-marathons, have amateur photography skills and love to walk around unknown destinations without a plan.
 nav: true
 nav_order: 7
 ---
@@ -10,9 +10,9 @@ nav_order: 7
 <!-- Gallery Header -->
 <div class="gallery-header text-center mb-5">
   <h1 class="display-4 fw-bold text-primary mb-3">
-    <i class="fas fa-camera me-3"></i>Travel Gallery
+    <i class="fas fa-camera me-3"></i>Memory lane
   </h1>
-  <p class="lead text-muted">Exploring Germany's rich history, vibrant culture, and stunning natural landscapes</p>
+  <p class="lead text-muted">Every memory is treasure which is heavily influenced by nature</p>
 </div>
 
 <!-- Filter Buttons -->

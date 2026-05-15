@@ -2,7 +2,7 @@
 layout: about
 title: About Me
 permalink: /
-subtitle: Reinforcement Learning | Nvidia Isaac Sim and Jetson Expert | VSLAM and Foundational models
+subtitle: Mathematical modelling | Nvidia Isaac Sim and Jetson Expert | VSLAM and Foundational models
 nav_order: 1
 nav: true
 
@@ -287,11 +287,11 @@ document.addEventListener('DOMContentLoaded', function() {
   clear     - Clear the terminal
   help      - Show this help message`,
 
-    about: () => `Karthigeyan Ganesh Shankar\nLead Engineer - Autonomy @ Ati Motors\nSpecializing in Reinforcement Learning, Robotics, and Simulation`,
+    about: () => `Karthigeyan Ganesh Shankar\nLead Engineer - Autonomy @ Ati Motors\nSpecializing in Mathematical Modelling, systems, and simulation`,
 
     skills: () => `Technical Skills:\n• Simulations\n• Nvidia Isaac Sim\n• Operating systems\n• Computer vision models\n• Docker and Kubernetes`,
 
-    contact: () => `Email: karthigeyan.gs@gmail.com\nLinkedIn: linkedin.com/in/karthigeyan-ganesh-shankar\nGitHub: github.com/karthigeyanrgs`,
+    contact: () => `Email: karthigeyanrgs@gmail.com\nLinkedIn: linkedin.com/in/karthigeyan-ganesh-shankar\nGitHub: github.com/karthigeyanrgs`,
 
     projects: () => `Notable Projects:\n1. 3D reconstruction methods - VGGT, Mast3R, Fast3R, Nerf models\n2. Isaac Sim highly fidel representations\n3. Migration from Monolithic to Microservices\n4. VSLAM Implementation for Lidar free navigation\n5. Upgrading the operating system with custom dts`,
 
