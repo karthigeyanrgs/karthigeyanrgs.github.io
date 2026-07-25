@@ -12,7 +12,7 @@ profile:
   image_circular: false
   more_info: >
     <b>Karthigeyan Ganesh Shankar</b><br>
-    <b><i>Lead Engineer - Autonomy @ Ati Motors</i></b><br>
+    <b><i>Senior Solutions Engineer @ Vimaan</i></b><br>
     <i>Master's in Simulation Sciences</i><br>
     RWTH Aachen, Germany<br>
 
@@ -446,9 +446,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <h2 class="section-title">Introduction</h2>
     <p><strong>Vanakkam</strong> 🙏 (<em>Greetings in Tamil</em>),</p>
     
-    <p>I started my professional journey with <strong>core mechanical disciplines</strong>, finding my foot in <em>fluid simulations</em> with sufficient mathematical training. Delving deeper, I took up an interesting challenge of designing <strong>kinetic equations</strong> (<em>mesoscopic</em>) for unemployment using transport equations as my master's thesis.</p>
+    <p>My research interest sits in the sweet spot of physics-informed geometric representations in simulation (visual mapping would be an added plus) while well tied with the accurate actuation control of joints/entities. I have worked extensively with robotics simulation, foundational models for navigation and 3D reconstruction for replication and visual localisation. </p>
     
-    <p>My journey took an unexpected turn as I explored <em>non-technical roles</em> - from <strong>Community and Growth Manager</strong> to <strong>Customer Success Engineer</strong>, eventually becoming the <strong>Head of Growth</strong>. After a year of valuable experience, I found my true calling at <strong>Ati Motors</strong>, where I pursue my passion for advancing technology to benefit humanity. I have worked on different technical verticals at Ati: </p>
+    <p> The idea of having differential environmental features (be it spatio-temporal scene changes or understanding the stress/strain profiles along with elastic tendencies of the objects of interest) were important, since the interpretation is taken into account with the control of the robot. </p>
+
+    <p>My journey has taken unexpected turns as I explored <em>non-technical roles</em> - from <strong>Community and Growth Manager</strong> to <strong>Customer Success Engineer</strong>, eventually becoming the <strong>Head of Growth</strong>. After a year of valuable experience, I found my true calling at <strong>Ati Motors</strong>, where I pursue my passion for advancing technology to benefit humanity. I have worked on different technical verticals at differnt junctures of my life: </p>
 
     <ul class="list-styled">
       <li>Create a <strong>clean simulation-first</strong> software validation and regression framework.</li>
@@ -466,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <!-- Current Work Section -->
   <div class="section">
-    <h2 class="section-title">Current Focus</h2>
+    <h2 class="section-title">Past Focus</h2>
     <ul class="list-styled">
       <li>Working on bridging the gap between <strong>robotics simulations</strong> and <strong>reality</strong>. Using <strong>Nvidia Isaac Sim</strong>, we are creating <em>highly accurate digital twins</em> of our robots and their operational environments, translating real-world scenarios into precise simulation frameworks.</li>
       <li>Leading concentrated research efforts to create <strong>millimeter accuracy reconstructions</strong> of warehouse environments and integrate <em>state-of-the-art Visual SLAM algorithms</em> for robust navigation.</li>
