@@ -20,14 +20,14 @@ env:
 
 jobs:
   axe:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.4'
+          ruby-version: '3.2.2'
           bundler-cache: false
       - name: Configure Bundler 🔧
         run: |
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies 📦
-        run: npm install @axe-core/cli
+        run: npm install -g @axe-core/cli
       - name: Build site 🏗️
         run: bundle exec jekyll build
       - name: Run axe 🔍
