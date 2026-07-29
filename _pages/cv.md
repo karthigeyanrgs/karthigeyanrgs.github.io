@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 2
-cv_pdf: Karthigeyan_Resume_2025_May.pdf
+cv_pdf: Karthigeyan_Resume_July_26.pdf
 description: A showcase of my professional journey, skills, and achievements in technology and innovation.
 ---
 
