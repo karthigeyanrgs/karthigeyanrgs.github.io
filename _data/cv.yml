@@ -32,9 +32,18 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Senior Solutions Engineer
+      institution: Vimaan AI
+      year: June 2026 - Present
+      location: Bengaluru, India
+      description:
+        - Engineered a cross-functional partner integration with key stakeholders, delivering a production-ready solution
+        - Perfected firmware, software, geometric and computer vision pipelines for three different product SKUs
+        - Improved tooling and awareness with \textbf{powerful token reduction methods (67%) of Claude
+        - "Skills: Foxglove, ROS1, Neo4j, Kafka, Triton Inference Server"
     - title: Lead Autonomy Engineer
       institution: Ati Motors
-      year: April 2025 - Present
+      year: April 2025 - May 2026
       location: Bengaluru, India
       description:
         - Led to widespread adoption of simulation-first development and testing
