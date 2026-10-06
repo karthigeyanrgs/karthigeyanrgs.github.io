@@ -110,8 +110,16 @@
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              <button
+                id="search-toggle"
+                type="button"
+                title="Search"
+                aria-label="Open site search"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                onclick="openSearchModal()"
+              >
+                <span class="nav-link" aria-hidden="true">ctrl k <i class="ti ti-search"></i></span>
               </button>
             </li>
           {% endif %}
@@ -124,7 +132,13 @@
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
+              <button
+                id="light-toggle"
+                type="button"
+                title="Change theme"
+                aria-label="Toggle color theme"
+                aria-pressed="false"
+              >
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>
