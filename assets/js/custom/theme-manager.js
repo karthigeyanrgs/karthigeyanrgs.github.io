@@ -60,21 +60,21 @@ class ThemeManager {
     const toggle = document.createElement('div');
     toggle.className = 'theme-toggle';
     toggle.innerHTML = `
-      <button class="theme-toggle-btn">
-        <i class="fas fa-adjust"></i>
+      <button class="theme-toggle-btn" type="button" aria-label="Open theme menu" aria-expanded="false">
+        <i class="fas fa-adjust" aria-hidden="true"></i>
       </button>
-      <div class="theme-menu">
-        <button data-theme="light">
-          <i class="fas fa-sun"></i> Light
+      <div class="theme-menu" aria-label="Theme menu">
+        <button type="button" data-theme="light">
+          <i class="fas fa-sun" aria-hidden="true"></i> Light
         </button>
-        <button data-theme="dark">
-          <i class="fas fa-moon"></i> Dark
+        <button type="button" data-theme="dark">
+          <i class="fas fa-moon" aria-hidden="true"></i> Dark
         </button>
-        <button data-theme="dracula">
-          <i class="fas fa-ghost"></i> Dracula
+        <button type="button" data-theme="dracula">
+          <i class="fas fa-ghost" aria-hidden="true"></i> Dracula
         </button>
-        <button data-theme="nord">
-          <i class="fas fa-snowflake"></i> Nord
+        <button type="button" data-theme="nord">
+          <i class="fas fa-snowflake" aria-hidden="true"></i> Nord
         </button>
       </div>
     `;
@@ -85,8 +85,15 @@ class ThemeManager {
     const toggleBtn = toggle.querySelector('.theme-toggle-btn');
     const menu = toggle.querySelector('.theme-menu');
 
+    const syncToggleState = () => {
+      const isOpen = menu.classList.contains('active');
+      toggleBtn.setAttribute('aria-expanded', String(isOpen));
+      toggleBtn.setAttribute('aria-label', isOpen ? 'Close theme menu' : 'Open theme menu');
+    };
+
     toggleBtn.addEventListener('click', () => {
       menu.classList.toggle('active');
+      syncToggleState();
     });
 
     menu.querySelectorAll('button').forEach(btn => {
@@ -94,6 +101,7 @@ class ThemeManager {
         const theme = btn.dataset.theme;
         this.applyTheme(theme);
         menu.classList.remove('active');
+        syncToggleState();
       });
     });
 
@@ -101,6 +109,7 @@ class ThemeManager {
     document.addEventListener('click', (e) => {
       if (!toggle.contains(e.target)) {
         menu.classList.remove('active');
+        syncToggleState();
       }
     });
   }
@@ -124,4 +133,4 @@ class ThemeManager {
 // Initialize theme manager when document is ready
 document.addEventListener('DOMContentLoaded', () => {
   window.themeManager = new ThemeManager();
-}); 
+});
