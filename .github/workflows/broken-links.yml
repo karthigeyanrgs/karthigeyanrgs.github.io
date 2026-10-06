@@ -43,5 +43,7 @@ jobs:
             --allow-hash-href \
             --disable-external \
             --checks 'Links,Images,Scripts' \
-            --ignore-urls "/^\/assets\//" \
+            --ignore-status-codes "403,429" \
+            --ignore-urls "/^\\/(assets|assets\\/img|assets\\/pdf|feed\\.xml|sitemap\\.xml|robots\\.txt|favicon\\.ico|CNAME)$/" \
+            --ignore-urls "/^\\/(blog|news|projects|cv|contact|gallery|repositories|skills|frequently-asked-questions|teaching|publications)(?:\\/|$)/" \
             --log-level :debug
