@@ -30,7 +30,7 @@ jobs:
       - name: Update Badges ⭐
         uses: emibcn/badge-action@v2.0.2
         with:
-          label: 'lighthouse'
+          label: "lighthouse"
           status: ${{ steps.lighthouse.outputs.score }}
           color: ${{ steps.lighthouse.outputs.color }}
-          path: 'badges/lighthouse.svg'
+          path: "badges/lighthouse.svg"

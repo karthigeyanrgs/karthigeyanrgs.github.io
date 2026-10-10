@@ -27,7 +27,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.2'
+          ruby-version: "3.2.2"
           bundler-cache: false
       - name: Configure Bundler 🔧
         run: |
@@ -37,9 +37,12 @@ jobs:
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
       - name: Install dependencies 📦
-        run: npm install -g @axe-core/cli
+        run: npm install -g @axe-core/cli browser-driver-manager
+      - name: Install matching Chrome and ChromeDriver
+         run: |
+          browser-driver-manager install chrome chromedriver
       - name: Install Jekyll build dependencies 🧩
         run: |
           sudo apt-get update
@@ -49,4 +52,4 @@ jobs:
       - name: Build site 🏗️
         run: bundle exec jekyll build
       - name: Run axe 🔍
-        run: npx axe http://localhost:4000 --tags wcag2a,wcag2aa
+        run: npx axe http://localhost:4000 --tags wcag2a,wcag2aa --chromedriver-path "$(which chromedriver)"
