@@ -101,7 +101,6 @@ We approached the travel ticket inspector who asked us to proceed much further f
     
     </figure>
 
-
 **And to our delight, there laid private cabins!!**
 
 A cabin which housed four individuals within its vicinity. Our co-passengers were a couple who never stopped talking to us until bedtime. They spoke about movies without breaking a sweat! My sister and I being patient listeners, heard to every one of their little experiences and inserting flavour to our conversation at the right moments.
@@ -164,7 +163,6 @@ Walking is my favourite physical activity. I push myself to the extremes when it
     
     </figure>
 
-
 And I was up for another challenge. Get to Auroville and back to my Airbnb with just water as my replenishment. The walk was 22 Km long when circled through, and hence I felt that it was extremely doable. I absolutely discounted the scorching heat during peak summer, my physical fitness levels and my frugal mindset.
 
 **How Frugal?**
@@ -204,7 +202,6 @@ Auroville apart from inducing an intentional, radical and free thinking society 
     </figcaption>
     
     </figure>
-
 
 And while heading back, I started to feel the aftereffects of intense heat. Thanks to the tender coconut seller on my return journey, who replenished my hydration levels to normal and hence clearing my head from any form of discomfort.
 

@@ -18,6 +18,7 @@ nav_order: 5
   </div>
 
 {% for category in site.data.skills %}
+
 <div class="skill-section" data-aos="fade-up">
 <h2><i class="fas fa-code"></i> {{ category.name }}</h2>
 <div class="skills-grid">

@@ -68,9 +68,9 @@ My sickness served as an escape from a normal childhood. I don't have any memory
 
 Adding to the mix, I was a taciturn and remotely silent and shy. Whenever I asked my extended family what do you remember the best about me:
 
-- Everyone remembers about my hydrophobia, pretty strange that people always associate to a singular crummy trait.  
+- Everyone remembers about my hydrophobia, pretty strange that people always associate to a singular crummy trait.
 
-- I used to question everything and had a very tangible belief system. (_I still question everything, some things just don't change_)  
+- I used to question everything and had a very tangible belief system. (_I still question everything, some things just don't change_)
 
 - I utter very few words, but they are either brutally honest or unexpected. They felt that I was not very social but listened very keenly when anyone tells a story or a life experience.
 
@@ -146,19 +146,19 @@ Our minds evolve in enchanting ways. I am not the same person now, compared to a
 
 Following are the steps I have taken to hold myself accountable of my nonconstructive time and optimising it appropriately. These are purely experimental and are very well subjective to changes.
 
-- I check the duration of time I spend on my phone at the end of each day. I feed this data into a table in my Notion workspace. My current average is **48** minutes.  
+- I check the duration of time I spend on my phone at the end of each day. I feed this data into a table in my Notion workspace. My current average is **48** minutes.
 
-- I have allocated utmost **four** hours every day towards writing. Be it this article, emails, responses to messages or tweets.  
+- I have allocated utmost **four** hours every day towards writing. Be it this article, emails, responses to messages or tweets.
 
-- I allocate **three** hours every day towards reading. Be it articles, posts, a book or a research paper. I don't resort to mindless scrolling on LinkedIn and Twitter anymore.  
+- I allocate **three** hours every day towards reading. Be it articles, posts, a book or a research paper. I don't resort to mindless scrolling on LinkedIn and Twitter anymore.
 
-- If there is an activity which requires my immediate attention and can be completed in a short span, I implement it right away.  
+- If there is an activity which requires my immediate attention and can be completed in a short span, I implement it right away.
 
 - I allocate approximately **three** hours towards any visual forms, be it watching a video or a lecture or television.
 
 Being a detracted human, I don't hard-pressingly follow this routine everyday, but I try to be in close proximity to this schedule. Now that I have published it in my blog, I will be more accountable to my actions. What serves as a huge inspiration in developing this schedule is a superposition of following two sources :
 
-- I am currently experimenting with [GTD](https://gettingthingsdone.com/) ("_Getting things done_") by emulating this [template](https://www.bsoundarya.com/2021-notion-gtd-weekly-planner/) developed by [Soundarya](https://www.youtube.com/watch?v=SbwFae-OqjM). I would highly recommend you to explore her [website](https://www.bsoundarya.com/), if you haven't already. It is a treasure trove containing productivity hacks, neuroscience, her life experiences and much much more. Her writing laid the foundational blocks for my writing journey and I have written close to **42,000** words over the past eight months in my blog since then.  
+- I am currently experimenting with [GTD](https://gettingthingsdone.com/) ("_Getting things done_") by emulating this [template](https://www.bsoundarya.com/2021-notion-gtd-weekly-planner/) developed by [Soundarya](https://www.youtube.com/watch?v=SbwFae-OqjM). I would highly recommend you to explore her [website](https://www.bsoundarya.com/), if you haven't already. It is a treasure trove containing productivity hacks, neuroscience, her life experiences and much much more. Her writing laid the foundational blocks for my writing journey and I have written close to **42,000** words over the past eight months in my blog since then.
 
 - "[Deep work](https://www.goodreads.com/book/show/25744928-deep-work?ac=1&from_search=true&qid=pNbrabM9GE&rank=1)" by Cal Newport. I was first introduced to Cal's works from this blog [post](https://www.bsoundarya.com/why-deep-work-is-valuable-busy-work-is-not-2/). I am yet to explore Cal's other works, but I can already observe vivid changes in my thought process despite being just halfway through the book.
 
