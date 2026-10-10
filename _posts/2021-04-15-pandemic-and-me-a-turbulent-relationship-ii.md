@@ -13,7 +13,7 @@ toc:
 
 This post is a continuation to the [previous](https://witfulmadrasi.wordpress.com/2021/04/02/pandemic-and-me-1/) post which briefly expanded on my travel between Germany and India during the first peak of the pandemic. Honestly, I feel less lively while writing about my experience. And more like a ghost dwindling through space and time narrating his tale softly to the void.
 
-* * *
+---
 
 **Place** : _Delhi_, India. **Date** : 16th June 2020. **Time** : Hazy
 
@@ -36,7 +36,7 @@ After a **"medical check-up"** which basically was just asking the passenger if 
 When it was my turn to speak to the officials after 45 minutes of waiting, I noticed a sheet of paper with tiny letters which read "**Medical exemption from Quarantine**" pasted onto the edges of the table. I had been standing in the wrong queue the whole time, and there was no way for me to know that. While I made my way to the other line, I vividly noticed how money and power unshackled laws and orders enforced by the government. There were several individuals hooping through loopholes without authenticated documents or throwing in a bit of coin. This isn't something new to observe for me personally, but I was deeply sickened to observe such rampant behaviours under extreme situations which concerned public health. **How can people be so selfish and reckless, banking on their monetary or influential advantages jeopardizing the lives of _"weaker"_ souls.**
 
 > Survival of the Fittest.
-> 
+>
 > \- [ChaRLES Darwin](https://mapmygenome.in/blog/charles-darwins-survival-of-the-fittest/)
 
 After reading **Darwin**'s theory, it is blatantly clear that _**"fittest"**_ did not denote brain nor the brawn power, but rather the species which adapts best to its environment and circumstances. In views of **Darwin**, these mongering individuals were **fitter** than you and me when one discounts morality. I survived that eventful day and several others due to the support from my family. That was already a high value proposition against many others who stood in the line with me.
@@ -47,8 +47,8 @@ We fight and stay opiniated over countless brigade of events unfolding before us
 
 After spending 2.5 hours in the scorching heat with not a drop of water touching my tasting buds, I proceeded into another equally dehumidified room with 8 gentlemen seated to take possession of our passports for the next seven days. Since I had no access to internet or a mobile network, there was no way to verify the authenticity or comfort offered by the hotels **"tied-up"** for quarantine. These eight gentlemen divided the place of stay into three tiers based on the price. I had to half-blindly choose a hotel in the second tier which thankfully was part of the list of hospitable hotels I had verified with my family before leaving Germany. Yes, the prices were exorbitant and I might as well have robbed a bank. What made it extremely unreasonable and outrageous is _what happened next._
 
-I was made to wait for another 2 hours for a special "**shuttle service**" to transport me to my hotel of choice. Delhi weather was unforgiving and I was overdressed to withstand the **German weather**. Solely due to my broken hindi language skills, I was able to identify and communicate with the driver of this shuttle service. And if you are wondering what this shuttle service was, it was a (_to-be-discontinued_) **1970s public bus** which was already loaded with passengers to the hotel I was to reside and other hotels within the vicinity. I wondered why they would ask us to quarantine after 7 hours of exposure to every support staff present in the Airport and charge us for what it's not worth. **But, we need to contribute to our economy after returning from another country right?**  
-  
+I was made to wait for another 2 hours for a special "**shuttle service**" to transport me to my hotel of choice. Delhi weather was unforgiving and I was overdressed to withstand the **German weather**. Solely due to my broken hindi language skills, I was able to identify and communicate with the driver of this shuttle service. And if you are wondering what this shuttle service was, it was a (_to-be-discontinued_) **1970s public bus** which was already loaded with passengers to the hotel I was to reside and other hotels within the vicinity. I wondered why they would ask us to quarantine after 7 hours of exposure to every support staff present in the Airport and charge us for what it's not worth. **But, we need to contribute to our economy after returning from another country right?**
+
 After every sharp turn that this bus had taken, I felt my savings getting flushed into the drain. After all, it was hard earned money which was saved penny by penny through my **frugality**. The vibrations channelled out by the bus literally shook my insides and I wished that every sharp turn would be the last as my luggage took life of its own to shuffle between the two interior extremes of the bus.
 
 **What an awful twenty five minute ride!** (Highly unrecommended).
@@ -58,7 +58,7 @@ Finally I disembarked from the bus which had barely lasted through the test of t
 This experience had been **etched** into my memory like the one which followed suit seven days later. I had a very comfortable stay, but my mind was inventing scenarios which had little probability of occurrence. **While I communicated frequently with my family, I felt an unfamiliar disconnect and disassociation.** Little did I know back then that it would last until I write it down now and maybe well beyond. Within the expanse of this _luxurious_ room, 20 years of my life which predominated my attention and memory felt like a _blur_. I felt like an overenthusiastic kid listening to a storyteller narrating my own tale. I felt so disassociated with my whole persona which I carefully formed for the last 24 years. I had never felt this empty in my life nor this wayward.
 
 > An ideal mind is the Devil's workshop
-> 
+>
 > \- Bible
 
 This proverb reverberated well within the confines of the four walls. While I was tempted to write "**Devils'**" instead of "**Devil's**" to account for different manifestation of Devil, I refrained from discrediting the original quote. _I cannot imagine the trauma, claustrophobic or people with serious mental health illness would have experienced within this room which was bolted tight to restrict natural airflow._
@@ -85,8 +85,8 @@ And then it stopped.
 
 **I couldn't think of any other commodity which embellished my identity.** We are made to direct our attention completely in pivoting around education and career that we cannot picture ourselves beyond that. We are dropped offhanded into a rat race and left to compete for the rest of our lives. **It overcasts a shadow so wide that, we in turn lose our very own identity before we had undertaken this drill.** I started jotting down what I could consider as my traits which roughly defined what I am as a person. Of course, I couldn't make this list in a day. I am still unsure about what perfectly fits into this list which encompasses my persona.
 
-I tackled several such questions over the next six days. They definitely weren't easy to answer and I still struggle to answer some of them for over a year. As my time in Delhi came to a close, I packed my bags and waited eagerly to proceed to the airport after checking out from the hotel. As soon I stepped outside my comfortable safe space, I lost my connection to the interconnected world. In other words, I again did not have any access to the internet. The hotel staff was as unhelpful as possible to help me arrange a mode of transportation to the airport. After several tense moments, I reached the **Delhi's Airport**.  
-  
+I tackled several such questions over the next six days. They definitely weren't easy to answer and I still struggle to answer some of them for over a year. As my time in Delhi came to a close, I packed my bags and waited eagerly to proceed to the airport after checking out from the hotel. As soon I stepped outside my comfortable safe space, I lost my connection to the interconnected world. In other words, I again did not have any access to the internet. The hotel staff was as unhelpful as possible to help me arrange a mode of transportation to the airport. After several tense moments, I reached the **Delhi's Airport**.
+
 I have only visited Delhi once in my life, but it can hardly be considered as a visit given the time I spent exploring the city. No hate to the city in general, but I was shocked to experience the "**poor**" air quality and smog so late in the morning. But alas, my exposure to the city lasted only for twenty minutes. I _was merely transferred from one prison cell to another as I made my way to catch a domestic flight to Bangalore._
 
 <figure>
@@ -105,7 +105,7 @@ On a comparative scale, this part of my story is less laborious. Couple of docum
 
 The flight attendants had pleadingly asked the passengers to **remain seated** to reduce risk of contact and maintaining a sparing distance between one another, but almost nobody listened. _I don't understand what sort of time advantage these people have over others who remained seated_. I still got to disembark much before several others who were standing behind my row. And without much more furore, I finally touched Bengalurian soil.
 
-* * *
+---
 
 **Place** : _Bengaluru_, India. **Date** : 23rd June 2020. **Time** : 3:3o p.m.
 
@@ -131,12 +131,12 @@ As I proceeded towards the dreaded document verification centre, **I least expec
 
 But, I persisted and didn't give in. After all, I am going to self-quarantine in a place only open for travellers who were advised to quarantine. I had the liberty of quarantining at home, but given the presence of members of high risk category in my family, this was the most logical choice.
 
-But, then again, I witnessed corruption and exploitation of power while I patiently waited to receive authentication to proceed_. I might not be supportive of every government's policies or directives, but I am law-abiding citizen and will continue to be one._ After 90 minutes of waiting, I approached the head of immigrations who was supervising the proceedings. After delivering my intentions in simple words to him, he asked one of his staff to authenticate my documents and helped me proceed further.
+But, then again, I witnessed corruption and exploitation of power while I patiently waited to receive authentication to proceed*. I might not be supportive of every government's policies or directives, but I am law-abiding citizen and will continue to be one.* After 90 minutes of waiting, I approached the head of immigrations who was supervising the proceedings. After delivering my intentions in simple words to him, he asked one of his staff to authenticate my documents and helped me proceed further.
 
 > **Lesson learned >** _Always speak up and never shy away from uttering the truth. Truth is usually hard for most people to handle. But, it's the best way forward._
 
-You might be wondering by now, how long was I stuck in Bangalore's Airport?  
-  
+You might be wondering by now, how long was I stuck in Bangalore's Airport?
+
 The right answer is **6.5 hours**! :(
 
 On a positive note, comparatively, it was an hour lesser than at Delhi's Airport.
@@ -145,13 +145,13 @@ On a positive note, comparatively, it was an hour lesser than at Delhi's Airport
 
 _to be continued_….
 
-* * *
+---
 
 I am extremely sorry for the delay in delivering my post to my regular readers. My part-time job and other responsibilities have taken the better of my time, leaving me little time to write down my thoughts. **I am a bit surprised that I could recollect the sequence of events that occurred a year back and were able to write them in such detail.** I had anticipated while I started ideating this series, that it would be a two part series. But as I continued writing, I realized that I had much more to say that I previously predicted. And hence this would lead to a third, conclusive post for this series.
 
 **Stay curious!**
 
-* * *
+---
 
 I include a witty remark or a bonus section along with my post in my newsletter. You may consider signing up for free, if you enjoy reading less **boring** emails. I only deliver once a month, and no spammy mails whatsoever.
 

@@ -19,7 +19,7 @@ Humour has never been my forte. But puns, that's my speciality (casually said by
 
 <figcaption>
 
-****Where it all started.** Prelude to the trek.**
+\***\*Where it all started.** Prelude to the trek.\*\*
 
 </figcaption>
 
@@ -107,4 +107,4 @@ I am content to know that you have stuck until the end of this blog, and as a re
 
 [https://www.nrw-tourism.com/a-coppertrail](https://www.nrw-tourism.com/a-coppertrail)
 
-* * *
+---

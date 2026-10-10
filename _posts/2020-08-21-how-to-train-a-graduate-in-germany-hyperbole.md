@@ -111,4 +111,4 @@ Y was slightly tipsy after entering the stadium, but chose to buy another beer a
 
 </figure>
 
-\[jetpack\_subscription\_form show\_subscribers\_total="false" button\_on\_newline="false" custom\_background\_button\_color="#a3001f" custom\_font\_size="16" custom\_border\_radius="0" custom\_border\_weight="1" custom\_border\_color="#a3001f" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="has-a-3001-f-border-color" email\_field\_classes="has-a-3001-f-border-color" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form show_subscribers_total="false" button_on_newline="false" custom_background_button_color="#a3001f" custom_font_size="16" custom_border_radius="0" custom_border_weight="1" custom_border_color="#a3001f" custom_padding="15" custom_spacing="10" submit_button_classes="has-a-3001-f-border-color" email_field_classes="has-a-3001-f-border-color" show_only_email_and_button="true"\]

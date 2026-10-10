@@ -20,16 +20,16 @@ class TypingEffect {
       setTimeout(() => this.type(), this.speed);
     } else {
       this.isTyping = false;
-      this.element.classList.add('typing-complete');
+      this.element.classList.add("typing-complete");
     }
   }
 
   reset() {
     this.currentChar = 0;
-    this.element.textContent = '';
+    this.element.textContent = "";
     this.isTyping = false;
   }
 }
 
 // Add to window object for global access
-window.TypingEffect = TypingEffect; 
+window.TypingEffect = TypingEffect;

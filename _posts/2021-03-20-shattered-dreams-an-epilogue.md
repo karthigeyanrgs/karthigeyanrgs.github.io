@@ -57,11 +57,11 @@ Photo by [Jaclyn Moy](https://unsplash.com/@jelizabm?utm_source=unsplash&utm_med
 In the eyes of the society, a twenty one year old is termed to be a young adult. Having completed his bachelor's, another crossroads presented itself before him. He remembered a particular verse from "The road not taken" by Robert Frost.
 
 > Two roads diverged in a wood, and I—
-> 
+>
 > I took the one less travelled by,
-> 
+>
 > And that has made all the difference.
-> 
+>
 > Robert Frost
 
 Among his peers, higher education in applied sciences was a "road" less throttled by. With little direction and guidance onto what entails in a master's and struggles one faces in a foreign country, this young adult started his graduate applications. Of the eight applications spanning from United states, South Korea, Japan, Switzerland to Germany, seven of them returned with decorated rejects. What was unknown to this young adult about educational institutions throughout our world is that, an institution will admit you into their program if they either find you marketable enough to the outside world, wading along with your achievements.
@@ -78,4 +78,4 @@ Ounces of self-doubt, helplessness and anxiety came crashing in. But before all 
 
 **_Disclaimer: These set of stories are fictional blend with some real events. I am not the protagonist of these stories. These works were particularly hard to write down, but I hope that I made enough justice to my impending thoughts on this topic_** **_and some of you found it relatable._** **_Thank you for reading through it._**
 
-\[jetpack\_subscription\_form subscribe\_placeholder="Enter your email address" show\_subscribers\_total="false" button\_on\_newline="false" submit\_button\_text="Sign Up" custom\_background\_button\_color="#a30023" custom\_font\_size="16px" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form subscribe_placeholder="Enter your email address" show_subscribers_total="false" button_on_newline="false" submit_button_text="Sign Up" custom_background_button_color="#a30023" custom_font_size="16px" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

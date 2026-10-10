@@ -91,4 +91,4 @@ Heimbach, Germany. Picturized by me. Head to my travel blogs to view more.
 
 </figure>
 
-* * *
+---

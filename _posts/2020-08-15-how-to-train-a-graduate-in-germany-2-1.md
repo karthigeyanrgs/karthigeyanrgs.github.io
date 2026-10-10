@@ -111,4 +111,4 @@ Want to know why? If I recollect the event best to my knowledge, only three of u
 
 **P.S.** : I have disabled the like feature since it reminds me of the recognition hungry person I used to be. All I care about now is to hear your comments, which could provide enough motivation to write better memories on the internet.
 
-\[jetpack\_subscription\_form show\_subscribers\_total="false" button\_on\_newline="false" custom\_background\_button\_color="#a30400" custom\_font\_size="16" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form show_subscribers_total="false" button_on_newline="false" custom_background_button_color="#a30400" custom_font_size="16" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

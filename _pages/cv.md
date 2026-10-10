@@ -60,7 +60,7 @@ description: A showcase of my professional journey, skills, and achievements in 
     <!-- Experience -->
     <section id="experience" class="cv-section">
       <h2>Experience</h2>
-      
+
       <!-- Current Roles -->
       <div id="current-roles">
         <h3>Current Roles</h3>
@@ -142,6 +142,7 @@ description: A showcase of my professional journey, skills, and achievements in 
       </div>
       {% endfor %}
     </section>
+
   </div>
 </div>
 

@@ -19,7 +19,7 @@ For people who don't know about Mrs. Shruti's works, now is you chance to explor
 
 And for the nomination procedures :
 
-* * *
+---
 
 **The Rules for this award are:**
 

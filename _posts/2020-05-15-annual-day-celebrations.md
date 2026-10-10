@@ -17,7 +17,7 @@ Two reasons for this title: It has been a lifetime since I last had been to a sc
 
 Just kidding, we are part of the milky way, there is still four billion years till we "meet and greet" each other (**cannot wait!**). Talking about annihilation reminds of this particular event which occurred in the snobbishly dark midnight of November 7th, I am not talking of my birth, but of the election results of United states. My birthday (November 8th) has particularly been targeted for shocking events. Let me remind you of some previous events:
 
-- November 8th, 2016 :  PM Narendra Modi of India announces the demonetization of all ₹500 and ₹1,000 banknotes. This was when everything went haywire! There are many stories to tell about this, but none being merry.
+- November 8th, 2016 : PM Narendra Modi of India announces the demonetization of all ₹500 and ₹1,000 banknotes. This was when everything went haywire! There are many stories to tell about this, but none being merry.
 - November 8th, 2016 : An extremely charming, relentless and hardworking person is provided a four tenure to lead United States into its demise glory.
 - Many others can be accessed [here](https://www.onthisday.com/events/november/8).
 
@@ -94,7 +94,7 @@ In the closing ends of my birthday, another unexpected surprise waited for me, o
 I would write more about my previous birthday when my blog series on graduate experience reaches that timeline. I can see that I am sufficiently far from it now. I apologize to the regular readers for my delay in regular posts. There wasn't any unfounded knowledge that I reflected upon after this birthday apart from this one.
 
 > Some people we meet aren't meant to stay long, we must cherish the time we spent with them. Sometimes people ghost or avoid you, do not take it personal. It's the other person's loss. Spend your time with people who value your thoughts and time.
-> 
+>
 > \- Karthigeyan Ganesh Shankar, New-age philosopher and revolutionary.
 
-* * *
+---

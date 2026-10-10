@@ -11,18 +11,17 @@ toc:
   sidebar: left
 ---
 
-Moving from one paradise to the other, after we set our feet wet in the dainty, enchanting and spellbinding natural spectacle which goes by the name of [Goa](https://witfulmadrasi.wordpress.com/2021/06/27/india-anniversary-edition/), we move our focus to another lush but serene getaway.  
-  
-Wow, that was an extremely long sentence!  
-  
-**A challenge for you**: Try reading the first sentence without taking a breathing gap :D  
-  
+Moving from one paradise to the other, after we set our feet wet in the dainty, enchanting and spellbinding natural spectacle which goes by the name of [Goa](https://witfulmadrasi.wordpress.com/2021/06/27/india-anniversary-edition/), we move our focus to another lush but serene getaway.
+
+Wow, that was an extremely long sentence!
+
+**A challenge for you**: Try reading the first sentence without taking a breathing gap :D
+
 Now that we have learned the necessity of breaking sentences at the right moment, in order to accommodate for a balanced breathing and impulsive memory processing. Let us move on to our next location.
 
-**Before the grand reveal, why not start with a hint?**  
-  
-In English, the literal equivalent is _"The Virgin Princess"_. It serves as the southernmost point of landmass of India. And most importantly, if you wake up early enough, you can witness one of the most beautiful **sunrise** 🌅  
-  
+**Before the grand reveal, why not start with a hint?**
+
+In English, the literal equivalent is _"The Virgin Princess"_. It serves as the southernmost point of landmass of India. And most importantly, if you wake up early enough, you can witness one of the most beautiful **sunrise** 🌅
 
 <figure>
 
@@ -36,7 +35,7 @@ In English, the literal equivalent is _"The Virgin Princess"_. It serves as the 
 
 </figure>
 
-* * *
+---
 
 ## Kanyakumari - Indian Land of Rising Sun
 
@@ -56,13 +55,12 @@ The tagline is originally credited to Japan which is called as _"Land of the Ris
 
 **April 10th, 2019**
 
-I returned to India from Germany before I started my final semester of my masters with a plan of a well deserved rest and a place to unwind. And my family came up with the perfect plan!  
-  
+I returned to India from Germany before I started my final semester of my masters with a plan of a well deserved rest and a place to unwind. And my family came up with the perfect plan!
+
 Off we crusade to the southernmost point of India. As long as I don't have to make the itinerary or the course of action, I always say **"yes"** to any trip. Planning a trip is extremely laborious and my sister is always ready to volunteer to go through this painful and strenuous process.
 
 > **If someone wants to go deep down into something they enjoy, we should just let them get along with it and watch the spectacle unfold.**
 
-  
 And that is exactly what I did! I just let her do all the planning right from the minute we left our home until we got back. As most of you are quite well aware, I am not known for making _travel_ plans. I just choose a destination and let fate take the upper hand 🙈.
 
 <figure>
@@ -79,7 +77,7 @@ And that is exactly what I did! I just let her do all the planning right from th
 
 We unload our luggage into a shanty which is centrally situated early before the sunrise. After resorting to routine hygienic care any sane human must resort oneself to, we proceeded to the **sunrise point** to get a first glance at our dear radiant Sun. While the rest of my family settled down close to the banks, my sister and I probed further to get to the limiting point.
 
-**And there we found it!**  
+**And there we found it!**
 
 <figure>
 
@@ -97,7 +95,6 @@ We walked steadfastly along the rocky and clunky path to reach the zenith of thi
 
 **Most of _you_ could second guess what we witnessed next, crediting to the love we Indians have towards food!**
 
-  
 **Oh Yes! Merchants and salespersons selling ornaments and refreshments at the end of the trail. It looked like a marketplace altogether.** To add to the flub, there wasn't a single trash can to dispose off the mess they made. Where can you find tranquillity here, where there was a constant murmur of politics, social status and religion and what-not!
 
 **Peace people, peace. Hear to your own inner voice for once!** 🍀
@@ -138,7 +135,7 @@ Every relationship forged through exchange of beautiful words.
 
 Are we living in an unyielding world now?
 Perhaps writing too much conveys too little,
-One needs to translate their thoughts succinctly, 
+One needs to translate their thoughts succinctly,
 For no one has the time or the energy,
 To deeply understand the underlying placement of each word.
 
@@ -206,8 +203,6 @@ With our stomachs filled to the brim, we took a "**boat cruise**" to the island 
 
 **Your initial test towards spirituality is the ride to the island itself!**
 
-  
-  
 No kidding! The "**cruise**" is filled to the brim with people who would take every moment to bring a disturbance into the order of things. From taking a photo for every inch that the cruise advances forward to sharing food and refreshments in the most immodest sense. If this is the route to spirituality, abort the mission and take the quickest U-turn.
 
 > I never understand the obsession that captivates people to indulge in restricted activities. It's disrespectful to someone's ideology and sense of decorum.
@@ -230,15 +225,15 @@ From snapping photos to talking jarringly loud near the meditation halls, I have
 
 We spent close to two hours walking around and getting swindled inside by witnessing this beauty. My mom bought baby pineapples (_so cute that you don't want to slice them down_ :( ) from a local vendor there that we shamelessly devoured. So sweet!
 
-My memory is rather dicey, but I do remember visiting a palace. 🏫  
-  
+My memory is rather dicey, but I do remember visiting a palace. 🏫
+
 **Aha! Not just any palace, but the [Padmanabhapuram Palace](https://www.holidify.com/places/kanyakumari/padmanabhapuram-palace-sightseeing-2273.html)!** (_Thank you for saving me just in the nick of time, [DuckDuckGo](https://duckduckgo.com/)_ 🦆)
 
 Sadly we weren't allowed to take photos there. But we spend very good quality there, indulging history and cultural inerrancies of the Malabar customs. What I do remember vividly, was the women empowerment was a bit more pronounced there than anywhere else in India.
 
 **If you aren't aware of [Nangeli's tale](https://historyofyesterday.com/the-woman-who-cut-off-her-breasts-in-response-to-rules-set-by-early-19th-century-society-b2170f113294) who took it upon herself to protest against an obscene and submissive law, you should give it a read. It's a disheartening, but also an empowering read!**
 
-* * *
+---
 
 ## Poovar - Can it get any more lushy?
 
@@ -278,8 +273,8 @@ My sister being the amazing negotiator that she has always been, managed to half
 
 **The overall trip was a bliss.**
 
-We got to travel to a secluded beach, eat in a floating restaurant and to add to the awesomeness, travel through creeps (the hanging ones, not real creeps :p).  
-  
+We got to travel to a secluded beach, eat in a floating restaurant and to add to the awesomeness, travel through creeps (the hanging ones, not real creeps :p).
+
 All I remember when I retrospect now about this location is my close association with nature. 🍊
 
 > **There was something strangely tranquilizing and serotine inducing about the whole place that I want every one of you to experience it in their lives**!
@@ -296,16 +291,16 @@ All I remember when I retrospect now about this location is my close association
 
 </figure>
 
-I am going to leave this story with an open ending :D  
+I am going to leave this story with an open ending :D
 
-* * *
+---
 
 I will be on vacations for the first two weeks of October in two exotic locations in India. And thus, this series wouldn't be closed just yet ;)
 
-* * *
+---
 
-_My [Newsletter](https://witfulmadrasi.substack.com/) is my way of communicating with this world around us. I send one every month, adding some fun bits which led to my post or give a sneak peak into my day to day life._  
-  
+_My [Newsletter](https://witfulmadrasi.substack.com/) is my way of communicating with this world around us. I send one every month, adding some fun bits which led to my post or give a sneak peak into my day to day life._
+
 **_A Spoiler: I included a verse from my first poem in my current newsletter_** ;)
 
 [Monthly Newsletter](https://witfulmadrasi.substack.com/)

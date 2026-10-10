@@ -12,7 +12,7 @@ toc:
 coverImage: "lifes-a-tape-recorder.png"
 ---
 
-* * *
+---
 
 My grandfather had a tape recorder which was one of his precious possessions. Each and every day until he was bedridden, he used to switch it on and listen to the sound waves radiating from this apparatus.
 
@@ -39,7 +39,7 @@ I recognized the analogy between life, and a tape recorder within this green spa
 Answer to this is foreseeable. A long standing article wouldn't be necessary if we arrived at _"our"_ destination promptly. Reminds me of the following quote.
 
 > "It's the not the destination, It's the journey."
-> 
+>
 > \- **Ralph Waldo Emerson**
 
 Eliot was inspired by Emerson and wrote _"The journey, not the destination matters."_ Now that we know our destination, let us walk through the journey.
@@ -50,13 +50,12 @@ As we press the rewind button on our virtual tape recorder, we find ourselves to
 
 It's been two years since I had taken a vacation. As coincidental as things can get, on 15th September 2019, I along with my sister went on an Europe trip for two weeks. The trip \[very [Schengen](https://en.wikipedia.org/wiki/Schengen_Area) friendly!\] started in Aachen where I was previously located. Proceeding further to Paris, Annecy, Chamonix, Interlaken, Munich, Garmisch-Partenkirchen and bringing a cyclic end back at Aachen.
 
-While this story warrants another series of articles altogether, one of the major thematic revelation to me personally was this: **my sister was an excellent planner and enjoyed this process immensely.** Hence my decision was sporadic. I should definitely ask her to plan this vacation as well. But, alas, she was the intelligent one, as she has always been.  
+While this story warrants another series of articles altogether, one of the major thematic revelation to me personally was this: **my sister was an excellent planner and enjoyed this process immensely.** Hence my decision was sporadic. I should definitely ask her to plan this vacation as well. But, alas, she was the intelligent one, as she has always been.
 
 ![](/assets/img/posts/img_20211002_075653.jpg)
 
 **Initial impression of Pondicherry.**
 
-  
 For a change, she wanted me to get along with the planning for at least the first week of the two week vacation (_Excellent planners always make the job so difficult for spontaneous wanders like me_). Here is how I phased out my vacation:
 
 1. First two days will be spent along with sister.
@@ -89,7 +88,7 @@ We approached the travel ticket inspector who asked us to proceed much further f
     </figcaption>
     
     </figure>
-    
+
 - <figure>
     
     ![](/assets/img/posts/img_20211003_114358.jpg)
@@ -101,10 +100,8 @@ We approached the travel ticket inspector who asked us to proceed much further f
     </figcaption>
     
     </figure>
-    
 
-  
-  
+
 **And to our delight, there laid private cabins!!**
 
 A cabin which housed four individuals within its vicinity. Our co-passengers were a couple who never stopped talking to us until bedtime. They spoke about movies without breaking a sweat! My sister and I being patient listeners, heard to every one of their little experiences and inserting flavour to our conversation at the right moments.
@@ -134,7 +131,7 @@ I layered my reflections for the next few days as I stayed in [Auroville](https:
 To anyone who knows me too well, they do know that I introspect and spend more time in solitude. I do enjoy the company of others but it taxes me quickly. If I were to encapsulate the next few days into a quote, I will choose my favourite one.
 
 > The best and most Beautiful things in the world cannot be seen or touched -- they must be felt with the heart.
-> 
+>
 > \- Helen Keller
 
 I will break down my train of thoughts into different sections to cater to different _"wheels"_ of life reflected at different checkpoints of my journey.
@@ -154,7 +151,7 @@ Walking is my favourite physical activity. I push myself to the extremes when it
     </figcaption>
     
     </figure>
-    
+
 - <figure>
     
     ![](/assets/img/posts/img_20211004_143207.jpg)
@@ -166,16 +163,16 @@ Walking is my favourite physical activity. I push myself to the extremes when it
     </figcaption>
     
     </figure>
-    
 
-And I was up for another challenge. Get to Auroville and back to my Airbnb with just water as my replenishment. The walk was 22 Km long when circled through, and hence I felt that it was extremely doable. I absolutely discounted the scorching heat during peak summer, my physical fitness levels and my frugal mindset.  
-  
-**How Frugal?**  
-  
+
+And I was up for another challenge. Get to Auroville and back to my Airbnb with just water as my replenishment. The walk was 22 Km long when circled through, and hence I felt that it was extremely doable. I absolutely discounted the scorching heat during peak summer, my physical fitness levels and my frugal mindset.
+
+**How Frugal?**
+
 I left my wallet in the Airbnb. Yes, when I challenge myself, I push myself to the extreme. With my camera, phone and a bottle of water I headed on my planned walking action plan. One of reasons why I consider walking to be my favourite is the following.
 
 > "All truly great thoughts are conceived while walking."
-> 
+>
 > \- Friedrich Nietzsche.
 
 And I agree to the above quote wholeheartedly. My mind cycled through several moments of my life while recognizing the need to stay in the present. I only took a break once I reached Auroville. And here is when we reach to the start of this post. Yes, I reached the location where I reflected about many things in my life, trying to answer some of the questions which have rented my mind without paying a rent.
@@ -195,7 +192,7 @@ Auroville apart from inducing an intentional, radical and free thinking society 
     </figcaption>
     
     </figure>
-    
+
 - <figure>
     
     ![](/assets/img/posts/img_20211004_145126.jpg)
@@ -207,16 +204,16 @@ Auroville apart from inducing an intentional, radical and free thinking society 
     </figcaption>
     
     </figure>
-    
+
 
 And while heading back, I started to feel the aftereffects of intense heat. Thanks to the tender coconut seller on my return journey, who replenished my hydration levels to normal and hence clearing my head from any form of discomfort.
 
 **How did I pay for the tender coconut?**
 
-You will have to wait to find out. :)  
-  
-Let me leave you, my reader with a cliff-hanger (_not really, if you think through this_).  
-  
+You will have to wait to find out. :)
+
+Let me leave you, my reader with a cliff-hanger (_not really, if you think through this_).
+
 The other three sections to cover, which I reflected upon are:
 
 - People 👨‍👨‍👧‍👧
@@ -227,7 +224,7 @@ The other three sections to cover, which I reflected upon are:
 
 _See you soon with the next one!_ :)
 
-* * *
+---
 
 <figure>
 
@@ -241,7 +238,7 @@ _See you soon with the next one!_ :)
 
 </figure>
 
-* * *
+---
 
 _My [Newsletter](https://witfulmadrasi.substack.com/) is my way of communicating with this world around us. I send one every month, adding some fun bits which led to my post or give a sneak peak into my day to day life._
 

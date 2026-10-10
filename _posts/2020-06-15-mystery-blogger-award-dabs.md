@@ -87,4 +87,4 @@ Since I would not be nominating any of them, I would not burden you with any mor
 
 Ciao!
 
-\[jetpack\_subscription\_form show\_subscribers\_total="false" button\_on\_newline="false" custom\_font\_size="16" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form show_subscribers_total="false" button_on_newline="false" custom_font_size="16" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

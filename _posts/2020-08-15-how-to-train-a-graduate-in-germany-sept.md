@@ -2,7 +2,7 @@
 title: "How to train a graduate in Germany Sept"
 date: 2020-08-15
 categories: life
-tags: 
+tags:
   - "germany"
   - "graduate"
   - "humour"
@@ -93,4 +93,4 @@ What I was not aware of, is that you would need to wear costumes to stand out in
 
 Want to see a magic? Enter your email address, and you will magically get my blog in your mail. :D
 
-\[jetpack\_subscription\_form show\_subscribers\_total="false" button\_on\_newline="false" custom\_background\_button\_color="#a30028" custom\_font\_size="16" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form show_subscribers_total="false" button_on_newline="false" custom_background_button_color="#a30028" custom_font_size="16" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

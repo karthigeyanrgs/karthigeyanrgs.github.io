@@ -454,13 +454,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <ul class="list-styled">
       <li>Create a <strong>clean simulation-first</strong> software validation and regression framework.</li>
-      
+
       <li>Develop an <strong>end-to-end operating system</strong> upgradation framework for our custom ARM machines based off <em>Nvidia Jetson SoM</em>.</li>
-      
+
       <li>Integrate several <em>auxillary devices and peripherals</em> (<strong>CAN, HMI, Load Cell</strong>) with the robot all the way to a <strong>decentralised decision-making</strong> fleet management system.</li>
-      
+
       <li>Mature the <strong>Isaac Sim pipeline</strong> to cleanly integrate with Ati's stack and help accelerate the software development and validation cycles.</li>
-      
+
       <li>Kickstart the thread on <strong>General navigation models</strong> which are foundational and pave the way to <em>VSLAM methods</em>.</li>
     </ul>
 
@@ -503,4 +503,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 {% include common_styles.liquid %}
-

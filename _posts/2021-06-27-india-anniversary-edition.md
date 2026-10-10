@@ -2,7 +2,7 @@
 title: "India: Anniversary Edition"
 date: 2021-06-27
 categories: life
-tags: 
+tags:
   - "anniversary"
   - "blog"
   - "goa"
@@ -25,7 +25,7 @@ You might be wondering, why is the word **_Anniversary_** chosen in the first pl
 
 Let's cut short the philosophical backstory and get forward from where we left off [previously](https://witfulmadrasi.wordpress.com/2021/03/06/india-never-heard-of-this-place/).
 
-* * *
+---
 
 **Goa - Every student's unfulfilled adventure**
 
@@ -151,7 +151,7 @@ And our fears turned out to be true. We weren't able to plan a reunion until now
 
 to be continued....
 
-* * *
+---
 
 **I will conclude this series with my enchanting travel to Kanyakumari along with my family. Due to my work commitments, I wasn't able to complete this series as planned.**
 
@@ -169,7 +169,7 @@ I thank [Rishabh](https://gradly.us/) wholeheartedly for gifting me the followin
 
 </figure>
 
-* * *
+---
 
 I include a witty remark or a bonus section along with my post in my newsletter. You should consider signing up for free, if you enjoy reading less **boring** emails. I only deliver once a month, and no spammy mails whatsoever.
 

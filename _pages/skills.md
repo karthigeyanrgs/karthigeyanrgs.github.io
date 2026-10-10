@@ -17,27 +17,23 @@ nav_order: 5
     <p class="subtitle">A journey through my technical capabilities</p>
   </div>
 
-
-
-  {% for category in site.data.skills %}
-    <div class="skill-section" data-aos="fade-up">
-      <h2><i class="fas fa-code"></i> {{ category.name }}</h2>
-      <div class="skills-grid">
-        {% for skill in category.items %}
-          <div class="skill-card" data-aos="zoom-in" data-aos-delay="{{ forloop.index0 | times: 100 }}">
-            <h3>{{ skill.name }}</h3>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: {{ skill.level }}%">
-                <span class="skill-percent">{{ skill.level }}%</span>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  {% endfor %}
-
-
+{% for category in site.data.skills %}
+<div class="skill-section" data-aos="fade-up">
+<h2><i class="fas fa-code"></i> {{ category.name }}</h2>
+<div class="skills-grid">
+{% for skill in category.items %}
+<div class="skill-card" data-aos="zoom-in" data-aos-delay="{{ forloop.index0 | times: 100 }}">
+<h3>{{ skill.name }}</h3>
+<div class="skill-bar">
+<div class="skill-level" style="width: {{ skill.level }}%">
+<span class="skill-percent">{{ skill.level }}%</span>
+</div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endfor %}
 
   <div class="skill-section scientific-computing" data-aos="fade-right">
     <h2><i class="fas fa-brain"></i> Scientific Computing</h2>
@@ -794,4 +790,4 @@ html, body {
     }
   }, perfOptions);
 })();
-</script> 
+</script>

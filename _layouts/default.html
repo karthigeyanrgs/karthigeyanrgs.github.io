@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ site.lang }}">
   {% include head.html %}
   <body>
     <!-- Load Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
     <!-- Load custom enhancements -->
-    <link rel="stylesheet" href="{{ '/assets/css/custom/markdown-enhancements.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom/theme-manager.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom/table-of-contents.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom/search-overlay.css' | relative_url }}">
-    
+    <link rel="stylesheet" href="{{ '/assets/css/custom/markdown-enhancements.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/custom/theme-manager.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/custom/table-of-contents.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/custom/search-overlay.css' | relative_url }}" />
+
     <script src="{{ '/assets/js/custom/markdown-enhancements.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/js/custom/theme-manager.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/js/custom/table-of-contents.js' | relative_url }}" defer></script>
@@ -18,9 +18,7 @@
 
     {% include header.html %}
 
-    <div class="container mt-4">
-      {{ content }}
-    </div>
+    <div class="container mt-4">{{ content }}</div>
 
     {% include footer.html %}
 
@@ -58,25 +56,25 @@
 
     <script>
       // Initialize keyboard shortcuts help panel
-      document.addEventListener('DOMContentLoaded', () => {
-        const helpPanel = document.querySelector('.keyboard-shortcuts-help');
-        const toggle = helpPanel.querySelector('.keyboard-shortcuts-toggle');
-        const panel = helpPanel.querySelector('.keyboard-shortcuts-panel');
+      document.addEventListener("DOMContentLoaded", () => {
+        const helpPanel = document.querySelector(".keyboard-shortcuts-help");
+        const toggle = helpPanel.querySelector(".keyboard-shortcuts-toggle");
+        const panel = helpPanel.querySelector(".keyboard-shortcuts-panel");
 
-        toggle.addEventListener('click', () => {
-          panel.classList.toggle('active');
+        toggle.addEventListener("click", () => {
+          panel.classList.toggle("active");
         });
 
-        document.addEventListener('keydown', (e) => {
-          if (e.key === '?' && !e.ctrlKey && !e.metaKey) {
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "?" && !e.ctrlKey && !e.metaKey) {
             e.preventDefault();
-            panel.classList.toggle('active');
+            panel.classList.toggle("active");
           }
         });
 
-        document.addEventListener('click', (e) => {
+        document.addEventListener("click", (e) => {
           if (!helpPanel.contains(e.target)) {
-            panel.classList.remove('active');
+            panel.classList.remove("active");
           }
         });
       });
@@ -149,4 +147,4 @@
       }
     </style>
   </body>
-</html> 
+</html>

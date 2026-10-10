@@ -38,4 +38,4 @@ nav: false
 - Rational approach to disagreements
 - Focus on understanding different viewpoints
 - Preference for calm, measured responses
-- Emphasis on finding constructive solutions 
+- Emphasis on finding constructive solutions

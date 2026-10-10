@@ -25,10 +25,8 @@ Back to rejoiceful writing! We left our story on a cliffhanger. Germany didn't m
 
 </figure>
 
-  
-Myself and three of my classmates (_Mexican man_ _U_ ![:flag-mx:](images/1f1f2-1f1fd.png), _Spanish woman_ _A_ ![:es:](images/1f1ea-1f1f8.png) and _German woman_ _S_ ![:de:](images/1f1e9-1f1ea.png)) decided to meet in [Elisenbrunnen](https://www.nrw-tourism.com/elisenbrunnen) to witness salsa dancing ![:dancer:](images/1f483.png) wherein the floor is open to anyone to dance![:man_dancing:](images/1f57a.png). For those who haven't been to Elisenbrunnen, you have saved yourself from the pungent smell of sulphur. It was primarily a spa for the kings back then. Dancing on a floor which housed the great King Charlemagne is something to be proud of right? (_highly debatable_) But usual banter aside, It sure is an architectural beauty with excellent lighting to capture the essence of Aachen. Little did I know that we would be "**dancing**" there. I for one haven't made any rhythmic motions with my hands or legs to constitute something close to a dance in my entire life.
+Myself and three of my classmates (_Mexican man_ *U* ![:flag-mx:](images/1f1f2-1f1fd.png), _Spanish woman_ *A* ![:es:](images/1f1ea-1f1f8.png) and _German woman_ *S* ![:de:](images/1f1e9-1f1ea.png)) decided to meet in [Elisenbrunnen](https://www.nrw-tourism.com/elisenbrunnen) to witness salsa dancing ![:dancer:](images/1f483.png) wherein the floor is open to anyone to dance![:man_dancing:](images/1f57a.png). For those who haven't been to Elisenbrunnen, you have saved yourself from the pungent smell of sulphur. It was primarily a spa for the kings back then. Dancing on a floor which housed the great King Charlemagne is something to be proud of right? (_highly debatable_) But usual banter aside, It sure is an architectural beauty with excellent lighting to capture the essence of Aachen. Little did I know that we would be "**dancing**" there. I for one haven't made any rhythmic motions with my hands or legs to constitute something close to a dance in my entire life.
 
-  
 _U_ and _A_ had dancing in their blood (_or part of their culture at least_). _S_ was also a pretty good dancer and a very cheerful person. _A_ told me that we should enter the dance floor while _U_ and _S_ were entering it. I freaked out! I told her this, "_I will just embarrass you_" to which she replied "_Doesn't matter. Nobody cares here_". She started demonstrating and assisting me with basic steps of salsa. She did the laborious "_male-equivalence_" of salsa by spinning me around ![:grin:](images/1f601.png) . I obviously made many mistakes going offbeat and then we switched partners and _S_ did the same basic steps with me.
 
 <figure>
@@ -43,7 +41,6 @@ Photo by [Ardian Lumi](https://unsplash.com/@ardianlumi?utm_source=unsplash&utm_
 
 </figure>
 
-  
 And then, I danced with _U_ wherein he taught me more complex steps and I messed up totally, to which we laughed our heads off. So overall, I had the time of my life and nobody else cared in the audience. Safe to say, that was the last time I had danced until now.
 
 Let me recall an event from my first semester. Precisely [this](https://witfulmadrasi.wordpress.com/2020/07/03/how-to-train-a-graduate-in-germany-iii/), wherein I had to make a walk of atonement before failing to make it to the karaoke night. Say what about second chances in life, I got to prove my **adept** singing skills🎤🎶 once again! To make sure that I don't make any obtuse decisions again, I accompanied my German friend to the Bahnhof (_railway station_). Well, talk about strange encounters, I had one in our sufficiently short journey.
@@ -96,7 +93,7 @@ Anyways, we reached [Cologne](https://en.wikipedia.org/wiki/Cologne) (_a locatio
 
 </figure>
 
-Have you seen movies involving mafia and crime, where they always have the "**meeting room**" scene? The lavish shocking-red cushioned sofas and dark teak wood round table with baroque lighting. Well, the setting was similar barring the lighting. A room engulfed by darkness with a hint of light radiating from the karaoke system transfixed in the corner. The system contained a finite number of songs to choose from. We were offered complimentary drinks and snacks (_roasted peas_😶). Of course, none of this was "_complimentary_" as a hefty 120 euros was slashed at us to book the room for three hours. There were twelve of us, so it was a decent split and I had a great time.
+Have you seen movies involving mafia and crime, where they always have the "**meeting room**" scene? The lavish shocking-red cushioned sofas and dark teak wood round table with baroque lighting. Well, the setting was similar barring the lighting. A room engulfed by darkness with a hint of light radiating from the karaoke system transfixed in the corner. The system contained a finite number of songs to choose from. We were offered complimentary drinks and snacks (*roasted peas*😶). Of course, none of this was "_complimentary_" as a hefty 120 euros was slashed at us to book the room for three hours. There were twelve of us, so it was a decent split and I had a great time.
 
 To clarify further why this replicated the chambers of a horror movie, this particular moment will add weight to my stance. I chose to sing🎤 "**All of me**" by _John Legend_ (_RIP John after hearing to my "**cover**"_) along with a dear friend of mine who overestimated my capability to sing. Yes, my voice resonated and reverberated throughout the room and the people who were present in the room have this cursed memory impeached in their brain. Thank goodness the song ended in a few minutes, I cannot meet those soulless and distressed eyes again! Of course, I am being a hyperbole but I restrain to sing in public after this🙊. I am always grateful to my taco-loving-friend to explicitly state how bad my singing was :D He is a wise wise man who never sang barring a group performance of Dragonball's or Pokémon's theme song where his voice was well contained.
 
@@ -118,4 +115,4 @@ Intertwined within these two rather canny moments was a heavily stressful semest
 
 **Stay tuned!**
 
-\[jetpack\_subscription\_form show\_subscribers\_total="false" button\_on\_newline="false" custom\_background\_button\_color="#a3000d" custom\_font\_size="16px" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form show_subscribers_total="false" button_on_newline="false" custom_background_button_color="#a3000d" custom_font_size="16px" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

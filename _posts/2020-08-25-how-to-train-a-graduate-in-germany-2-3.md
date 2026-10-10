@@ -30,7 +30,7 @@ That text, that text, that is where all the trouble began!
 Summer of 2018, with sun grinning completely of yellow tinted teeth (unlike the toothpaste advertisements where everyone ends up with a blanched teeth), I enter a dimly lit excuse for a classroom in the topmost floor of a well hidden building. While I enter this building, I feel like one of those secret agents who appear in several movies (totally distant from reality). Little did I know that by the end of this semester, I would be employed by them and work in this building for another six months (spoiler alert). In their minds :
 
 > **"**We will watch your career with great interest"
-> 
+>
 > Palpatine, Star wars
 
 Am I a "star wars" fanatic? No, but the dialogues uttered in star wars films have been well captured by creative artists (meme makers :D). Anyways, as I am seated in the first row of the sparsely lit room (am I in a movie theatre?), I turn around to see my batchmate enter through the door. He was shining like an vampire, or was it donuts he was holding that was sparkling. Let us call this person S. So S briefly had Y (from the very first blog, "_**sleeping beauty**_") a roommate. In S's own words, he was nearly killed by Y. Want to hear how? Let me tell you now : (even if you wouldn't want to know)
@@ -83,4 +83,4 @@ Back when browsing Instagram was for quality memes. It has been two years of reh
 
 Happy 2021 with a lot more reading and learning to my dear readers. 2020 as a year hasn't been easy for any one of us. As I reflect about this year, there are many things which come to my mind but they are best kept away from public space. I don't want any of my writings to be turned against me. Everyone fights their own battle, better not to judge them based on perceptions. I have some exciting projects in the pipeline for writing in 2021 (education and travel). See you next year! (**I always wanted to say that!**)
 
-\[jetpack\_subscription\_form show\_subscribers\_total="false" button\_on\_newline="false" custom\_background\_button\_color="#a30028" custom\_font\_size="16" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form show_subscribers_total="false" button_on_newline="false" custom_background_button_color="#a30028" custom_font_size="16" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

@@ -6,7 +6,9 @@
   justify-content: center;
   position: relative;
   background: var(--bg-primary);
-  transition: transform 1s ease, opacity 1s ease;
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
   overflow: hidden;
 }
 
@@ -30,7 +32,9 @@
   font-size: 1.2rem;
   border-radius: 30px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -112,7 +116,7 @@
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 0;
@@ -144,7 +148,7 @@
 }
 
 .timeline-dot::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 1rem;
@@ -318,7 +322,9 @@
 [data-aos] {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 [data-aos].aos-animate {
@@ -329,4 +335,4 @@
 /* Skills Animation */
 .skill-category.aos-animate .progress-line span {
   width: var(--width);
-} 
+}

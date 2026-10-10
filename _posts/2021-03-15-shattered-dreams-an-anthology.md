@@ -13,7 +13,7 @@ toc:
 
 Have you ever dropped a brittle object, to watch it scatter into odd shapes, demarcated to its initial perfect shape. During this very action when gravity performs its intent, everything proceeds in slow motion. A sense of regret, lassitude and depreciation is chided by our subconsciousness onto our tiny little brain. The following anthology is a collection of four short stories bringing into spotlight different timelines one goes through in a canvas of life. In the end, these short stories converge and chime into a common theme: _**shattered dream**_.
 
-* * *
+---
 
 #### **First**: **Innocence of a child and its embrittlement**
 
@@ -47,7 +47,7 @@ And with that, a dream meets its demise. The child berates himself internally fo
 
 The adult replies "_Kudos, that is what is expected of you. You will become a great one!_" and pats the child in the back and bribes him with a sweet and some money.
 
-* * *
+---
 
 #### **Second**: **Know your limits, or you will be made to know it.**
 
@@ -82,19 +82,19 @@ Unfortunately, reality struck on the boy only on the day of the results. Two yea
 A verse from one of my favourite songs :
 
 > _Bachpan to gaya jawaani bhi gayi,_
-> 
+>
 > _ek pal to ab humein jeene do jeene do._
-> 
+>
 > _(Our childhood has been lost and so has our youth,_
-> 
+>
 > _Now let us live fully for just a moment)_
-> 
+>
 > \- "Give me some sunshine"- 3 idiots, movie.
 
 _to be continued soon....._
 
-* * *
+---
 
 This collection of stories is rather morose and brusque complementing my current state of mind. I plan to resume writing on my graduate experience once I complete this anthology. Thank you for reading through it.
 
-\[jetpack\_subscription\_form subscribe\_placeholder="Enter your email address" show\_subscribers\_total="false" button\_on\_newline="false" submit\_button\_text="Sign Up" custom\_background\_button\_color="#a30028" custom\_font\_size="16px" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form subscribe_placeholder="Enter your email address" show_subscribers_total="false" button_on_newline="false" submit_button_text="Sign Up" custom_background_button_color="#a30028" custom_font_size="16px" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

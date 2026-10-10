@@ -175,4 +175,4 @@ nav_order: 6
   <p class="note-box" style="margin-top: 1rem;">
     <em>This list will be continuously updated. All responses are to the best of my knowledge. Any corrections, feel free to contact me.</em>
   </p>
-</div> 
+</div>

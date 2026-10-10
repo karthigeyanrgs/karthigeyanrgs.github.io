@@ -13,7 +13,7 @@ coverImage: "tim-marshall-t-aoff2b8zw-unsplash.jpg"
 ---
 
 ```
-The following account was shared with me by someone who wants to stay anonymous yesterday. It was both heart-wrenching and agonising to hear about this. The only intention of this person is to tell her story to the world and in a sense, gain closure. I have divided the story into three segments based on the occurrence on a timeline and added storytelling elements to the excerpt from her. 
+The following account was shared with me by someone who wants to stay anonymous yesterday. It was both heart-wrenching and agonising to hear about this. The only intention of this person is to tell her story to the world and in a sense, gain closure. I have divided the story into three segments based on the occurrence on a timeline and added storytelling elements to the excerpt from her.
 ```
 
 #### **First segment**
@@ -110,8 +110,8 @@ After an hour, him and a mutual friend of ours arrived. His first question was, 
 
 To lift me from such a pathetic state, the band started radiating their energy in the form of music. **He started playing his solo after a while to which I screamed my heart out and waved both of my hands to the beat he charismatically had mastered.** I was just in the moment, didn't care a bit about the surrounding nor let my inhibitions take the better of me.
 
-After staying an hour long, I said my goodbye and left with my heart feeling content. My heart fluttered with joy and my mind replayed several of these moments where he stroke the strings and waved at the crowd. _He embodies charisma completely and gave it a face._  
-  
+After staying an hour long, I said my goodbye and left with my heart feeling content. My heart fluttered with joy and my mind replayed several of these moments where he stroke the strings and waved at the crowd. _He embodies charisma completely and gave it a face._
+
 We rarely saw each other the next semester due to differing schedules to a point where I almost lost contact with him. I still liked every one of his posts, closely monitoring his journey. By the end of the semester, he invited me to another one of his gig which would be happening in an institution close to where I live. I arrived an hour early with no one to accompany me there. I felt so awkward being the only one in the performance room apart from the support staff.
 
 He arrived with his band members about an hour and half later. He casually waved at me and proceeded backstage. I wanted to pounce from my seat and proceed with him backstage. But my brain took the better decision at the moment and I remained rooted to my seat. I stayed till the end of the event, hoping that I would be able to talk to him after the performance. But to my dismay, he rushed along with his band members outside the hall.
@@ -182,8 +182,8 @@ I have understood through past experiences that relationship is just not for me.
 
 My last experience has scarred me enough to know better and not venture into dating for several years to come. Do you know what is the most cruel thing ever: **when you love someone who doesn't love you**. I should shift my focus to my career because my family supported me throughout my life, and it is time for me to give back to them and gain some self-respect. For the following two days, I tried to maintain a smiling face but my mind is cluttered and morbid. After all, I am human too, who wants a shoulder to lie on from time to time. Thank you for reading my experience.
 
-* * *
+---
 
 **The third segment was particularly painful to write since it happened quite recently. I sincerely thank this person for sharing her experience. I spent a sleepless night to articulate and write this post and connect the dots. To be honest, I am not in the best of my mind after writing this. I will be taking a writing detox to recover, and might return to writing next month or much later. I am not sure.**
 
-\[jetpack\_subscription\_form subscribe\_placeholder="Enter your email address" show\_subscribers\_total="false" button\_on\_newline="false" submit\_button\_text="Sign Up" custom\_background\_button\_color="#a30023" custom\_font\_size="16px" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form subscribe_placeholder="Enter your email address" show_subscribers_total="false" button_on_newline="false" submit_button_text="Sign Up" custom_background_button_color="#a30023" custom_font_size="16px" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

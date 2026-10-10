@@ -93,6 +93,7 @@ I'm always open to interesting conversations and collaborations. I am very socia
 ## Preferred Communication
 
 I value clear and meaningful communication. When reaching out:
+
 - Email is preferred for professional inquiries
 - Social media for casual connections
 - In-person meetings can be arranged for substantial discussions

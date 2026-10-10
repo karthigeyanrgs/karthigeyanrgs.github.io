@@ -17,7 +17,7 @@ To disperse the "_**clickbait**_" content swirling out in the internet, I will c
 
 Let's get started.
 
-* * *
+---
 
 **Place** : _Berlin_, Germany. **Date** : 13th March 2020. **Time** : 2:00 A.M.
 
@@ -68,7 +68,7 @@ Things weren't improving for the better as days passed by, but the motive of ret
 
 Due to several such conflicting thoughts running around my mind, I couldn't concentrate on making any mindful job/PhD applications nor contribute properly towards voluntary projects I had undertaken. There were job freezes throughout Germany and who were currently employed were asked to work for lesser working hours for lesser pay to keep the economy striving. Many low wage employees lost their sources of income and I hadn't worked long enough to receive "[kurzarbeit](https://www.bloomberg.com/news/articles/2020-04-03/how-germany-pays-workers-when-their-work-dries-up-quicktake)" benefits. Every day until June 14th was bleak, some days filled with little hope or microaggressions or some self-humiliations.
 
-* * *
+---
 
 **Place** : _Aachen_, Germany. **Date** : 15th June 2020. **Time** : 11:00 A.M.
 
@@ -98,7 +98,6 @@ Due to several such conflicting thoughts running around my mind, I couldn't conc
 
 The day had finally arrived when I was able to travel back to India. My extended visa was to expire on **30th June** (_after repeated phone calls and emails explaining my situation to immigration officers_), it was again a close call. Things weren't straightforward. On **7th June** the embassy of India in Germany informed through its social channels that an evacuation flight was scheduled on **16th June** to Delhi and those willing to fly must register themselves and pay an squandering price for an one way ticket. I'm not being naïve here, I do know how the economy works. Aviation industry has been heavily impugned and bruised by the travel restrictions imposed around the world. To me, this was an economically viable option considering the rent, living costs and visa penalty costs likely incurred. Yes, the employees of aviation industry were heavily overworked and I can empathize with them. But they do not reap any benefits from this surge apart from not losing their jobs. I just wished back then that they communicated the preponderance of my flight from 16th to the 15th much earlier than two days prior to the day of travel. And this information was passed through a pretentious mail which can very well be identified as a spam and ignored. I became frantic as I had to cancel my train tickets to Frankfurt losing money on that front and book another overpriced ticket to get to Frankfurt in order to catch my flight. So much loss of hard earned money.
 
-  
 I left Aachen just the way I had entered it, with three trolleys and a laptop bag. The only distinction being the excitement I had felt lacking. I have wandered within Aachen alone, discovering its sparsely lit alleys with a dainty promise of cheerfulness and grandquilence.
 
 > I have wandered within Aachen alone, discovering its sparsely lit alleys with a dainty promise of cheerfulness and grandquilence.
@@ -131,7 +130,7 @@ To which I answered **"Sure, but now is not the best time I think"**.
 
 She was disappointed. But to be fair, there was several people waiting behind me and some accompanied by elderly too. Many of them the very same day were also denied entry to the flight due to some lacking documents. And I wasn't in a mood to play any music notes too. I boarded the flight and thankfully was seated next to a postdoc who followed the safety guidelines (_some of them casually ignored it_). Flight landed in Delhi with minimal turbulence (_unlike the tale which followed_).
 
-* * *
+---
 
 **Place** : _Delhi_, India. **Date** : 16th June 2020. **Time** : Hazy
 
@@ -147,13 +146,13 @@ For starters, this C21 centre was raised and bolted with a poorly _inclined_ and
 
 _to be continued_....
 
-* * *
+---
 
 The following account will be about my 28 days institutional quarantine which has been spaced out for a year in India and Oman. I spent 7 days in Delhi, 14 days in Bangalore and currently spending my 6th day in Oman. The sequent account wouldn't be very pleasant or ground breaking, but dosed with self-reflection and my docile self-inculcation.
 
 Stay tuned!
 
-* * *
+---
 
 **As an experimental venture, I will be writing newsletters through SubStack. If you are interested to read my thoughts along with my posts in your mail, please consider subscribing through the below link.**
 

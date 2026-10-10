@@ -79,7 +79,7 @@ Bessy sure has a different vibe. The above picture has a story of its own to tel
 
 I didn't spend the entirety of my childhood and teenage years in Madras. A good chunk was spent in an oil based country and the other two years in a hostel which was arguably in the remotest part of Madras which makes it less accountable. My experiences in Madras can very well be drafted to be a 250 page book, let's move on to another location.
 
-* * *
+---
 
 **Guwahati :**
 
@@ -183,7 +183,7 @@ A peculiar contrast I observed among the common folk in Guwahati is this - they 
 
 _To be continued...._
 
-* * *
+---
 
 I failed to realize while conceptualising this article that I have much more to write when it comes to illustrate my adventures in India thus resulting in a continuation post. A little spoiler: sequent post will expand on my trips to Coorg, Dhanushkodi, Madurai, Kanyakumari and a secretive location (_undisputed part of every Indian college student's unachievable plan_). I cannot particularly weave an interesting story about my brief visits to Jaipur/Udaipur, Kodaikanal, Trichy and Thiruvananthapuram.
 
@@ -199,8 +199,8 @@ I failed to realize while conceptualising this article that I have much more to 
 
 </figure>
 
-* * *
+---
 
 _Upon a suggestion from a Greek friend of mine who can very well be mistaken to be Japanese for her knowledge in anime and Japanese culture, this series was ideated. I request a short comment from my readers mentioning their favourite travel destination in India or their home country. This could lead to some very interesting conversations!_
 
-\[jetpack\_subscription\_form show\_subscribers\_total="false" button\_on\_newline="false" custom\_background\_button\_color="#a3002c" custom\_font\_size="16px" custom\_border\_radius="0" custom\_border\_weight="1" custom\_padding="15" custom\_spacing="10" submit\_button\_classes="" email\_field\_classes="" show\_only\_email\_and\_button="true"\]
+\[jetpack_subscription_form show_subscribers_total="false" button_on_newline="false" custom_background_button_color="#a3002c" custom_font_size="16px" custom_border_radius="0" custom_border_weight="1" custom_padding="15" custom_spacing="10" submit_button_classes="" email_field_classes="" show_only_email_and_button="true"\]

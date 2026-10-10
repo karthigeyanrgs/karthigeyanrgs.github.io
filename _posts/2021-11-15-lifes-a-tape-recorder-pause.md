@@ -11,7 +11,7 @@ toc:
   sidebar: left
 ---
 
-* * *
+---
 
 _This narrative is a continuation of a previous post which can be accessed [here](https://wp.me/pc7re9-o9)._
 
@@ -65,14 +65,14 @@ Silhouettes in the dark
 
 </figure>
 
-I had always felt like I was never a people person. It took me an unnatural amount of time to get over this notion I had of myself.  
-  
+I had always felt like I was never a people person. It took me an unnatural amount of time to get over this notion I had of myself.
+
 _Slow down_, Karthik. What do you mean by a **people person**?
 
 Were you not comfortable conversing with people? Did you feel insecure in the presence of strangers?
 
-_.... Are you asocial?_  
-  
+_.... Are you asocial?_
+
 **No, no, none of this**. As the definition goes, people's person is someone who is very outgoing and makes social connections effortlessly.
 
 Based on all my previous experiences, I labeled myself to be anything but a people person. If any, I was more inclined to name myself as someone who was avoided by everyone around them a.k.a **avoidant**.
@@ -126,7 +126,7 @@ Things did get better on the people front up until the pandemic struck.
 During this time I read _"Who will cry when you die"_ by Robin. It did help put the people around me in a better light. It helped me shed some boundaries with a few people I met who I am fortunate to call now close friends.
 
 > What's the point of triumph if you've no one to share it with?
-> 
+>
 > Jeffrey Archer in "A Prisoner of Birth"
 
 Since then, like _trophies_, I have been collecting people in my life **who would cry when I die.**
@@ -134,10 +134,10 @@ Since then, like _trophies_, I have been collecting people in my life **who woul
 I will sum up what people who I call friends in my life, mean to me in the words of Jane:
 
 > There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature.”
-> 
+>
 > ― **Jane Austen**
 
-* * *
+---
 
 Why don't we switch topics to something I have little to no idea about -- relationships. Quite specifically **romantic relationships.**
 
@@ -147,24 +147,24 @@ No, not so much. My cooking is far more spicier and seen much more. :P
 
 Only the clueless can be ardently curious and inquisitive about things that stay as a piece of common knowledge to others.
 
-Whenever I get to meet couples, which is not been a lot, I try to understand the psychology behind them trying to stay together in the first place. _What was the attracting factor? How did they stay hooked on each other?_  
-  
+Whenever I get to meet couples, which is not been a lot, I try to understand the psychology behind them trying to stay together in the first place. _What was the attracting factor? How did they stay hooked on each other?_
+
 There were so many questions, but so _few answers._
 
 The best way to answer them is to set up an **experiment** which I later did. I learned more about human psychology than relationships through my experiment. 🙈
 
-For those who didn't know, I set up [a dating profile of my own](https://karthigeyan2.notion.site/Date-Karthik-Date-O-485cdaaa4e3645d2928ccb1d497cd63b) and also a template for others to set one for themselves. In the initial days, I garnered interest from my own friends who either _liked the idea or ridiculed it._  
-  
+For those who didn't know, I set up [a dating profile of my own](https://karthigeyan2.notion.site/Date-Karthik-Date-O-485cdaaa4e3645d2928ccb1d497cd63b) and also a template for others to set one for themselves. In the initial days, I garnered interest from my own friends who either _liked the idea or ridiculed it._
+
 While the idea in itself didn't work out, [the template](https://www.notion.so/karthigeyan2/Dating-Profile-Template-ce1b915de09a4c0683b1989b8028ac2e) was duplicated by more than **60 people**! This is something very positive out of the effort involved.
 
 What did I learn about psychology from this? Precisely this quote from Rumi:
 
 > **"Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it."**
-> 
+>
 > Rumi
 
-Let me recollect a conversation I had with a couple who are destined to be together and live for/with each other. During the initial stages of their relationship, they had sought my opinion on how they should proceed further. (What an irony right? :D)  
-  
+Let me recollect a conversation I had with a couple who are destined to be together and live for/with each other. During the initial stages of their relationship, they had sought my opinion on how they should proceed further. (What an irony right? :D)
+
 I spoke to them along the lines of _chemistry_ right from balancing chemical reactions with the right amount of reactants to finding the "catalyst" which fosters their relationship. After hearing my 30-minute lecture, they were far more baffled than they were before they asked me. :D
 
 Thankfully they sought counsel elsewhere and are happily married now.
@@ -208,12 +208,12 @@ Now that I know what is lacking in the first place, I can improve on that front.
 And perhaps, I will get to say the below quote to someone in my life in the future. ;)
 
 > "So, I love you because the entire universe conspired to help me find you."
-> 
+>
 > ― **Paulo Coelho**
 
-* * *
+---
 
-* * *
+---
 
 > **Let's end it here. My story stretched longer than I would want it to. Let me give a sneek peek on what's in store.**
 
@@ -232,7 +232,7 @@ Greyscale as shown in Movies
 </figure>
 
 > While the actor danced, he could find no mirrors, so he leant back to admire his image in the chandeliers
-> 
+>
 > Scott Fitzgerald
 
 ## Titles 🎓
@@ -251,10 +251,10 @@ Ah, look at the trophy cabinet. It's empty.
 
 > "I am nothing special, of this I am sure.  
 > I am a common man with common thoughts and I've led a common life. There are no monuments dedicated to me and my name will soon be forgotten, but I've loved another with all my heart and soul, and to me, this has always been enough."
-> 
+>
 > **Nicholas Sparks, [The Notebook](https://www.goodreads.com/work/quotes/1498135)**
 
-* * *
+---
 
 to be continued soon..
 

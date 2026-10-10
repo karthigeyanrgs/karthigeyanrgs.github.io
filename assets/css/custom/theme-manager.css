@@ -74,8 +74,9 @@
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  transition: background-color var(--transition-duration) ease,
-              color var(--transition-duration) ease;
+  transition:
+    background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
 }
 
 a {
@@ -96,8 +97,9 @@ code {
 blockquote {
   background-color: var(--blockquote-bg);
   border-color: var(--accent-primary);
-  transition: background-color var(--transition-duration) ease,
-              border-color var(--transition-duration) ease;
+  transition:
+    background-color var(--transition-duration) ease,
+    border-color var(--transition-duration) ease;
 }
 
 /* Animation */
@@ -128,4 +130,4 @@ blockquote {
   transition-property: background-color, color, border-color, box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: ease;
-} 
+}
