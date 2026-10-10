@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies 📦
         run: npm install -g @axe-core/cli browser-driver-manager
       - name: Install matching Chrome and ChromeDriver
-         run: |
+        run: |
           browser-driver-manager install chrome chromedriver
       - name: Install Jekyll build dependencies 🧩
         run: |
