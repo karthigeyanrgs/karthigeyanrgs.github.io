@@ -51,5 +51,9 @@ jobs:
           python3 -m pip install jupyter
       - name: Build site 🏗️
         run: bundle exec jekyll build
+      - name: Start Jekyll server 🚀
+        run: bundle exec jekyll serve --no-watch &
+      - name: Wait for server to start ⏳
+        run: sleep 5
       - name: Run axe 🔍
         run: npx axe http://localhost:4000 --tags wcag2a,wcag2aa --chromedriver-path "$(which chromedriver)"
